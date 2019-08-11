@@ -1,0 +1,93 @@
+{
+    "title": "Duolingo Quiz Vocab",
+    "vocabulary": [
+        {
+            "hanzi": {
+                "display": "应该"
+            },
+            "pinyin": {
+                "display": "yīnggāi"
+            },
+            "english": {
+                "display": "should"
+            }
+        },
+        {
+            "hanzi": {
+                "display": "大概"
+            },
+            "pinyin": {
+                "display": "dàgài"
+            },
+            "english": {
+                "display": "probably"
+            }
+        },
+        {
+            "hanzi": {
+                "display": "如果"
+            },
+            "pinyin": {
+                "display": "rúguǒ"
+            },
+            "english": {
+                "display": "if"
+            }
+        },
+        {
+            "hanzi": {
+                "display": "经常"
+            },
+            "pinyin": {
+                "display": "jīngchāng"
+            },
+            "english": {
+                "display": "often"
+            }
+        },
+        {
+            "hanzi": {
+                "display": "找"
+            },
+            "pinyin": {
+                "display": "zhǎo"
+            },
+            "english": {
+                "display": "find"
+            }
+        },
+        {
+            "hanzi": {
+                "display": "大约"
+            },
+            "pinyin": {
+                "display": "dàyuē"
+            },
+            "english": {
+                "display": "approximately"
+            }
+        },
+        {
+            "hanzi": {
+                "display": "新闻"
+            },
+            "pinyin": {
+                "display": "xīnwén"
+            },
+            "english": {
+                "display": "news"
+            }
+        },
+        {
+            "hanzi": {
+                "display": "明星"
+            },
+            "pinyin": {
+                "display": "míngxīng"
+            },
+            "english": {
+                "display": "celebrity"
+            }
+        }
+    ]
+}
