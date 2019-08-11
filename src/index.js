@@ -12,12 +12,10 @@ const jsonList = [
 ];
 
 function QuizMenuItem(props) {
-  const classNames = props.isChosen ? ['active'] : [];
-
   return <li 
-    className={classNames} 
-    onClick={() => props.chooseTitle(props.displayName)}>
-      {props.displayName}
+      className={props.isChosen ? ['active'] : []} 
+      onClick={() => props.chooseTitle(props.displayName)}>
+        {props.displayName}
     </li>;
 }
 
@@ -32,17 +30,44 @@ function QuizList(props) {
   );
 }
 
+function VocabItem(props) {
+  return <tr>
+    <td>{props.row.hanzi.display}</td>
+    <td>{props.row.pinyin.display}</td>
+    <td>{props.row.english.display}</td>
+  </tr>;
+}
+
+function VocabList(props) {
+  return props.vocab.map(row => <VocabItem key={row.english.display} row={row}/>);
+}
+
+function VocabTable(props) {
+  return <table className="vocabulary_table">
+    <tbody>
+      <tr>
+        <th>Hanzi (汉字)</th>
+        <th>Pinyin (拼音)</th>
+        <th>English (英语)</th>
+      </tr>
+      <VocabList vocab={props.vocab}/>
+    </tbody>
+  </table>;
+}
+
 class MainSite extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       jsonList: jsonList,
-      chosenTitle: jsonList[0].default.title
+      chosenJson: jsonList[0].default
     };
   }
 
   chooseTitle(title) {
-    this.setState({chosenTitle: title});
+    this.setState({
+      chosenJson: this.state.jsonList.find(json => json.default.title === title).default
+    });
   }
 
   render() {
@@ -54,7 +79,7 @@ class MainSite extends React.Component {
         <ul>
           <QuizList
             titleList={titleList} 
-            chosenTitle={this.state.chosenTitle}
+            chosenTitle={this.state.chosenJson.title}
             chooseTitle={(title) => this.chooseTitle(title)}/>
         </ul>
       </div>;
@@ -62,12 +87,12 @@ class MainSite extends React.Component {
     const content =
       <div key="content" className="content">
         <h2>Memorize Chinese</h2>
+        <VocabTable vocab={this.state.chosenJson.vocabulary}/>
       </div>;
 
     return [sidebar, content];
   }
 }
-
 
 ReactDOM.render(
   <MainSite />,
