@@ -103,18 +103,16 @@ function VocabList(props) {
 }
 
 function VocabTable(props) {
-  return <form>
-    <table className="vocabulary_table">
-      <tbody>
-        <tr>
-          <th>Hanzi (汉字)</th>
-          <th>Pinyin (拼音)</th>
-          <th>English (英语)</th>
-        </tr>
-        <VocabList vocab={props.vocab}/>
-      </tbody>
-    </table>
-  </form>;
+  return <table className="vocabulary_table">
+    <tbody>
+      <tr>
+        <th>Hanzi (汉字)</th>
+        <th>Pinyin (拼音)</th>
+        <th>English (英语)</th>
+      </tr>
+      <VocabList vocab={props.vocab}/>
+    </tbody>
+  </table>;
 }
 
 class MainSite extends React.Component {
@@ -135,6 +133,10 @@ class MainSite extends React.Component {
     });
   }
 
+  onSubmit() {
+    alert("submit");
+  }
+
   render() {
     const titleList = this.state.jsonList.map(json => json.default.title);
 
@@ -152,7 +154,10 @@ class MainSite extends React.Component {
     const content =
       <div key="content" className="content">
         <h2>Memorize Chinese</h2>
-        <VocabTable vocab={this.state.vocabData}/>
+        <form onSubmit={this.onSubmit}>
+          <VocabTable vocab={this.state.vocabData}/>
+          <input type="submit" value="Submit"/>
+        </form>
       </div>;
 
     return [sidebar, content];
