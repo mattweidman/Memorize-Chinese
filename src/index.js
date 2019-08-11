@@ -17,14 +17,13 @@ const jsonList = [
  * @param rawCell object containing "display" property and "accept" list.
  * The "display" string is what to show the user if the answer is filled
  * in, and "accept" is a list of answers a user can enter to be correct.
- * @param isFilledIn whether this cell should be automatically
- * filled in by the application
+ * @param userAnswer user's answer; null if computer filled in
  */
-function generateVocabCell(rawCell, isFilledIn) {
+function generateVocabCell(rawCell, userAnswer) {
   return {
     display: rawCell.display,
     accept: rawCell.accept || [rawCell.display],
-    userAnswer: isFilledIn ? null : "_"
+    userAnswer: userAnswer
   };
 }
 
@@ -49,11 +48,19 @@ function generateVocabData(rawVocab) {
     const r = Math.floor(Math.random() * 3);
 
     return {
-      hanzi: generateVocabCell(rawRow.hanzi, r === 0),
-      pinyin: generateVocabCell(rawRow.pinyin, r === 1),
-      english: generateVocabCell(rawRow.english, r === 2),
+      hanzi: generateVocabCell(rawRow.hanzi, r === 0 ? null : ""),
+      pinyin: generateVocabCell(rawRow.pinyin, r === 1 ? null : ""),
+      english: generateVocabCell(rawRow.english, r === 2 ? null : ""),
     };
   });
+}
+
+function copyVocabRow(vocabRow) {
+  return {
+    hanzi: generateVocabCell(vocabRow.hanzi, vocabRow.hanzi.userAnswer),
+    pinyin: generateVocabCell(vocabRow.pinyin, vocabRow.pinyin.userAnswer),
+    english: generateVocabCell(vocabRow.english, vocabRow.english.userAnswer),
+  }
 }
 
 function QuizMenuItem(props) {
@@ -76,22 +83,27 @@ function QuizList(props) {
 }
 
 function VocabItem(props) {
-  const whatToDisplay = cell => 
-    cell.userAnswer === null ? 
-      cell.display : 
-      cell.userAnswer;
-
   const row = props.row;
 
+  const whatToDisplay = (cell, colNo) => 
+    cell.userAnswer === null ? 
+      cell.display : 
+      <input type="text" value={cell.userAnswer} 
+        onChange={event => props.onCellChange(row.english.display, colNo, event.target.value)}/>;
+
   return <tr>
-    <td>{whatToDisplay(row.hanzi)}</td>
-    <td>{whatToDisplay(row.pinyin)}</td>
-    <td>{whatToDisplay(row.english)}</td>
+    <td>{whatToDisplay(row.hanzi, 0)}</td>
+    <td>{whatToDisplay(row.pinyin, 1)}</td>
+    <td>{whatToDisplay(row.english, 2)}</td>
   </tr>;
 }
 
 function VocabList(props) {
-  return props.vocab.map(row => <VocabItem key={row.english.display} row={row}/>);
+  return props.vocab.map(row => 
+    <VocabItem 
+      key={row.english.display} 
+      row={row}
+      onCellChange={props.onCellChange}/>);
 }
 
 function VocabTable(props) {
@@ -102,7 +114,9 @@ function VocabTable(props) {
         <th>Pinyin (拼音)</th>
         <th>English (英语)</th>
       </tr>
-      <VocabList vocab={props.vocab}/>
+      <VocabList 
+        vocab={props.vocab} 
+        onCellChange={props.onCellChange}/>
     </tbody>
   </table>;
 }
@@ -125,6 +139,27 @@ class MainSite extends React.Component {
     });
   }
 
+  onCellChange(englishDisplay, columnNumber, newValue) {
+    const newVocabData = this.state.vocabData.map(row => {
+        const newRow = copyVocabRow(row);
+
+        if (newRow.english.display === englishDisplay) {
+          let cellToModify;
+          if (columnNumber === 0) cellToModify = newRow.hanzi;
+          else if (columnNumber === 1) cellToModify = newRow.pinyin;
+          else if (columnNumber === 2) cellToModify = newRow.english;
+          cellToModify.userAnswer = newValue;
+        }
+
+        return newRow;
+      }
+    );
+
+    this.setState({
+      vocabData: newVocabData
+    });
+  }
+
   render() {
     const titleList = this.state.jsonList.map(json => json.default.title);
 
@@ -142,7 +177,9 @@ class MainSite extends React.Component {
     const content =
       <div key="content" className="content">
         <h2>Memorize Chinese</h2>
-        <VocabTable vocab={this.state.vocabData}/>
+        <VocabTable 
+          vocab={this.state.vocabData} 
+          onCellChange={(ed, cn, nv) => this.onCellChange(ed, cn, nv)}/>
       </div>;
 
     return [sidebar, content];
