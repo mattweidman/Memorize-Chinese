@@ -11,6 +11,22 @@ const jsonList = [
   common_words
 ];
 
+const columnOptions = {
+  hanzi: 1,
+  pinyin: 2,
+  english: 4
+};
+
+const deleteProgressNotification = "Are you sure you want to delete your progress?";
+
+function showHanzi(columnFormat) {
+  return columnFormat & columnOptions.hanzi ? true : false;
+}
+
+function showPinyin(columnFormat) {
+  return columnFormat & columnOptions.pinyin ? true : false;
+}
+
 /**
  * Returns whether a user entered a correct answer in a table cell.
  * @param acceptableAnswer answer accepted by quiz
@@ -73,16 +89,32 @@ function generateVerifiedVocabCell(oldCell) {
  *   }
  * ]
  * @param rawVocab vocabulary from JSON (not modified in this function)
+ * @param columnFormat format describing which columns are enabled (see columnOptions)
  */
-function generateVocabData(rawVocab) {
+function generateVocabData(rawVocab, columnFormat) {
   return rawVocab.map(rawRow => {
-    const r = Math.floor(Math.random() * 3);
+    const numCols = columnFormat === 7 ? 3 : 2;
+    const r = Math.floor(Math.random() * numCols);
+    let colsSoFar = 0;
+    const newRow = {};
 
-    return {
-      hanzi: generateVocabCell(rawRow.hanzi, r === 0 ? null : ""),
-      pinyin: generateVocabCell(rawRow.pinyin, r === 1 ? null : ""),
-      english: generateVocabCell(rawRow.english, r === 2 ? null : ""),
-    };
+    if (showHanzi(columnFormat)) {
+      newRow.hanzi = generateVocabCell(rawRow.hanzi, r === colsSoFar ? null : "");
+      colsSoFar += 1;
+    } else {
+      newRow.hanzi = generateVocabCell(rawRow.hanzi, null);
+    }
+
+    if (showPinyin(columnFormat)) {
+      newRow.pinyin = generateVocabCell(rawRow.pinyin, r === colsSoFar ? null : "");
+      colsSoFar += 1;
+    } else {
+      newRow.pinyin = generateVocabCell(rawRow.pinyin, null);
+    }
+
+    newRow.english = generateVocabCell(rawRow.english, r === colsSoFar ? null : "");
+
+    return newRow;
   });
 }
 
@@ -113,17 +145,20 @@ function rowIsDirty(vocabRow) {
     false);
 }
 
-function calculatePercentCorrect(vocabData) {
-  let numCorrect = 0;
+function calculatePercentCorrect(vocabData, columnFormat) {
+  let numNull = 0;
   for (let i=0; i<vocabData.length; i++) {
     const row = vocabData[i];
-    if (row.hanzi.userAnswer === null) numCorrect++;
-    if (row.pinyin.userAnswer === null) numCorrect++;
-    if (row.english.userAnswer === null) numCorrect++;
+    if (row.hanzi.userAnswer === null) numNull++;
+    if (row.pinyin.userAnswer === null) numNull++;
+    if (row.english.userAnswer === null) numNull++;
   }
 
   const numRows = vocabData.length;
-  return Math.floor((numCorrect - numRows) / (numRows * 2) * 100);
+  const numCols = columnFormat === 7 ? 3 : 2;
+  const numWrong = numRows * 3 - numNull;
+  const numQuestions = numRows * (numCols - 1);
+  return Math.floor((1 - numWrong / numQuestions) * 100);
 }
 
 function QuizMenuItem(props) {
@@ -155,8 +190,8 @@ function VocabItem(props) {
         onChange={event => props.onCellChange(row.english.display, colNo, event.target.value)}/>;
 
   return <tr>
-    <td>{whatToDisplay(row.hanzi, 0)}</td>
-    <td>{whatToDisplay(row.pinyin, 1)}</td>
+    {showHanzi(props.columnFormat) && <td>{whatToDisplay(row.hanzi, 0)}</td>}
+    {showPinyin(props.columnFormat) && <td>{whatToDisplay(row.pinyin, 1)}</td>}
     <td>{whatToDisplay(row.english, 2)}</td>
   </tr>;
 }
@@ -166,20 +201,22 @@ function VocabList(props) {
     <VocabItem 
       key={row.english.display} 
       row={row}
-      onCellChange={props.onCellChange}/>);
+      onCellChange={props.onCellChange}
+      columnFormat={props.columnFormat}/>);
 }
 
 function VocabTable(props) {
   return <table className="vocabulary_table">
     <tbody>
       <tr>
-        <th>Hanzi (汉字)</th>
-        <th>Pinyin (拼音)</th>
+        {showHanzi(props.columnFormat) && <th>Hanzi (汉字)</th>}
+        {showPinyin(props.columnFormat) && <th>Pinyin (拼音)</th>}
         <th>English (英语)</th>
       </tr>
       <VocabList 
         vocab={props.vocab} 
-        onCellChange={props.onCellChange}/>
+        onCellChange={props.onCellChange}
+        columnFormat={props.columnFormat}/>
     </tbody>
   </table>;
 }
@@ -190,8 +227,9 @@ class MainSite extends React.Component {
     this.state = {
       jsonList: jsonList,
       chosenTitle: jsonList[0].default.title,
-      vocabData: generateVocabData(jsonList[0].default.vocabulary),
-      percentCorrect: null
+      vocabData: generateVocabData(jsonList[0].default.vocabulary, 7),
+      percentCorrect: null,
+      columnFormat: 7
     };
   }
 
@@ -205,14 +243,28 @@ class MainSite extends React.Component {
   }
 
   chooseTitle(title) {
-    if (this.isDirty() && !window.confirm("Are you sure you want to delete your progress?")) {
+    if (this.isDirty() && !window.confirm(deleteProgressNotification)) {
       return;
     }
 
     const chosenJson = this.state.jsonList.find(json => json.default.title === title).default;
     this.setState({
       chosenTitle: chosenJson.title,
-      vocabData: generateVocabData(chosenJson.vocabulary),
+      vocabData: generateVocabData(chosenJson.vocabulary, this.state.columnFormat),
+      percentCorrect: null
+    });
+  }
+
+  changeColumns(newColumnFormat) {
+    if (this.isDirty() && !window.confirm(deleteProgressNotification)) {
+      return;
+    }
+
+    const title = this.state.chosenTitle;
+    const chosenJson = this.state.jsonList.find(json => json.default.title === title).default;
+    this.setState({
+      columnFormat: newColumnFormat,
+      vocabData: generateVocabData(chosenJson.vocabulary, newColumnFormat),
       percentCorrect: null
     });
   }
@@ -247,7 +299,7 @@ class MainSite extends React.Component {
 
     this.setState({
       vocabData: newVocabData,
-      percentCorrect: calculatePercentCorrect(newVocabData)
+      percentCorrect: calculatePercentCorrect(newVocabData, this.state.columnFormat)
     });
   }
 
@@ -282,10 +334,18 @@ class MainSite extends React.Component {
       <div key="content" className="content">
         <h2>Memorize Chinese</h2>
         <p>{this.state.chosenTitle}</p>
+        <select 
+          value={`${this.state.columnFormat}`} 
+          onChange={event => this.changeColumns(parseInt(event.target.value))}>
+            <option value="7">Hanzi, Pinyin, and English</option>
+            <option value="5">Hanzi and English</option>
+            <option value="6">Pinyin and English</option>
+        </select><br/><br/>
         <form onSubmit={event => this.onSubmit(event)}>
           <VocabTable 
             vocab={this.state.vocabData} 
-            onCellChange={(ed, cn, nv) => this.onCellChange(ed, cn, nv)}/>
+            onCellChange={(ed, cn, nv) => this.onCellChange(ed, cn, nv)}
+            columnFormat={this.state.columnFormat}/>
           <input type="submit" value="Submit"/>
           <p className={percentClasses}>{percentCorrect}&#37; correct</p>
         </form>
