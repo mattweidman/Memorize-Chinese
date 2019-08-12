@@ -345,8 +345,8 @@ class MainSite extends React.Component {
     }
 
     const content =
-      <div className="contentContainer">
-        <div key="content" className="content">
+      <div key="content" className="contentContainer">
+        <div className="content">
           <h2>Memorize Chinese</h2>
           <p>{this.state.chosenTitle}</p>
           <select 
