@@ -1,93 +1,1035 @@
 {
-    "title": "Duolingo Quiz Vocab",
-    "vocabulary": [
-        {
-            "hanzi": {
-                "display": "应该"
-            },
-            "pinyin": {
-                "display": "yīnggāi"
-            },
-            "english": {
-                "display": "should"
-            }
-        },
-        {
-            "hanzi": {
-                "display": "大概"
-            },
-            "pinyin": {
-                "display": "dàgài"
-            },
-            "english": {
-                "display": "probably"
-            }
-        },
-        {
-            "hanzi": {
-                "display": "如果"
-            },
-            "pinyin": {
-                "display": "rúguǒ"
-            },
-            "english": {
-                "display": "if"
-            }
-        },
-        {
-            "hanzi": {
-                "display": "经常"
-            },
-            "pinyin": {
-                "display": "jīngchāng"
-            },
-            "english": {
-                "display": "often"
-            }
-        },
-        {
-            "hanzi": {
-                "display": "找"
-            },
-            "pinyin": {
-                "display": "zhǎo"
-            },
-            "english": {
-                "display": "find"
-            }
-        },
-        {
-            "hanzi": {
-                "display": "大约"
-            },
-            "pinyin": {
-                "display": "dàyuē"
-            },
-            "english": {
-                "display": "approximately"
-            }
-        },
-        {
-            "hanzi": {
-                "display": "新闻"
-            },
-            "pinyin": {
-                "display": "xīnwén"
-            },
-            "english": {
-                "display": "news"
-            }
-        },
-        {
-            "hanzi": {
-                "display": "明星"
-            },
-            "pinyin": {
-                "display": "míngxīng"
-            },
-            "english": {
-                "display": "celebrity"
-            }
-        }
-    ]
+  "title": "Duolingo Quiz Vocab",
+  "vocabulary": [
+    {
+      "hanzi": {
+        "display": "但是"
+      },
+      "pinyin": {
+        "display": "dànshì"
+      },
+      "english": {
+        "display": "but"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "应该"
+      },
+      "pinyin": {
+        "display": "yīnggāi"
+      },
+      "english": {
+        "display": "should"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "大概"
+      },
+      "pinyin": {
+        "display": "dàgài"
+      },
+      "english": {
+        "display": "probably"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "如果"
+      },
+      "pinyin": {
+        "display": "rúguǒ"
+      },
+      "english": {
+        "display": "if"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "经常"
+      },
+      "pinyin": {
+        "display": "jīngchāng"
+      },
+      "english": {
+        "display": "often"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "找"
+      },
+      "pinyin": {
+        "display": "zhǎo"
+      },
+      "english": {
+        "display": "find"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "大约"
+      },
+      "pinyin": {
+        "display": "dàyuē"
+      },
+      "english": {
+        "display": "approximately"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "新闻"
+      },
+      "pinyin": {
+        "display": "xīnwén"
+      },
+      "english": {
+        "display": "news"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "明星"
+      },
+      "pinyin": {
+        "display": "míngxīng"
+      },
+      "english": {
+        "display": "celebrity"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "订位"
+      },
+      "pinyin": {
+        "display": "dìngwèi"
+      },
+      "english": {
+        "display": "reservation",
+        "accept": ["reservation", "make a reservation"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "注意"
+      },
+      "pinyin": {
+        "display": "zhùyì"
+      },
+      "english": {
+        "display": "pay attention"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "身体"
+      },
+      "pinyin": {
+        "display": "shēntǐ"
+      },
+      "english": {
+        "display": "body",
+        "accept": ["body", "health"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "冰箱"
+      },
+      "pinyin": {
+        "display": "bīngxiāng"
+      },
+      "english": {
+        "display": "refrigerator",
+        "accept": ["refrigerator", "fridge"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "地铁"
+      },
+      "pinyin": {
+        "display": "dìtiě"
+      },
+      "english": {
+        "display": "subway"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "站"
+      },
+      "pinyin": {
+        "display": "zhàn"
+      },
+      "english": {
+        "display": "station"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "高"
+      },
+      "pinyin": {
+        "display": "gāo"
+      },
+      "english": {
+        "display": "tall",
+        "accept": ["high", "tall", "pointy"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "矮"
+      },
+      "pinyin": {
+        "display": "ǎi"
+      },
+      "english": {
+        "display": "short (height)",
+        "accept": ["short", "short (height)"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "长"
+      },
+      "pinyin": {
+        "display": "zhǎng"
+      },
+      "english": {
+        "display": "long"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "短"
+      },
+      "pinyin": {
+        "display": "duǎn"
+      },
+      "english": {
+        "display": "short (length)",
+        "accept": ["short", "short (length)"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "跳舞"
+      },
+      "pinyin": {
+        "display": "tiàowǔ"
+      },
+      "english": {
+        "display": "dance"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "医院"
+      },
+      "pinyin": {
+        "display": "yīyuàn"
+      },
+      "english": {
+        "display": "hospital"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "丈夫"
+      },
+      "pinyin": {
+        "display": "zhàngfū"
+      },
+      "english": {
+        "display": "husband"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "妻子"
+      },
+      "pinyin": {
+        "display": "qīzi"
+      },
+      "english": {
+        "display": "wife"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "准"
+      },
+      "pinyin": {
+        "display": "zhǔn"
+      },
+      "english": {
+        "display": "allowed"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "谁"
+      },
+      "pinyin": {
+        "display": "shéi"
+      },
+      "english": {
+        "display": "who"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "错"
+      },
+      "pinyin": {
+        "display": "cuò"
+      },
+      "english": {
+        "display": "wrong"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "坏"
+      },
+      "pinyin": {
+        "display": "huài"
+      },
+      "english": {
+        "display": "bad"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "读"
+      },
+      "pinyin": {
+        "display": "dú"
+      },
+      "english": {
+        "display": "read"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "约会"
+      },
+      "pinyin": {
+        "display": "yuēhuì"
+      },
+      "english": {
+        "display": "appointment",
+        "accept": ["appointment", "date"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "运动"
+      },
+      "pinyin": {
+        "display": "yūndòng"
+      },
+      "english": {
+        "display": "exercise",
+        "accept": ["exercise", "sport"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "办公室"
+      },
+      "pinyin": {
+        "display": "bàngōngshì"
+      },
+      "english": {
+        "display": "office"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "果汁"
+      },
+      "pinyin": {
+        "display": "guǒzhǐ"
+      },
+      "english": {
+        "display": "juice"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "脚"
+      },
+      "pinyin": {
+        "display": "jiǎo"
+      },
+      "english": {
+        "display": "foot"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "疼"
+      },
+      "pinyin": {
+        "display": "téng"
+      },
+      "english": {
+        "display": "pain",
+        "accept": ["pain", "hurt"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "伞"
+      },
+      "pinyin": {
+        "display": "sǎn"
+      },
+      "english": {
+        "display": "umbrella"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "饿"
+      },
+      "pinyin": {
+        "display": "è"
+      },
+      "english": {
+        "display": "hungry"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "渴"
+      },
+      "pinyin": {
+        "display": "kě"
+      },
+      "english": {
+        "display": "thirsty"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "一本书"
+      },
+      "pinyin": {
+        "display": "yī běn shū",
+        "accept": ["yī běn shū", "yīběn shū", "yīběnshū"]
+      },
+      "english": {
+        "display": "a book",
+        "accept": ["a book", "one book"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "出租车"
+      },
+      "pinyin": {
+        "display": "chūzū chē",
+        "accept": ["chūzū chē", "chūzūchē"]
+      },
+      "english": {
+        "display": "taxi",
+        "accept": ["taxi", "cab"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "汽车"
+      },
+      "pinyin": {
+        "display": "qìchē"
+      },
+      "english": {
+        "display": "car"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "香蕉"
+      },
+      "pinyin": {
+        "display": "xiāngjiāo"
+      },
+      "english": {
+        "display": "banana"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "空"
+      },
+      "pinyin": {
+        "display": "kōng"
+      },
+      "english": {
+        "display": "free time",
+        "accept": ["free time", "time", "free", "sky", "air"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "饱"
+      },
+      "pinyin": {
+        "display": "bǎo"
+      },
+      "english": {
+        "display": "full"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "已经"
+      },
+      "pinyin": {
+        "display": "yījīng"
+      },
+      "english": {
+        "display": "already"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "浪漫"
+      },
+      "pinyin": {
+        "display": "làngmàn"
+      },
+      "english": {
+        "display": "romantic"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "休息"
+      },
+      "pinyin": {
+        "display": "xiūxí"
+      },
+      "english": {
+        "display": "rest"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "放心"
+      },
+      "pinyin": {
+        "display": "fàngxīn"
+      },
+      "english": {
+        "display": "relax (as in, please relax)",
+        "accept": ["relax", "rest assured", "calm down"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "火车"
+      },
+      "pinyin": {
+        "display": "huǒchē"
+      },
+      "english": {
+        "display": "train"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "离"
+      },
+      "pinyin": {
+        "display": "lí"
+      },
+      "english": {
+        "display": "from (here to here)",
+        "accept": ["from"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "停"
+      },
+      "pinyin": {
+        "display": "tíng"
+      },
+      "english": {
+        "display": "stop"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "累"
+      },
+      "pinyin": {
+        "display": "lèi"
+      },
+      "english": {
+        "display": "tired"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "房间"
+      },
+      "pinyin": {
+        "display": "fángjiān"
+      },
+      "english": {
+        "display": "room"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "桌子"
+      },
+      "pinyin": {
+        "display": "zhuōzi"
+      },
+      "english": {
+        "display": "table"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "服务员"
+      },
+      "pinyin": {
+        "display": "fúwùyuán"
+      },
+      "english": {
+        "display": "waiter"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "票"
+      },
+      "pinyin": {
+        "display": "piào"
+      },
+      "english": {
+        "display": "ticket"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "左"
+      },
+      "pinyin": {
+        "display": "zuǒ"
+      },
+      "english": {
+        "display": "left"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "右"
+      },
+      "pinyin": {
+        "display": "yòu"
+      },
+      "english": {
+        "display": "right"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "黑"
+      },
+      "pinyin": {
+        "display": "hēi"
+      },
+      "english": {
+        "display": "black"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "白"
+      },
+      "pinyin": {
+        "display": "bái"
+      },
+      "english": {
+        "display": "white"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "不但"
+      },
+      "pinyin": {
+        "display": "bùdàn"
+      },
+      "english": {
+        "display": "not only"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "而且"
+      },
+      "pinyin": {
+        "display": "érqiě"
+      },
+      "english": {
+        "display": "but also"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "美术"
+      },
+      "pinyin": {
+        "display": "měishù"
+      },
+      "english": {
+        "display": "art"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "课"
+      },
+      "pinyin": {
+        "display": "kè"
+      },
+      "english": {
+        "display": "class"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "远"
+      },
+      "pinyin": {
+        "display": "yuǎn"
+      },
+      "english": {
+        "display": "far"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "健康"
+      },
+      "pinyin": {
+        "display": "jiànkāng"
+      },
+      "english": {
+        "display": "healthy"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "帅"
+      },
+      "pinyin": {
+        "display": "shuāi"
+      },
+      "english": {
+        "display": "handsome"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "送"
+      },
+      "pinyin": {
+        "display": "sòng"
+      },
+      "english": {
+        "display": "give away",
+        "accept": ["give", "give away"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "礼物"
+      },
+      "pinyin": {
+        "display": "lǐwù"
+      },
+      "english": {
+        "display": "gift",
+        "accept": ["gift", "present"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "试一下"
+      },
+      "pinyin": {
+        "display": "shì yīxià",
+        "accept": ["shì yīxià", "shìyīxià"]
+      },
+      "english": {
+        "display": "try"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "春节"
+      },
+      "pinyin": {
+        "display": "chūnjié"
+      },
+      "english": {
+        "display": "Spring Festival",
+        "accept": ["Spring Festival", "Chinese New Year"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "节日"
+      },
+      "pinyin": {
+        "display": "jiérì"
+      },
+      "english": {
+        "display": "festival"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "亲戚"
+      },
+      "pinyin": {
+        "display": "qīnqī"
+      },
+      "english": {
+        "display": "relatives",
+        "accept": ["relative", "relatives", "family member", "family members"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "参加"
+      },
+      "pinyin": {
+        "display": "cānjiā"
+      },
+      "english": {
+        "display": "participate",
+        "accept": ["participate", "attend"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "派对"
+      },
+      "pinyin": {
+        "display": "pàiduì"
+      },
+      "english": {
+        "display": "party"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "第一",
+        "accept": ["第一", "先"]
+      },
+      "pinyin": {
+        "display": "dì yī",
+        "accept": ["dì yī", "dìyī", "xiān"]
+      },
+      "english": {
+        "display": "first"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "足球"
+      },
+      "pinyin": {
+        "display": "zúqiú"
+      },
+      "english": {
+        "display": "soccer",
+        "accept": ["soccer", "football"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "同学"
+      },
+      "pinyin": {
+        "display": "tóngxué"
+      },
+      "english": {
+        "display": "classmate"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "火锅"
+      },
+      "pinyin": {
+        "display": "huǒguō"
+      },
+      "english": {
+        "display": "hot pot"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "骑马"
+      },
+      "pinyin": {
+        "display": "qímǎ"
+      },
+      "english": {
+        "display": "ride a horse",
+        "accept": ["ride a horse", "ride horse", "ride horses"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "裤子"
+      },
+      "pinyin": {
+        "display": "kùzi"
+      },
+      "english": {
+        "display": "pants"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "肚子"
+      },
+      "pinyin": {
+        "display": "dùzi"
+      },
+      "english": {
+        "display": "stomach"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "裙子"
+      },
+      "pinyin": {
+        "display": "qúnzi"
+      },
+      "english": {
+        "display": "dress",
+        "accept": ["dress", "skirt"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "关系"
+      },
+      "pinyin": {
+        "display": "guānxì"
+      },
+      "english": {
+        "display": "relationship"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "油条"
+      },
+      "pinyin": {
+        "display": "yóutiáo"
+      },
+      "english": {
+        "display": "deep-fried dough stick",
+        "accept": ["deep-fried dough stick", "deep-fried doughstick", "deep fried dough stick", "deep fried doughstick", "deep-fried dough-stick", "deep fried dough-stick"]
+      }
+    },
+    {
+      "hanzi": {
+        "display": "阿姨"
+      },
+      "pinyin": {
+        "display": "āyí"
+      },
+      "english": {
+        "display": "aunt"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "叔叔"
+      },
+      "pinyin": {
+        "display": "shūshū"
+      },
+      "english": {
+        "display": "uncle"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "一会儿"
+      },
+      "pinyin": {
+        "display": "yīhuǐer"
+      },
+      "english": {
+        "display": "for a while"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "因为"
+      },
+      "pinyin": {
+        "display": "yīnwèi"
+      },
+      "english": {
+        "display": "because"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "西瓜"
+      },
+      "pinyin": {
+        "display": "xīguā"
+      },
+      "english": {
+        "display": "watermelon"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "迟"
+      },
+      "pinyin": {
+        "display": "chí"
+      },
+      "english": {
+        "display": "late"
+      }
+    },
+    {
+      "hanzi": {
+        "display": "感冒"
+      },
+      "pinyin": {
+        "display": "gǎnmào"
+      },
+      "english": {
+        "display": "cold (as in sickness)",
+        "accept": ["cold"]
+      }
+    }
+  ]
 }
