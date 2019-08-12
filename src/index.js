@@ -212,7 +212,8 @@ class MainSite extends React.Component {
     const chosenJson = this.state.jsonList.find(json => json.default.title === title).default;
     this.setState({
       chosenTitle: chosenJson.title,
-      vocabData: generateVocabData(chosenJson.vocabulary)
+      vocabData: generateVocabData(chosenJson.vocabulary),
+      percentCorrect: null
     });
   }
 
