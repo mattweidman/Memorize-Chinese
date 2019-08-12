@@ -27,6 +27,17 @@ function showPinyin(columnFormat) {
   return columnFormat & columnOptions.pinyin ? true : false;
 }
 
+/** Shuffle an array using the Fisher-Yates shuffle. */
+function shuffle(a) {
+  const n = a.length;
+  for (let i=0; i<n-1; i++) {
+    const j = Math.floor(Math.random() * (n - i)) + i;
+    const t = a[i];
+    a[i] = a[j];
+    a[j] = t;
+  }
+}
+
 /**
  * Returns whether a user entered a correct answer in a table cell.
  * @param acceptableAnswer answer accepted by quiz
@@ -92,7 +103,7 @@ function generateVerifiedVocabCell(oldCell) {
  * @param columnFormat format describing which columns are enabled (see columnOptions)
  */
 function generateVocabData(rawVocab, columnFormat) {
-  return rawVocab.map(rawRow => {
+  const newVocab = rawVocab.map(rawRow => {
     const numCols = columnFormat === 7 ? 3 : 2;
     const r = Math.floor(Math.random() * numCols);
     let colsSoFar = 0;
@@ -116,6 +127,9 @@ function generateVocabData(rawVocab, columnFormat) {
 
     return newRow;
   });
+
+  shuffle(newVocab);
+  return newVocab;
 }
 
 function copyVocabRow(vocabRow) {
