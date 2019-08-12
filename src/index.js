@@ -113,6 +113,19 @@ function rowIsDirty(vocabRow) {
     false);
 }
 
+function calculatePercentCorrect(vocabData) {
+  let numCorrect = 0;
+  for (let i=0; i<vocabData.length; i++) {
+    const row = vocabData[i];
+    if (row.hanzi.userAnswer === null) numCorrect++;
+    if (row.pinyin.userAnswer === null) numCorrect++;
+    if (row.english.userAnswer === null) numCorrect++;
+  }
+
+  const numRows = vocabData.length;
+  return Math.floor((numCorrect - numRows) / (numRows * 2) * 100);
+}
+
 function QuizMenuItem(props) {
   return <li 
       className={props.isChosen ? ['active'] : []} 
@@ -177,7 +190,8 @@ class MainSite extends React.Component {
     this.state = {
       jsonList: jsonList,
       chosenTitle: jsonList[0].default.title,
-      vocabData: generateVocabData(jsonList[0].default.vocabulary)
+      vocabData: generateVocabData(jsonList[0].default.vocabulary),
+      percentCorrect: null
     };
   }
 
@@ -231,7 +245,8 @@ class MainSite extends React.Component {
       vocabRowFilledInIfCorrect(vocabRow));
 
     this.setState({
-      vocabData: newVocabData
+      vocabData: newVocabData,
+      percentCorrect: calculatePercentCorrect(newVocabData)
     });
   }
 
@@ -249,14 +264,29 @@ class MainSite extends React.Component {
         </ul>
       </div>;
 
+    const percentCorrect = this.state.percentCorrect;
+    
+    let percentClasses;
+    if (percentCorrect === null) {
+      percentClasses = ["invisible"];
+    } else if (percentCorrect < 40) {
+      percentClasses = ["redText"];
+    } else if (percentCorrect < 80) {
+      percentClasses = ["yellowText"];
+    } else {
+      percentClasses = ["greenText"];
+    }
+
     const content =
       <div key="content" className="content">
         <h2>Memorize Chinese</h2>
+        <p>{this.state.chosenTitle}</p>
         <form onSubmit={event => this.onSubmit(event)}>
           <VocabTable 
             vocab={this.state.vocabData} 
             onCellChange={(ed, cn, nv) => this.onCellChange(ed, cn, nv)}/>
           <input type="submit" value="Submit"/>
+          <p className={percentClasses}>{percentCorrect}&#37; correct</p>
         </form>
       </div>;
 

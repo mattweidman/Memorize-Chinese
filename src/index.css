@@ -71,3 +71,19 @@ h2 {
   width: 100%;
   text-align: left;
 }
+
+.invisible {
+  visibility: hidden;
+}
+
+.redText {
+  color: rgb(146, 0, 0);
+}
+
+.yellowText {
+  color: rgb(155, 132, 2);
+}
+
+.greenText {
+  color: rgb(1, 124, 7);
+}
