@@ -345,24 +345,26 @@ class MainSite extends React.Component {
     }
 
     const content =
-      <div key="content" className="content">
-        <h2>Memorize Chinese</h2>
-        <p>{this.state.chosenTitle}</p>
-        <select 
-          value={`${this.state.columnFormat}`} 
-          onChange={event => this.changeColumns(parseInt(event.target.value))}>
-            <option value="7">Hanzi, Pinyin, and English</option>
-            <option value="5">Hanzi and English</option>
-            <option value="6">Pinyin and English</option>
-        </select><br/><br/>
-        <form onSubmit={event => this.onSubmit(event)}>
-          <VocabTable 
-            vocab={this.state.vocabData} 
-            onCellChange={(ed, cn, nv) => this.onCellChange(ed, cn, nv)}
-            columnFormat={this.state.columnFormat}/>
-          <input type="submit" value="Submit"/>
-          <p className={percentClasses}>{percentCorrect}&#37; correct</p>
-        </form>
+      <div className="contentContainer">
+        <div key="content" className="content">
+          <h2>Memorize Chinese</h2>
+          <p>{this.state.chosenTitle}</p>
+          <select 
+            value={`${this.state.columnFormat}`} 
+            onChange={event => this.changeColumns(parseInt(event.target.value))}>
+              <option value="7">Hanzi, Pinyin, and English</option>
+              <option value="5">Hanzi and English</option>
+              <option value="6">Pinyin and English</option>
+          </select><br/><br/>
+          <form onSubmit={event => this.onSubmit(event)}>
+            <VocabTable 
+              vocab={this.state.vocabData} 
+              onCellChange={(ed, cn, nv) => this.onCellChange(ed, cn, nv)}
+              columnFormat={this.state.columnFormat}/>
+            <input type="submit" value="Submit"/>
+            <p className={percentClasses}>{percentCorrect}&#37; correct</p>
+          </form>
+        </div>
       </div>;
 
     return [sidebar, content];
