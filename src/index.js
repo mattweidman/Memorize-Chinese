@@ -12,6 +12,22 @@ const jsonList = [
 ];
 
 /**
+ * Returns whether a user entered a correct answer in a table cell.
+ * @param acceptableAnswer answer accepted by quiz
+ * @param userAnswer user's answer
+ */
+function isCorrect(acceptableAnswer, userAnswer) {
+  if (typeof(acceptableAnswer) !== "string" || typeof(userAnswer) !== "string") {
+    return false;
+  }
+
+  acceptableAnswer = acceptableAnswer.trim().toLocaleLowerCase();
+  userAnswer = userAnswer.trim().toLocaleLowerCase();
+
+  return acceptableAnswer === userAnswer;
+}
+
+/**
  * Takes a raw cell from the vocabulary list and converts it into a
  * vocabulary cell used by the table shown at the beginning of the game.
  * @param rawCell object containing "display" property and "accept" list.
@@ -25,6 +41,21 @@ function generateVocabCell(rawCell, userAnswer) {
     accept: rawCell.accept || [rawCell.display],
     userAnswer: userAnswer
   };
+}
+
+/**
+ * Create a new vocab cell in which userAnswer is null if the correct
+ * answer was submitted.
+ * @param oldCell old vocab cell
+ */
+function generateVerifiedVocabCell(oldCell) {
+  const userAnswer = oldCell.userAnswer;
+  const correct = oldCell.accept.findIndex(value => isCorrect(value, userAnswer)) !== -1;
+  return {
+    display: oldCell.display,
+    accept: oldCell.accept,
+    userAnswer: correct ? null : userAnswer
+  }
 }
 
 /**
@@ -59,8 +90,27 @@ function copyVocabRow(vocabRow) {
   return {
     hanzi: generateVocabCell(vocabRow.hanzi, vocabRow.hanzi.userAnswer),
     pinyin: generateVocabCell(vocabRow.pinyin, vocabRow.pinyin.userAnswer),
-    english: generateVocabCell(vocabRow.english, vocabRow.english.userAnswer),
+    english: generateVocabCell(vocabRow.english, vocabRow.english.userAnswer)
   }
+}
+
+/**
+ * Return a new vocab row in which correct answers are filled in 
+ * (i.e. userAnswer is null).
+ * @param vocabRow existing vocab row
+ */
+function vocabRowFilledInIfCorrect(vocabRow) {
+  return {
+    hanzi: generateVerifiedVocabCell(vocabRow.hanzi),
+    pinyin: generateVerifiedVocabCell(vocabRow.pinyin),
+    english: generateVerifiedVocabCell(vocabRow.english)
+  }
+}
+
+function rowIsDirty(vocabRow) {
+  return [vocabRow.hanzi, vocabRow.pinyin, vocabRow.english].reduce(
+    (prev, current) => prev || current.userAnswer !== null, 
+    false);
 }
 
 function QuizMenuItem(props) {
@@ -131,16 +181,25 @@ class MainSite extends React.Component {
     };
   }
 
+  isDirty() {
+    for (let i=0; i<this.state.vocabData.length; i++) {
+      if (rowIsDirty(this.state.vocabData[i])) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   chooseTitle(title) {
+    if (this.isDirty() && !window.confirm("Are you sure you want to delete your progress?")) {
+      return;
+    }
+
     const chosenJson = this.state.jsonList.find(json => json.default.title === title).default;
     this.setState({
       chosenTitle: chosenJson.title,
       vocabData: generateVocabData(chosenJson.vocabulary)
     });
-  }
-
-  onSubmit() {
-    alert("submit");
   }
 
   onCellChange(englishDisplay, columnNumber, newValue) {
@@ -164,6 +223,18 @@ class MainSite extends React.Component {
     });
   }
 
+  onSubmit(event) {
+    event.preventDefault();
+
+    // Fill in every correct answer
+    const newVocabData = this.state.vocabData.map(vocabRow => 
+      vocabRowFilledInIfCorrect(vocabRow));
+
+    this.setState({
+      vocabData: newVocabData
+    });
+  }
+
   render() {
     const titleList = this.state.jsonList.map(json => json.default.title);
 
@@ -181,7 +252,7 @@ class MainSite extends React.Component {
     const content =
       <div key="content" className="content">
         <h2>Memorize Chinese</h2>
-        <form onSubmit={this.onSubmit}>
+        <form onSubmit={event => this.onSubmit(event)}>
           <VocabTable 
             vocab={this.state.vocabData} 
             onCellChange={(ed, cn, nv) => this.onCellChange(ed, cn, nv)}/>
