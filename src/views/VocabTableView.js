@@ -42,3 +42,40 @@ export function VocabTable(props) {
     </tbody>
   </table>;
 }
+
+export function MainContent(props) {
+  const percentCorrect = props.percentCorrect;
+    
+  let percentClasses;
+  if (percentCorrect === null) {
+    percentClasses = ["invisible"];
+  } else if (percentCorrect < 40) {
+    percentClasses = ["redText"];
+  } else if (percentCorrect < 80) {
+    percentClasses = ["yellowText"];
+  } else {
+    percentClasses = ["greenText"];
+  }
+
+  return <div key="content" className="contentContainer">
+    <div className="content">
+      <h2>Memorize Chinese</h2>
+      <p>{props.chosenTitle}</p>
+      <select 
+        value={`${props.vocabData.columnFormat}`} 
+        onChange={props.changeColumns}>
+          <option value="7">Hanzi, Pinyin, and English</option>
+          <option value="5">Hanzi and English</option>
+          <option value="6">Pinyin and English</option>
+      </select><br/><br/>
+      <form onSubmit={props.onSubmit}>
+        <VocabTable 
+          vocab={props.vocabData.vocabRows} 
+          onCellChange={props.onCellChange}
+          columnFormat={props.vocabData.columnFormat}/>
+        <input type="submit" value="Submit"/>
+        <p className={percentClasses}>{percentCorrect}&#37; correct</p>
+      </form>
+    </div>
+  </div>;
+}

@@ -5,8 +5,8 @@ import './index.css';
 // local imports
 import * as ColumnFormat from './models/ColumnFormat';
 import * as VocabData from './models/VocabDataModel';
-import { QuizList } from './views/QuizSidebarView';
-import { VocabTable } from './views/VocabTableView';
+import { MainContent } from './views/VocabTableView';
+import { QuizSidebar } from './views/QuizSidebarView';
 
 // JSON files
 import * as duolingo_quizzes from './data/duolingo_quizzes.json';
@@ -19,7 +19,11 @@ const jsonList = [
 
 const deleteProgressNotification = "Are you sure you want to delete your progress?";
 
-class MainSite extends React.Component {
+/**
+ * Component representing entire website. Contains controller functions
+ * and all state.
+ */
+class MainComponent extends React.Component {
   constructor(props) {
     super(props);
 
@@ -32,6 +36,10 @@ class MainSite extends React.Component {
     };
   }
 
+  /**
+   * Called when user clicks a title in the sidebar.
+   * @param {string} title new title chosen
+   */
   chooseTitle(title) {
     if (this.state.vocabData.isDirty() && !window.confirm(deleteProgressNotification)) {
       return;
@@ -45,6 +53,10 @@ class MainSite extends React.Component {
     });
   }
 
+  /**
+   * Called when the user changes the column format.
+   * @param {number} newColumnFormat column format
+   */
   changeColumns(newColumnFormat) {
     if (this.state.vocabData.isDirty() && !window.confirm(deleteProgressNotification)) {
       return;
@@ -58,6 +70,12 @@ class MainSite extends React.Component {
     });
   }
 
+  /**
+   * Called when the user changes a cell in the table.
+   * @param {string} englishDisplay english vocabulary word to identify the row
+   * @param {number} columnNumber 0 for hanzi, 1 for pinyin, and 2 for english
+   * @param {string} newValue new cell value entered by user
+   */
   onCellChange(englishDisplay, columnNumber, newValue) {
     this.setState({
       vocabData: this.state.vocabData.copyOnCellChange(englishDisplay, columnNumber, newValue)
@@ -75,61 +93,32 @@ class MainSite extends React.Component {
     });
   }
 
+  /**
+   * Main render function. Returns the entire web view.
+   */
   render() {
     const titleList = this.state.jsonList.map(json => json.default.title);
 
-    const sidebar = 
-      <div key="sidebar" className="sidebar">
-        <h3>Quizzes</h3>
-        <ul>
-          <QuizList
-            titleList={titleList} 
-            chosenTitle={this.state.chosenTitle}
-            chooseTitle={(title) => this.chooseTitle(title)}/>
-        </ul>
-      </div>;
+    return <div>
 
-    const percentCorrect = this.state.percentCorrect;
-    
-    let percentClasses;
-    if (percentCorrect === null) {
-      percentClasses = ["invisible"];
-    } else if (percentCorrect < 40) {
-      percentClasses = ["redText"];
-    } else if (percentCorrect < 80) {
-      percentClasses = ["yellowText"];
-    } else {
-      percentClasses = ["greenText"];
-    }
+      <QuizSidebar 
+        titleList={titleList} 
+        chosenTitle={this.state.chosenTitle}
+        chooseTitle={(title) => this.chooseTitle(title)}/>
 
-    const content =
-      <div key="content" className="contentContainer">
-        <div className="content">
-          <h2>Memorize Chinese</h2>
-          <p>{this.state.chosenTitle}</p>
-          <select 
-            value={`${this.state.vocabData.columnFormat}`} 
-            onChange={event => this.changeColumns(parseInt(event.target.value))}>
-              <option value="7">Hanzi, Pinyin, and English</option>
-              <option value="5">Hanzi and English</option>
-              <option value="6">Pinyin and English</option>
-          </select><br/><br/>
-          <form onSubmit={event => this.onSubmit(event)}>
-            <VocabTable 
-              vocab={this.state.vocabData.vocabRows} 
-              onCellChange={(ed, cn, nv) => this.onCellChange(ed, cn, nv)}
-              columnFormat={this.state.vocabData.columnFormat}/>
-            <input type="submit" value="Submit"/>
-            <p className={percentClasses}>{percentCorrect}&#37; correct</p>
-          </form>
-        </div>
-      </div>;
+      <MainContent 
+        chosenTitle={this.state.chosenTitle}
+        vocabData={this.state.vocabData}
+        percentCorrect={this.state.percentCorrect}
+        changeColumns={event => this.changeColumns(parseInt(event.target.value))}
+        onSubmit={event => this.onSubmit(event)}
+        onCellChange={(ed, cn, nv) => this.onCellChange(ed, cn, nv)}/>
 
-    return [sidebar, content];
+    </div>;
   }
 }
 
 ReactDOM.render(
-  <MainSite />,
+  <MainComponent />,
   document.getElementById('root')
 );

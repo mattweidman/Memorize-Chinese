@@ -18,3 +18,15 @@ export function QuizList(props) {
     }
   );
 }
+
+export function QuizSidebar(props) {
+  return <div key="sidebar" className="sidebar">
+    <h3>Quizzes</h3>
+    <ul>
+      <QuizList
+        titleList={props.titleList} 
+        chosenTitle={props.chosenTitle}
+        chooseTitle={props.chooseTitle}/>
+    </ul>
+  </div>;
+}
