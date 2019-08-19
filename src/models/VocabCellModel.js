@@ -1,3 +1,5 @@
+import {convertPinyin} from '../helpers/PinyinHelpers';
+
 /**
  * Represents one cell in the vocabulary table.
  */
@@ -24,10 +26,11 @@ export class VocabCell {
   /**
    * Create a new vocab cell in which userAnswer is null if the correct
    * answer was submitted.
+   * @param {number} col 0 for hanzi, 1 for pinyin, and 2 for english
    */
-  copyAndFillInIfCorrect() {
+  copyAndFillInIfCorrect(col) {
     const userAnswer = this.userAnswer;
-    const correct = this.accept.findIndex(value => isCorrect(value, userAnswer)) !== -1;
+    const correct = this.accept.findIndex(value => isCorrect(value, userAnswer, col)) !== -1;
     return new VocabCell(this.display, this.accept, correct ? null : userAnswer);  
   }
 }
@@ -47,14 +50,20 @@ export function create(rawCell, userAnswer) {
  * Returns whether a user entered a correct answer in a table cell.
  * @param {string} acceptableAnswer answer accepted by quiz
  * @param {string} userAnswer user's answer
+ * @param {number} col 0 for hanzi, 1 for pinyin, and 2 for english
  */
-function isCorrect(acceptableAnswer, userAnswer) {
+function isCorrect(acceptableAnswer, userAnswer, col) {
   if (typeof(acceptableAnswer) !== "string" || typeof(userAnswer) !== "string") {
     return false;
   }
 
   acceptableAnswer = acceptableAnswer.trim().toLocaleLowerCase();
   userAnswer = userAnswer.trim().toLocaleLowerCase();
+  
+  if (col === 1) {
+    acceptableAnswer = convertPinyin(acceptableAnswer);
+    userAnswer = convertPinyin(userAnswer);
+  }
 
   return acceptableAnswer === userAnswer;
 }

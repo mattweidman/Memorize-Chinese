@@ -51,9 +51,9 @@ export class VocabRow {
    */
   copyAndFillInIfCorrect() {
     return new VocabRow(
-      this.hanzi.copyAndFillInIfCorrect(),
-      this.pinyin.copyAndFillInIfCorrect(),
-      this.english.copyAndFillInIfCorrect());
+      this.hanzi.copyAndFillInIfCorrect(0),
+      this.pinyin.copyAndFillInIfCorrect(1),
+      this.english.copyAndFillInIfCorrect(2));
   }
 
   /**

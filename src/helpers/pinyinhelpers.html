@@ -1,0 +1,83 @@
+<!-- Used for testing PinyinHelpers.js -->
+<script src="PinyinHelpers.js"></script>
+<script>
+function assertEquals(expected, observed) {
+  if (expected !== observed) {
+    console.error(`Assertion error: expected ${expected} but observed ${observed}`);
+  } else {
+    console.log(`Correct: ${observed}`);
+  }
+}
+
+function assertArrayEquals(expected, observed) {
+  let isCorrect = true;
+  for (let i=0; i<expected.length; i++) {
+    if (expected[i] !== observed[i]) {
+      isCorrect = false;
+      break;
+    }
+  }
+
+  if (!isCorrect) {
+    console.error(`Assertion error: expected ${expected} but observed ${observed}`);
+  } else {
+    console.log(`Correct: ${observed}`);
+  }
+}
+
+function testFindLastVowels() {
+  assertArrayEquals([2, 3], findLastVowels("shuang", 3));
+  assertArrayEquals([2, 4], findLastVowels("shuang", 4));
+  assertArrayEquals([2, 4], findLastVowels("shuang", 5));
+  assertArrayEquals([2, 4], findLastVowels("shuang", 6));
+  assertArrayEquals([2, 4], findLastVowels("shuang", 7));
+  assertArrayEquals([0, 1], findLastVowels("e", 1));
+  assertArrayEquals([0, 0], findLastVowels("e", 0));
+  assertArrayEquals([3, 5], findLastVowels("aeuoi", 5));
+  assertArrayEquals([0, 0], findLastVowels("ffffffff", 3));
+  assertArrayEquals([14, 16], findLastVowels("jaeueuanerfpouuod", 18));
+  assertArrayEquals([5, 7], findLastVowels("jaeueuanerfpouuod", 7));
+  assertArrayEquals([5, 7], findLastVowels("jaeueuanerfpouuod", 8));
+}
+
+function testConvertVowels() {
+  assertEquals("aé", convertVowelsToPinyin("ae", 2));
+  assertEquals("eā", convertVowelsToPinyin("ea", 1));
+  assertEquals("ài", convertVowelsToPinyin("ai", 4));
+  assertEquals("iō", convertVowelsToPinyin("io", 1));
+  assertEquals("iǔ", convertVowelsToPinyin("iu", 3));
+  assertEquals("ǒu", convertVowelsToPinyin("ou", 3));
+}
+
+function testConvertPinyin() {
+  assertEquals("shuāng", convertPinyin("shuang1"));
+  assertEquals("shuáng", convertPinyin("shuang2"));
+  assertEquals("shuǎng", convertPinyin("shuang3"));
+  assertEquals("shuàng", convertPinyin("shuang4"));
+  assertEquals("ē", convertPinyin("e1"));
+  assertEquals("é", convertPinyin("e2"));
+  assertEquals("ě", convertPinyin("e3"));
+  assertEquals("è", convertPinyin("e4"));
+  assertEquals("gē", convertPinyin("ge1"));
+  assertEquals("gé", convertPinyin("ge2"));
+  assertEquals("gě", convertPinyin("ge3"));
+  assertEquals("gè", convertPinyin("ge4"));
+  assertEquals("dddddd", convertPinyin("dddddd"));
+  assertEquals("eau", convertPinyin("eau"));
+  assertEquals("chànggē", convertPinyin("chang4ge1"));
+  assertEquals("chànggē", convertPinyin("chang4 ge1"));
+  assertEquals("chànggē", convertPinyin("chang4'ge1"));
+  assertEquals("chànggē", convertPinyin("chang4  ge1"));
+  assertEquals("chànggē", convertPinyin("chànggē"));
+  assertEquals("eòu", convertPinyin("eou4"));
+  assertEquals("yīhuǐer", convertPinyin("yi1hui3er"));
+  assertEquals("yīhuǐer", convertPinyin("yi1 hui3 er"));
+  assertEquals("yīhuǐer", convertPinyin("yi1 hui3er"));
+  assertEquals("yīhuǐer", convertPinyin("yi1hui3 er"));
+  assertEquals("yīhuǐer", convertPinyin("yīhuǐer"));
+}
+
+testFindLastVowels();
+testConvertVowels();
+testConvertPinyin();
+</script>
