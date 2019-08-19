@@ -1,6 +1,6 @@
 import React from 'react';
 
-function QuizMenuItem(props) {
+function QuizMenuItemView(props) {
   return <li 
       className={props.isChosen ? ['active'] : []} 
       onClick={() => props.chooseTitle(props.displayName)}>
@@ -8,9 +8,9 @@ function QuizMenuItem(props) {
     </li>;
 }
 
-export function QuizList(props) {
+function QuizListView(props) {
   return props.titleList.map(title => {
-      return <QuizMenuItem 
+      return <QuizMenuItemView 
         key={title}
         displayName={title} 
         isChosen={title === props.chosenTitle}
@@ -19,11 +19,11 @@ export function QuizList(props) {
   );
 }
 
-export function QuizSidebar(props) {
+export function QuizSidebarView(props) {
   return <div key="sidebar" className="sidebar">
     <h3>Quizzes</h3>
     <ul>
-      <QuizList
+      <QuizListView
         titleList={props.titleList} 
         chosenTitle={props.chosenTitle}
         chooseTitle={props.chooseTitle}/>

@@ -2,32 +2,60 @@ import React from 'react';
 
 import * as ColumnFormat from '../models/ColumnFormat';
 
-function VocabItem(props) {
+/**
+ * One cell in the vocabulary table.
+ * @param props.cell data representing vocabulary cell
+ * @param props.colNo 0 for Hanzi, 1 for Pinyin, and 2 for English
+ */
+function VocabCellView(props) {
+  if (props.cell.userAnswer === undefined) {
+    return null;
+  } else if (props.cell.userAnswer === null) {
+    return <td>{props.cell.display}</td>;
+  } else {
+    return <td><input type="text" value={props.cell.userAnswer} 
+      onChange={event => props.onCellChange(
+        props.colNo, 
+        event.target.value)}/></td>;
+  }
+}
+
+/**
+ * List of rows in vocabulary table.
+ * @param props.row data representing row of vocabulary in table
+ * @param props.onCellChange function called when any cell is changed
+ */
+function VocabRowView(props) {
   const row = props.row;
-
-  const whatToDisplay = (cell, colNo) => 
-    cell.userAnswer === null ? 
-      cell.display : 
-      <input type="text" value={cell.userAnswer} 
-        onChange={event => props.onCellChange(row.english.display, colNo, event.target.value)}/>;
-
+  const onCellChange = (colNo, value) => 
+    props.onCellChange(row.english.display, colNo, value);
   return <tr>
-    {ColumnFormat.showHanzi(props.columnFormat) && <td>{whatToDisplay(row.hanzi, 0)}</td>}
-    {ColumnFormat.showPinyin(props.columnFormat) && <td>{whatToDisplay(row.pinyin, 1)}</td>}
-    <td>{whatToDisplay(row.english, 2)}</td>
+    <VocabCellView cell={row.hanzi} colNo={0} onCellChange={onCellChange}/>
+    <VocabCellView cell={row.pinyin} colNo={1} onCellChange={onCellChange}/>
+    <VocabCellView cell={row.english} colNo={2} onCellChange={onCellChange}/>
   </tr>;
 }
 
-function VocabList(props) {
+/**
+ * List of rows in vocabulary table.
+ * @param props.vocab list of vocabulary rows
+ * @param props.onCellChange function called when any cell is changed
+ */
+function VocabListView(props) {
   return props.vocab.map(row => 
-    <VocabItem 
+    <VocabRowView 
       key={row.english.display} 
       row={row}
-      onCellChange={props.onCellChange}
-      columnFormat={props.columnFormat}/>);
+      onCellChange={props.onCellChange}/>);
 }
 
-export function VocabTable(props) {
+/**
+ * Vocabulary table view.
+ * @param props.vocab list of vocabulary rows
+ * @param props.onCellChange function called when any cell is changed
+ * @param props.columnFormat column format
+ */
+function VocabTableView(props) {
   return <table className="vocabulary_table">
     <tbody>
       <tr>
@@ -35,15 +63,33 @@ export function VocabTable(props) {
         {ColumnFormat.showPinyin(props.columnFormat) && <th>Pinyin (拼音)</th>}
         <th>English (英语)</th>
       </tr>
-      <VocabList 
+      <VocabListView 
         vocab={props.vocab} 
-        onCellChange={props.onCellChange}
-        columnFormat={props.columnFormat}/>
+        onCellChange={props.onCellChange}/>
     </tbody>
   </table>;
 }
 
-export function MainContent(props) {
+/**
+ * List of options in drop-down menu.
+ */
+function ColumnDropdownView() {
+  return ColumnFormat.getColumnOptions().map(columnFormat => 
+    <option value={columnFormat} key={columnFormat}>
+      {ColumnFormat.getColumnTitle(columnFormat)}
+    </option>);
+}
+
+/**
+ * Main content of website (everything but the sidebar).
+ * @param props.chosenTitle title of chosen vocabulary file
+ * @param props.vocabData vocabulary data
+ * @param props.percentCorrect percent of answers correct
+ * @param props.changeColumns function called when columns are changed
+ * @param props.onSubmit function called when submit button clicked
+ * @param props.onCellChange function called when any cell is changed
+ */
+export function MainContentView(props) {
   const percentCorrect = props.percentCorrect;
     
   let percentClasses;
@@ -64,12 +110,10 @@ export function MainContent(props) {
       <select 
         value={`${props.vocabData.columnFormat}`} 
         onChange={props.changeColumns}>
-          <option value="7">Hanzi, Pinyin, and English</option>
-          <option value="5">Hanzi and English</option>
-          <option value="6">Pinyin and English</option>
+          <ColumnDropdownView />
       </select><br/><br/>
       <form onSubmit={props.onSubmit}>
-        <VocabTable 
+        <VocabTableView 
           vocab={props.vocabData.vocabRows} 
           onCellChange={props.onCellChange}
           columnFormat={props.vocabData.columnFormat}/>

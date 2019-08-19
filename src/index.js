@@ -5,8 +5,8 @@ import './index.css';
 // local imports
 import * as ColumnFormat from './models/ColumnFormat';
 import * as VocabData from './models/VocabDataModel';
-import { MainContent } from './views/VocabTableView';
-import { QuizSidebar } from './views/QuizSidebarView';
+import { MainContentView } from './views/VocabTableView';
+import { QuizSidebarView } from './views/QuizSidebarView';
 
 // JSON files
 import * as duolingo_quizzes from './data/duolingo_quizzes.json';
@@ -101,12 +101,12 @@ class MainComponent extends React.Component {
 
     return <div>
 
-      <QuizSidebar 
+      <QuizSidebarView 
         titleList={titleList} 
         chosenTitle={this.state.chosenTitle}
         chooseTitle={(title) => this.chooseTitle(title)}/>
 
-      <MainContent 
+      <MainContentView 
         chosenTitle={this.state.chosenTitle}
         vocabData={this.state.vocabData}
         percentCorrect={this.state.percentCorrect}

@@ -38,23 +38,18 @@ export class VocabData {
   }
 
   /**
-   * Calculate percentage of cells that were filled in correctly, not including
-   * cells that were originally filled in by the application.
+   * Calculates percentage of cells that were filled in correctly when submit 
+   * was pressed, not including cells that were originally filled in by the 
+   * application. Rounds down to the nearest 100.
    */
   calculatePercentCorrect() {
-    let numNull = 0;
-    for (let i=0; i<this.vocabRows.length; i++) {
-      const row = this.vocabRows[i];
-      if (row.hanzi.userAnswer === null) numNull++;
-      if (row.pinyin.userAnswer === null) numNull++;
-      if (row.english.userAnswer === null) numNull++;
-    }
+    const numCellsCorrect = this.vocabRows.reduce(
+      (prev, vocabRow) => prev + vocabRow.getNumCorrect(this.columnFormat), 0);
 
-    const numRows = this.vocabRows.length;
-    const numCols = ColumnFormat.numCols(this.columnFormat);
-    const numWrong = numRows * 3 - numNull;
-    const numQuestions = numRows * (numCols - 1);
-    return Math.floor((1 - numWrong / numQuestions) * 100);
+    // assuming 1 column is filled at the beginning
+    const numFillableCols = ColumnFormat.numCols(this.columnFormat) - 1;
+    const numCells = this.vocabRows.length * numFillableCols;
+    return Math.floor(numCellsCorrect / numCells * 100);
   }
 
   /**
@@ -62,7 +57,7 @@ export class VocabData {
    */
   isDirty() {
     for (let i=0; i<this.vocabRows.length; i++) {
-      if (this.vocabRows[i].isDirty(this.columnFormat)) {
+      if (this.vocabRows[i].isDirty()) {
         return true;
       }
     }

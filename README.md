@@ -9,9 +9,9 @@ Vocabulary data for each quiz is stored in a JSON format. This application allow
 ### TODO
 
 1. ~~Refactor MainSite a little more~~
-2. Refactor the way ColumnFormat works
+2. ~~Refactor the way ColumnFormat works~~
 3. More, smaller quizzes
-4. Options for Hanzi -> English, Pinyin -> English, English -> Hanzi, and English -> Pinyin
+4. ~~Options for Hanzi -> English, Pinyin -> English, English -> Hanzi, and English -> Pinyin~~
 5. Option to show answers
 6. Accept numbers as well as accents in Pinyin
 

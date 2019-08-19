@@ -58,13 +58,27 @@ export class VocabRow {
 
   /**
    * Whether this vocabulary row has been modified.
+   */
+  isDirty() {
+    // return true if hanzi, pinyin, or english has a userAnswer that
+    // is not undefined, null, or empty string.
+    return false || // false is used to convert other values to boolean
+      this.hanzi.userAnswer || 
+      this.pinyin.userAnswer || 
+      this.english.userAnswer;
+  }
+
+  /**
+   * Gets the number of cells in this row that were answered correctly when 
+   * submit was pressed.
    * @param {number} columnFormat column format
    */
-  isDirty(columnFormat) {
-    const numCols = ColumnFormat.numCols(columnFormat);
-    const numBlanks = [this.hanzi, this.pinyin, this.english].reduce(
-      (prev, current) => prev + (current.userAnswer === "" ? 1 : 0), 0);
-    return numCols === numBlanks + 1;
+  getNumCorrect() {
+    const numNulls = [this.hanzi, this.pinyin, this.english].reduce(
+      (prev, cell) => prev + (cell.userAnswer === null ? 1 : 0), 0);
+
+    // assuming 1 column is filled at the beginning
+    return numNulls - 1;
   }
 }
 
@@ -76,27 +90,9 @@ export class VocabRow {
  * (see columnOptions)
  */
 export function create(rawRow, columnFormat) {
-  const numCols = ColumnFormat.numCols(columnFormat);
-  const r = Math.floor(Math.random() * numCols);
-  let colsSoFar = 0;
-
-  let hanzi;
-  if (ColumnFormat.showHanzi(columnFormat)) {
-    hanzi = VocabCell.create(rawRow.hanzi, r === colsSoFar ? null : "");
-    colsSoFar += 1;
-  } else {
-    hanzi = VocabCell.create(rawRow.hanzi, null);
-  }
-
-  let pinyin;
-  if (ColumnFormat.showPinyin(columnFormat)) {
-    pinyin = VocabCell.create(rawRow.pinyin, r === colsSoFar ? null : "");
-    colsSoFar += 1;
-  } else {
-    pinyin = VocabCell.create(rawRow.pinyin, null);
-  }
-
-  const english = VocabCell.create(rawRow.english, r === colsSoFar ? null : "");
-
+  const rowFormat = ColumnFormat.getInitialRowFormat(columnFormat);
+  const hanzi = VocabCell.create(rawRow.hanzi, rowFormat[0]);
+  const pinyin = VocabCell.create(rawRow.pinyin, rowFormat[1]);
+  const english = VocabCell.create(rawRow.english, rowFormat[2]);
   return new VocabRow(hanzi, pinyin, english);
 }
