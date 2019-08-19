@@ -64,7 +64,8 @@
         "display": "zhǎo"
       },
       "english": {
-        "display": "find"
+        "display": "find",
+        "accept": ["find", "look for"]
       }
     },
     {
@@ -109,7 +110,7 @@
       },
       "english": {
         "display": "reservation",
-        "accept": ["reservation", "make a reservation"]
+        "accept": ["reservation", "make a reservation", "booking", "book", "reserve"]
       }
     },
     {
@@ -381,7 +382,7 @@
       },
       "english": {
         "display": "pain",
-        "accept": ["pain", "hurt"]
+        "accept": ["pain", "hurt", "painful"]
       }
     },
     {
@@ -729,7 +730,8 @@
         "display": "jiànkāng"
       },
       "english": {
-        "display": "healthy"
+        "display": "healthy",
+        "accept": ["health", "healthy"]
       }
     },
     {
