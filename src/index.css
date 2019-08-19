@@ -100,3 +100,30 @@ h2 {
 .greenText {
   color: rgb(1, 124, 7);
 }
+
+.showBtn {
+  position: relative;
+}
+
+.showBtn .showBtnTooltip {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  white-space: nowrap;
+  left: 23px;
+  /* top: -20px;
+  left: -28px; */
+  width: fit-content;
+}
+
+button.showBtn:hover .showBtnTooltip {
+  visibility: visible;
+}
+
+.vocabCell {
+  white-space: nowrap;
+}

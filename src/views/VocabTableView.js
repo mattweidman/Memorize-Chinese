@@ -13,10 +13,16 @@ function VocabCellView(props) {
   } else if (props.cell.userAnswer === null) {
     return <td>{props.cell.display}</td>;
   } else {
-    return <td><input type="text" value={props.cell.userAnswer} 
-      onChange={event => props.onCellChange(
-        props.colNo, 
-        event.target.value)}/></td>;
+    return <td class="vocabCell">
+      <input type="text" value={props.cell.userAnswer} 
+        onChange={event => props.onCellChange(
+          props.colNo, 
+          event.target.value)}/>
+      <button tabindex="-1" class="showBtn" type="button"
+        onClick={() => props.onCellChange(props.colNo, props.cell.display)}>
+        S<span class="showBtnTooltip">Show answer</span>
+      </button>
+    </td>;
   }
 }
 
@@ -114,9 +120,9 @@ export function MainContentView(props) {
       </select><br/><br/>
       <form onSubmit={props.onSubmit}>
         <VocabTableView 
-          vocab={props.vocabData.vocabRows} 
-          onCellChange={props.onCellChange}
-          columnFormat={props.vocabData.columnFormat}/>
+          vocab={props.vocabData.vocabRows}
+          columnFormat={props.vocabData.columnFormat} 
+          onCellChange={props.onCellChange}/>
         <input type="submit" value="Submit"/>
         <p className={percentClasses}>{percentCorrect}&#37; correct</p>
       </form>
