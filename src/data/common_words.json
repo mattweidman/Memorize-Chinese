@@ -1,115 +1,15 @@
 {
   "title": "Common Words",
   "vocabulary": [
-    {
-      "hanzi": {
-        "display": "但是"
-      },
-      "pinyin": {
-        "display": "dànshì"
-      },
-      "english": {
-        "display": "but"
-      }
-    },
-    {
-      "hanzi": {
-        "display": "应该"
-      },
-      "pinyin": {
-        "display": "yīnggāi"
-      },
-      "english": {
-        "display": "should"
-      }
-    },
-    {
-      "hanzi": {
-        "display": "大概"
-      },
-      "pinyin": {
-        "display": "dàgài"
-      },
-      "english": {
-        "display": "probably"
-      }
-    },
-    {
-      "hanzi": {
-        "display": "如果"
-      },
-      "pinyin": {
-        "display": "rúguǒ"
-      },
-      "english": {
-        "display": "if"
-      }
-    },
-    {
-      "hanzi": {
-        "display": "经常"
-      },
-      "pinyin": {
-        "display": "jīngchāng"
-      },
-      "english": {
-        "display": "often"
-      }
-    },
-    {
-      "hanzi": {
-        "display": "找"
-      },
-      "pinyin": {
-        "display": "zhǎo"
-      },
-      "english": {
-        "display": "find"
-      }
-    },
-    {
-      "hanzi": {
-        "display": "大约"
-      },
-      "pinyin": {
-        "display": "dàyuē"
-      },
-      "english": {
-        "display": "approximately"
-      }
-    },
-    {
-      "hanzi": {
-        "display": "已经"
-      },
-      "pinyin": {
-        "display": "yījīng"
-      },
-      "english": {
-        "display": "already"
-      }
-    },
-    {
-      "hanzi": {
-        "display": "一会儿"
-      },
-      "pinyin": {
-        "display": "yīhuǐer"
-      },
-      "english": {
-        "display": "for a while"
-      }
-    },
-    {
-      "hanzi": {
-        "display": "因为"
-      },
-      "pinyin": {
-        "display": "yīnwèi"
-      },
-      "english": {
-        "display": "because"
-      }
-    }
+    { "id": "2485062e-40b1-436b-a523-68edcdc21929" },
+    { "id": "dad8c8dd-1773-48f6-a7ca-3b6379721c58" },
+    { "id": "7b84a028-8658-434f-8e28-bd8e3358c6c8" },
+    { "id": "3d28c9f0-1e69-4ab6-a659-e3c8c9f1d0a2" },
+    { "id": "d656cb4c-abb1-42c1-a8f9-85d9c0e263b5" },
+    { "id": "e50325ca-f7dd-4f99-83cb-72e2e596a381" },
+    { "id": "7324aaa9-6836-46de-bc18-8e799ec4bb00" },
+    { "id": "a48be0a4-310e-487f-8df7-4ecb788213b6" },
+    { "id": "ba27a2aa-ff3a-4d37-94bb-f51b845aad65" },
+    { "id": "99f72aae-1c52-4466-80e1-986236168200" }
   ]
 }

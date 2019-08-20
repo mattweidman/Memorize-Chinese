@@ -9,6 +9,7 @@ import { MainContentView } from './views/VocabTableView';
 import { QuizSidebarView } from './views/QuizSidebarView';
 
 // JSON files
+import * as all_vocabulary from './data/all_vocabulary.json';
 import * as duolingo_quizzes from './data/duolingo_quizzes.json';
 import * as common_words from './data/common_words.json';
 
@@ -20,6 +21,17 @@ const jsonList = [
 const deleteProgressNotification = "Are you sure you want to delete your progress?";
 
 /**
+ * Creates a list of vocabulary by combining a list of vocabulary with IDs
+ * with a list of IDs indicating which vocabulary to show.
+ * @param {*} allVocab JSON containing all vocabulary words
+ * @param {*} json JSON containing title and list of IDs in allVocab
+ */
+function getVocabularyFromJson(allVocab, json) {
+  const vocabIdList = json.default.vocabulary.map(item => item.id);
+  return vocabIdList.map(id => allVocab.default.vocabulary.find(vocab => vocab.id === id));
+}
+
+/**
  * Component representing entire website. Contains controller functions
  * and all state.
  */
@@ -28,10 +40,14 @@ class MainComponent extends React.Component {
     super(props);
 
     const columnFormat = ColumnFormat.defaultColumnFormat;
+    const chosenJson = jsonList[0];
+    const vocab = getVocabularyFromJson(all_vocabulary, chosenJson);
+
     this.state = {
+      all_vocabulary: all_vocabulary,
       jsonList: jsonList,
-      chosenTitle: jsonList[0].default.title,
-      vocabData: VocabData.create(jsonList[0].default.vocabulary, columnFormat),
+      chosenTitle: chosenJson.default.title,
+      vocabData: VocabData.create(vocab, columnFormat),
       percentCorrect: null
     };
   }
@@ -45,10 +61,12 @@ class MainComponent extends React.Component {
       return;
     }
 
-    const chosenJson = this.state.jsonList.find(json => json.default.title === title).default;
+    const chosenJson = this.state.jsonList.find(json => json.default.title === title);
+    const vocab = getVocabularyFromJson(this.state.all_vocabulary, chosenJson);
+    
     this.setState({
-      chosenTitle: chosenJson.title,
-      vocabData: VocabData.create(chosenJson.vocabulary, this.state.vocabData.columnFormat),
+      chosenTitle: chosenJson.default.title,
+      vocabData: VocabData.create(vocab, this.state.vocabData.columnFormat),
       percentCorrect: null
     });
   }
@@ -63,9 +81,11 @@ class MainComponent extends React.Component {
     }
 
     const title = this.state.chosenTitle;
-    const chosenJson = this.state.jsonList.find(json => json.default.title === title).default;
+    const chosenJson = this.state.jsonList.find(json => json.default.title === title);
+    const vocab = getVocabularyFromJson(this.state.all_vocabulary, chosenJson);
+
     this.setState({
-      vocabData: VocabData.create(chosenJson.vocabulary, newColumnFormat),
+      vocabData: VocabData.create(vocab, newColumnFormat),
       percentCorrect: null
     });
   }
