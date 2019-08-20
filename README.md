@@ -9,7 +9,6 @@ Vocabulary data for each quiz is stored in a JSON format. This application allow
 ### TODO
 
 * More, smaller quizzes
-* Reduce data redundancy by keeping all vocab in one file and make quizzes by referencing IDs in the file
 * Create backend for saving progress
 * Quiz editor
 * Fancier CSS
