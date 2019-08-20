@@ -63,7 +63,7 @@ class MainComponent extends React.Component {
 
     const chosenJson = this.state.jsonList.find(json => json.default.title === title);
     const vocab = getVocabularyFromJson(this.state.all_vocabulary, chosenJson);
-    
+
     this.setState({
       chosenTitle: chosenJson.default.title,
       vocabData: VocabData.create(vocab, this.state.vocabData.columnFormat),
@@ -92,13 +92,13 @@ class MainComponent extends React.Component {
 
   /**
    * Called when the user changes a cell in the table.
-   * @param {string} englishDisplay english vocabulary word to identify the row
+   * @param {string} id id to identify the row
    * @param {number} columnNumber 0 for hanzi, 1 for pinyin, and 2 for english
    * @param {string} newValue new cell value entered by user
    */
-  onCellChange(englishDisplay, columnNumber, newValue) {
+  onCellChange(id, columnNumber, newValue) {
     this.setState({
-      vocabData: this.state.vocabData.copyOnCellChange(englishDisplay, columnNumber, newValue)
+      vocabData: this.state.vocabData.copyOnCellChange(id, columnNumber, newValue)
     });
   }
 

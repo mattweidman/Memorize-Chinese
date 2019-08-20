@@ -81,8 +81,8 @@ function convertVowelToPinyin(c, toneNum) {
     case 'i': return ['i', 'ī', 'í', 'ǐ', 'ì'][toneNum];
     case 'o': return ['o', 'ō', 'ó', 'ǒ', 'ò'][toneNum];
     case 'u': return ['u', 'ū', 'ú', 'ǔ', 'ù'][toneNum];
+    default: return c;
   }
-  return c;
 }
 
 function isBasicVowel(c) {

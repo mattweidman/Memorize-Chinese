@@ -6,11 +6,13 @@ import * as VocabCell from './VocabCellModel';
  */
 export class VocabRow {
   /**
+   * @param {string} id vocabulary row id
    * @param {VocabCell} hanzi hanzi vocab cell
    * @param {VocabCell} pinyin pinyin vocab cell
    * @param {VocabCell} english english vocab cell
    */
-  constructor(hanzi, pinyin, english) {
+  constructor(id, hanzi, pinyin, english) {
+    this.id = id;
     this.hanzi = hanzi;
     this.pinyin = pinyin;
     this.english = english;
@@ -20,21 +22,21 @@ export class VocabRow {
    * Copy vocabulary row.
    */
   copy() {
-    return new VocabRow(this.hanzi.copy(), this.pinyin.copy(), this.english.copy());  
+    return new VocabRow(this.id, this.hanzi.copy(), this.pinyin.copy(), this.english.copy());  
   }
 
   /**
-   * Copies this row and changes the userAnswer if englishDisplay parameter
-   * is the same as this one's englishDisplay.
-   * @param {string} englishDisplay english vocabulary word
+   * Copies this row and changes the userAnswer if the id parameter is the 
+   * same as this one's id.
+   * @param {string} id id of vocbulary row
    * @param {number} columnNumber which column to modify; 0 for hanzi, 1 for
    * pinyin, and 2 for english
    * @param {string} newValue value to place in cell
    */
-  copyAndChangeIfMatches(englishDisplay, columnNumber, newValue) {
+  copyAndChangeIfMatches(id, columnNumber, newValue) {
     const newRow = this.copy();
 
-    if (newRow.english.display === englishDisplay) {
+    if (newRow.id === id) {
       let cellToModify;
       if (columnNumber === 0) cellToModify = newRow.hanzi;
       else if (columnNumber === 1) cellToModify = newRow.pinyin;
@@ -51,6 +53,7 @@ export class VocabRow {
    */
   copyAndFillInIfCorrect() {
     return new VocabRow(
+      this.id,
       this.hanzi.copyAndFillInIfCorrect(0),
       this.pinyin.copyAndFillInIfCorrect(1),
       this.english.copyAndFillInIfCorrect(2));
@@ -94,5 +97,5 @@ export function create(rawRow, columnFormat) {
   const hanzi = VocabCell.create(rawRow.hanzi, rowFormat[0]);
   const pinyin = VocabCell.create(rawRow.pinyin, rowFormat[1]);
   const english = VocabCell.create(rawRow.english, rowFormat[2]);
-  return new VocabRow(hanzi, pinyin, english);
+  return new VocabRow(rawRow.id, hanzi, pinyin, english);
 }

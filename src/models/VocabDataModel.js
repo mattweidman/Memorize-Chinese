@@ -17,14 +17,14 @@ export class VocabData {
 
   /**
    * Copy data model when a cell changes.
-   * @param {string} englishDisplay english vocabulary word
+   * @param {string} id vocabulary id
    * @param {number} columnNumber which column to modify; 0 for hanzi, 1 for
    * pinyin, and 2 for english
    * @param {string} newValue value to place in cell
    */
-  copyOnCellChange(englishDisplay, columnNumber, newValue) {
+  copyOnCellChange(id, columnNumber, newValue) {
     const newVocabRows = this.vocabRows.map(row => 
-      row.copyAndChangeIfMatches(englishDisplay, columnNumber, newValue));
+      row.copyAndChangeIfMatches(id, columnNumber, newValue));
     return new VocabData(newVocabRows, this.columnFormat);
   }
 

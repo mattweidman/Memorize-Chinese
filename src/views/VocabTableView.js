@@ -13,14 +13,14 @@ function VocabCellView(props) {
   } else if (props.cell.userAnswer === null) {
     return <td>{props.cell.display}</td>;
   } else {
-    return <td class="vocabCell">
+    return <td className="vocabCell">
       <input type="text" value={props.cell.userAnswer} 
         onChange={event => props.onCellChange(
           props.colNo, 
           event.target.value)}/>
-      <button tabindex="-1" class="showBtn" type="button"
+      <button tabIndex="-1" className="showBtn" type="button"
         onClick={() => props.onCellChange(props.colNo, props.cell.display)}>
-        S<span class="showBtnTooltip">Show answer</span>
+        S<span className="showBtnTooltip">Show answer</span>
       </button>
     </td>;
   }
@@ -34,7 +34,7 @@ function VocabCellView(props) {
 function VocabRowView(props) {
   const row = props.row;
   const onCellChange = (colNo, value) => 
-    props.onCellChange(row.english.display, colNo, value);
+    props.onCellChange(row.id, colNo, value);
   return <tr>
     <VocabCellView cell={row.hanzi} colNo={0} onCellChange={onCellChange}/>
     <VocabCellView cell={row.pinyin} colNo={1} onCellChange={onCellChange}/>
@@ -50,7 +50,7 @@ function VocabRowView(props) {
 function VocabListView(props) {
   return props.vocab.map(row => 
     <VocabRowView 
-      key={row.english.display} 
+      key={row.id} 
       row={row}
       onCellChange={props.onCellChange}/>);
 }

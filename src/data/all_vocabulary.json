@@ -1122,6 +1122,493 @@
         "display": "cold (as in sickness)",
         "accept": ["cold"]
       }
+    },
+    {
+      "id": "24e792f5-9a98-4a9c-b552-6e64b1a0df74",
+      "hanzi": {
+        "display": "进"
+      },
+      "pinyin": {
+        "display": "jìn"
+      },
+      "english": {
+        "display": "enter"
+      }
+    },
+    {
+      "id": "bdfcf9fa-ffa8-4ead-9ad4-16074f936749",
+      "hanzi": {
+        "display": "菜单"
+      },
+      "pinyin": {
+        "display": "càidān"
+      },
+      "english": {
+        "display": "menu"
+      }
+    },
+    {
+      "id": "3c2130ad-c30a-45b6-acb8-74b51b7113f3",
+      "hanzi": {
+        "display": "买单"
+      },
+      "pinyin": {
+        "display": "mǎidān"
+      },
+      "english": {
+        "display": "check (at a restaurant)",
+        "accept": ["check", "bill"]
+      }
+    },
+    {
+      "id": "2ab9d10c-c2e8-44c9-bd45-9e03c1082b4b",
+      "hanzi": {
+        "display": "健康"
+      },
+      "pinyin": {
+        "display": "jiànkāng"
+      },
+      "english": {
+        "display": "health",
+        "accept": ["health", "healthy"]
+      }
+    },
+    {
+      "id": "9d5cf307-ef0d-4aaf-b313-40cff2cc028f",
+      "hanzi": {
+        "display": "越来越"
+      },
+      "pinyin": {
+        "display": "yuèláiyuè"
+      },
+      "english": {
+        "display": "more and more",
+        "accept": ["more and more"]
+      }
+    },
+    {
+      "id": "c4b9f3eb-cd54-4317-a9d9-1ed3d5c14cc2",
+      "hanzi": {
+        "display": "新鲜"
+      },
+      "pinyin": {
+        "display": "xīnxiān"
+      },
+      "english": {
+        "display": "fresh"
+      }
+    },
+    {
+      "id": "05fe9f05-3e28-4cc4-aa9e-9dd3ba65f901",
+      "hanzi": {
+        "display": "面包"
+      },
+      "pinyin": {
+        "display": "miànbāo"
+      },
+      "english": {
+        "display": "bread"
+      }
+    },
+    {
+      "id": "613c33d4-9579-436d-bc65-8e1b5603ead2",
+      "hanzi": {
+        "display": "靠"
+      },
+      "pinyin": {
+        "display": "kào"
+      },
+      "english": {
+        "display": "by (location)",
+        "accept": ["by", "near", "alongside", "on"]
+      }
+    },
+    {
+      "id": "9c25b8b4-d1b2-48b7-8704-06030d6df26b",
+      "hanzi": {
+        "display": "盐"
+      },
+      "pinyin": {
+        "display": "yán"
+      },
+      "english": {
+        "display": "salt"
+      }
+    },
+    {
+      "id": "69517c83-b755-4395-810e-1c38091037ab",
+      "hanzi": {
+        "display": "图书馆"
+      },
+      "pinyin": {
+        "display": "túshūguǎn"
+      },
+      "english": {
+        "display": "library"
+      }
+    },
+    {
+      "id": "aedf8beb-b009-46b4-b574-561ec9fb9b32",
+      "hanzi": {
+        "display": "中间"
+      },
+      "pinyin": {
+        "display": "zhōngjiān"
+      },
+      "english": {
+        "display": "between"
+      }
+    },
+    {
+      "id": "075f41ea-6bb4-4553-b812-a156fc50f7e8",
+      "hanzi": {
+        "display": "前"
+      },
+      "pinyin": {
+        "display": "qián"
+      },
+      "english": {
+        "display": "ago"
+      }
+    },
+    {
+      "id": "95793b02-1f66-4e26-bf24-87a8996e52c9",
+      "hanzi": {
+        "display": "上面"
+      },
+      "pinyin": {
+        "display": "shàngmiàn"
+      },
+      "english": {
+        "display": "above"
+      }
+    },
+    {
+      "id": "684faaea-f326-4c20-9cf1-7cc95c1ec07f",
+      "hanzi": {
+        "display": "炒饭"
+      },
+      "pinyin": {
+        "display": "chǎofàn"
+      },
+      "english": {
+        "display": "fried rice"
+      }
+    },
+    {
+      "id": "5b5e2f42-27dd-4f9a-92dd-490f49e90b74",
+      "hanzi": {
+        "display": "习惯"
+      },
+      "pinyin": {
+        "display": "xíguàn"
+      },
+      "english": {
+        "display": "habit",
+        "accept": ["used to", "habit"]
+      }
+    },
+    {
+      "id": "7c04d792-893d-4d5d-b017-4cccc58e21f6",
+      "hanzi": {
+        "display": "到"
+      },
+      "pinyin": {
+        "display": "dào"
+      },
+      "english": {
+        "display": "arrive"
+      }
+    },
+    {
+      "id": "a997f725-b566-447b-a349-fd3e72b7645b",
+      "hanzi": {
+        "display": "堵车"
+      },
+      "pinyin": {
+        "display": "dǔchē"
+      },
+      "english": {
+        "display": "traffic",
+        "accept": ["traffic", "traffic jam"]
+      }
+    },
+    {
+      "id": "1ef8247c-d8fd-40a0-bfc5-6e1b09f5ee38",
+      "hanzi": {
+        "display": "所以"
+      },
+      "pinyin": {
+        "display": "suǒyǐ"
+      },
+      "english": {
+        "display": "so",
+        "accept": ["so", "and so"]
+      }
+    },
+    {
+      "id": "c48d2afc-c8a9-4d56-96da-a1868fd50380",
+      "hanzi": {
+        "display": "刚"
+      },
+      "pinyin": {
+        "display": "gāng"
+      },
+      "english": {
+        "display": "just",
+        "accept": ["just", "barely", "only"]
+      }
+    },
+    {
+      "id": "bc3c4c04-0ef9-4825-a488-8b7eaaef1c45",
+      "hanzi": {
+        "display": "以前"
+      },
+      "pinyin": {
+        "display": "yǐqián"
+      },
+      "english": {
+        "display": "previous",
+        "accept": ["previous", "before"]
+      }
+    },
+    {
+      "id": "52e840d2-a3da-4eb0-a957-44b4b3e8be6a",
+      "hanzi": {
+        "display": "一天里"
+      },
+      "pinyin": {
+        "display": "yītiānlǐ"
+      },
+      "english": {
+        "display": "within a day",
+        "accept": ["within a day", "in a day", "in one day", "within one day"]
+      }
+    },
+    {
+      "id": "2b6cdce3-ac35-4376-8ab7-d87b9da7284a",
+      "hanzi": {
+        "display": "退货"
+      },
+      "pinyin": {
+        "display": "tuìhuò"
+      },
+      "english": {
+        "display": "return something",
+        "accept": ["return", "return something", "return a thing"]
+      }
+    },
+    {
+      "id": "7d623e84-99d6-4a9d-97af-be2b65ec7d43",
+      "hanzi": {
+        "display": "退款"
+      },
+      "pinyin": {
+        "display": "tuìkuǎn"
+      },
+      "english": {
+        "display": "refund"
+      }
+    },
+    {
+      "id": "245134ac-c1bd-49d1-99e0-9378b7ea678e",
+      "hanzi": {
+        "display": "南方"
+      },
+      "pinyin": {
+        "display": "nánfāng"
+      },
+      "english": {
+        "display": "south",
+        "accept": ["south", "southern"]
+      }
+    },
+    {
+      "id": "6d5e0b8c-1fd4-4276-934b-0ed659132c5f",
+      "hanzi": {
+        "display": "甜"
+      },
+      "pinyin": {
+        "display": "tián"
+      },
+      "english": {
+        "display": "sweet"
+      }
+    },
+    {
+      "id": "5ebe7427-487c-4b3d-b696-a71c4f0a98dc",
+      "hanzi": {
+        "display": "轻松"
+      },
+      "pinyin": {
+        "display": "qīngsōng"
+      },
+      "english": {
+        "display": "relax",
+        "accept": ["relax", "relaxed"]
+      }
+    },
+    {
+      "id": "2bcd0fe4-2509-4e82-a61a-9eec0bd57481",
+      "hanzi": {
+        "display": "照相机"
+      },
+      "pinyin": {
+        "display": "zhàoxiàngjī"
+      },
+      "english": {
+        "display": "camera"
+      }
+    },
+    {
+      "id": "e2a89147-8d4d-4554-b565-4ca76bdaa474",
+      "hanzi": {
+        "display": "机"
+      },
+      "pinyin": {
+        "display": "jī"
+      },
+      "english": {
+        "display": "machine"
+      }
+    },
+    {
+      "id": "6858802f-8715-44ee-885d-1843eacb6e36",
+      "hanzi": {
+        "display": "拍照"
+      },
+      "pinyin": {
+        "display": "pāizhào"
+      },
+      "english": {
+        "display": "take pictures",
+        "accept": ["take pictures", "take photos", "take a picture", "take a photo", "take picture", "take photo"]
+      }
+    },
+    {
+      "id": "a3b511c7-6ad5-4567-b4d0-08abfc5ea4c3",
+      "hanzi": {
+        "display": "冬天"
+      },
+      "pinyin": {
+        "display": "dōngtiān"
+      },
+      "english": {
+        "display": "winter"
+      }
+    },
+    {
+      "id": "8c79271c-ad4b-49a6-b3b0-0d24de45fbc1",
+      "hanzi": {
+        "display": "夏天",
+        "accept": ["夏季", "夏天"]
+      },
+      "pinyin": {
+        "display": "xiàtiān",
+        "accept": ["xiàjì", "xiàtiān"]
+      },
+      "english": {
+        "display": "summer"
+      }
+    },
+    {
+      "id": "6888776f-c9e5-45b7-b4d9-a242cb9fd4a5",
+      "hanzi": {
+        "display": "护照"
+      },
+      "pinyin": {
+        "display": "hùzhào"
+      },
+      "english": {
+        "display": "passport"
+      }
+    },
+    {
+      "id": "fbd22466-510c-4a69-b6e7-76245cb3424a",
+      "hanzi": {
+        "display": "饮料"
+      },
+      "pinyin": {
+        "display": "yǐnliào"
+      },
+      "english": {
+        "display": "beverage",
+        "accept": ["drinks", "drink", "beverage"]
+      }
+    },
+    {
+      "id": "06ebf214-21b5-478a-adb4-7e3864616324",
+      "hanzi": {
+        "display": "几乎"
+      },
+      "pinyin": {
+        "display": "jīhū"
+      },
+      "english": {
+        "display": "almost"
+      }
+    },
+    {
+      "id": "7031c12a-2583-47c3-af96-15342c191e7a",
+      "hanzi": {
+        "display": "忘记"
+      },
+      "pinyin": {
+        "display": "wàngjì"
+      },
+      "english": {
+        "display": "forget"
+      }
+    },
+    {
+      "id": "76f223df-3bec-453f-bbc2-910918c2c8b4",
+      "hanzi": {
+        "display": "机场"
+      },
+      "pinyin": {
+        "display": "jīchǎng"
+      },
+      "english": {
+        "display": "airport"
+      }
+    },
+    {
+      "id": "bf8733ab-3d00-4308-beda-057324361cf2",
+      "hanzi": {
+        "display": "一般"
+      },
+      "pinyin": {
+        "display": "yībān"
+      },
+      "english": {
+        "display": "normally",
+        "accept": ["normally", "in general", "usually"]
+      }
+    },
+    {
+      "id": "4a80de7f-4171-42e5-a1a1-57669048ed8c",
+      "hanzi": {
+        "display": "自己"
+      },
+      "pinyin": {
+        "display": "zìjǐ"
+      },
+      "english": {
+        "display": "oneself",
+        "accept": ["oneself", "by oneself"]
+      }
+    },
+    {
+      "id": "fa464c37-9e3b-490d-8382-ad9ec27f88dc",
+      "hanzi": {
+        "display": "天气"
+      },
+      "pinyin": {
+        "display": "tiānqì"
+      },
+      "english": {
+        "display": "weather"
+      }
     }
   ]
 }
