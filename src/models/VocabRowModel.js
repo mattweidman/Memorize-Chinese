@@ -1,4 +1,4 @@
-import * as ColumnFormat from './ColumnFormat';
+import * as ColumnFormat from '../helpers/ColumnFormat';
 import * as VocabCell from './VocabCellModel';
 
 /**

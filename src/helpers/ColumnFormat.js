@@ -5,7 +5,8 @@ const columnOptions = {
   HANZI_TO_ENGLISH: 3,
   PINYIN_TO_ENGLISH: 4,
   ENGLISH_TO_HANZI: 5,
-  ENGLISH_TO_PINYIN: 6
+  ENGLISH_TO_PINYIN: 6,
+  HANZI_TO_PINYIN: 7
 };
 
 const columnTitles = {
@@ -15,7 +16,8 @@ const columnTitles = {
   3: "Hanzi to English",
   4: "Pinyin to English",
   5: "English to Hanzi",
-  6: "English to Pinyin"
+  6: "English to Pinyin",
+  7: "Hanzi to Pinyin"
 }
 
 export const defaultColumnFormat = columnOptions.RANDOM_HANZI_PINYIN_ENGLISH;
@@ -25,27 +27,15 @@ export function getColumnOptions() {
 }
 
 export function showHanzi(columnFormat) {
-  switch (columnFormat) {
-    case columnOptions.RANDOM_HANZI_PINYIN_ENGLISH:
-    case columnOptions.RANDOM_HANZI_ENGLISH:
-    case columnOptions.HANZI_TO_ENGLISH:
-    case columnOptions.ENGLISH_TO_HANZI:
-      return true;
-    default: 
-      return false;
-  }
+  return getInitialRowFormat(columnFormat)[0] !== undefined;
 }
 
 export function showPinyin(columnFormat) {
-  switch (columnFormat) {
-    case columnOptions.RANDOM_HANZI_PINYIN_ENGLISH:
-    case columnOptions.RANDOM_PINYIN_ENGLISH:
-    case columnOptions.PINYIN_TO_ENGLISH:
-    case columnOptions.ENGLISH_TO_PINYIN:
-      return true;
-    default:
-      return false;
-  }
+  return getInitialRowFormat(columnFormat)[1] !== undefined;
+}
+
+export function showEnglish(columnFormat) {
+  return getInitialRowFormat(columnFormat)[2] !== undefined;
 }
 
 export function numCols(columnFormat) {
@@ -88,6 +78,8 @@ export function getInitialRowFormat(columnFormat) {
       return ["", undefined, null];
     case columnOptions.ENGLISH_TO_PINYIN:
       return [undefined, "", null];
+    case columnOptions.HANZI_TO_PINYIN:
+      return [null, "", undefined];
     default:
       const ans = ["", "", ""];
       ans[Math.floor(Math.random() * 3)] = null;

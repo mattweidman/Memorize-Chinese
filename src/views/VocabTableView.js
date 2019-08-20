@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as ColumnFormat from '../models/ColumnFormat';
+import * as ColumnFormat from '../helpers/ColumnFormat';
 
 /**
  * One cell in the vocabulary table.
@@ -67,7 +67,7 @@ function VocabTableView(props) {
       <tr>
         {ColumnFormat.showHanzi(props.columnFormat) && <th>Hanzi (汉字)</th>}
         {ColumnFormat.showPinyin(props.columnFormat) && <th>Pinyin (拼音)</th>}
-        <th>English (英语)</th>
+        {ColumnFormat.showEnglish(props.columnFormat) && <th>English (英语)</th>}
       </tr>
       <VocabListView 
         vocab={props.vocab} 

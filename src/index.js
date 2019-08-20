@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 // local imports
-import * as ColumnFormat from './models/ColumnFormat';
+import * as ColumnFormat from './helpers/ColumnFormat';
 import * as VocabData from './models/VocabDataModel';
 import { MainContentView } from './views/VocabTableView';
 import { QuizSidebarView } from './views/QuizSidebarView';
