@@ -10,11 +10,13 @@ import { QuizSidebarView } from './views/QuizSidebarView';
 
 // JSON files
 import * as all_vocabulary from './data/all_vocabulary.json';
-import * as duolingo_quizzes from './data/duolingo_quizzes.json';
+import * as duolingo_quizzes_1 from './data/duolingo_quizzes_1.json';
+import * as duolingo_quizzes_2 from './data/duolingo_quizzes_2.json';
 import * as common_words from './data/common_words.json';
 
 const jsonList = [
-  duolingo_quizzes,
+  duolingo_quizzes_1,
+  duolingo_quizzes_2,
   common_words
 ];
 
