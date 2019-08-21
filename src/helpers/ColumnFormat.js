@@ -6,7 +6,9 @@ const columnOptions = {
   PINYIN_TO_ENGLISH: 4,
   ENGLISH_TO_HANZI: 5,
   ENGLISH_TO_PINYIN: 6,
-  HANZI_TO_PINYIN: 7
+  HANZI_TO_PINYIN: 7,
+  HANZI_TO_PINYIN_AND_ENGLISH: 8,
+  ENGLISH_TO_HANZI_AND_PINYIN: 9
 };
 
 const columnTitles = {
@@ -17,7 +19,9 @@ const columnTitles = {
   4: "Pinyin to English",
   5: "English to Hanzi",
   6: "English to Pinyin",
-  7: "Hanzi to Pinyin"
+  7: "Hanzi to Pinyin",
+  8: "Hanzi to Pinyin and English",
+  9: "English to Hanzi and Pinyin"
 }
 
 export const defaultColumnFormat = columnOptions.RANDOM_HANZI_PINYIN_ENGLISH;
@@ -41,6 +45,8 @@ export function showEnglish(columnFormat) {
 export function numCols(columnFormat) {
   switch(columnFormat) {
     case columnOptions.RANDOM_HANZI_PINYIN_ENGLISH:
+    case columnOptions.HANZI_TO_PINYIN_AND_ENGLISH:
+    case columnOptions.ENGLISH_TO_HANZI_AND_PINYIN:
       return 3;
     default:
       return 2;
@@ -80,6 +86,10 @@ export function getInitialRowFormat(columnFormat) {
       return [undefined, "", null];
     case columnOptions.HANZI_TO_PINYIN:
       return [null, "", undefined];
+    case columnOptions.HANZI_TO_PINYIN_AND_ENGLISH:
+      return [null, "", ""];
+    case columnOptions.ENGLISH_TO_HANZI_AND_PINYIN:
+      return ["", "", null];
     default:
       const ans = ["", "", ""];
       ans[Math.floor(Math.random() * 3)] = null;
