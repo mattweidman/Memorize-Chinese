@@ -1609,6 +1609,70 @@
       "english": {
         "display": "weather"
       }
+    },
+    {
+      "id": "73a0e80d-dc18-4841-b062-c010e894683e",
+      "hanzi": {
+        "display": "锻炼"
+      },
+      "pinyin": {
+        "display": "duànliàn"
+      },
+      "english": {
+        "display": "work out"
+      }
+    },
+    {
+      "id": "7a58fbee-ea59-44c4-826c-0ca43e138f8d",
+      "hanzi": {
+        "display": "开始"
+      },
+      "pinyin": {
+        "display": "kāishǐ"
+      },
+      "english": {
+        "display": "start",
+        "accept": ["start", "begin"]
+      }
+    },
+    {
+      "id": "1ae66e6b-cbe0-4642-8dd7-c55fa66c6987",
+      "hanzi": {
+        "display": "有点儿"
+      },
+      "pinyin": {
+        "display": "yǒudiǎn er"
+      },
+      "english": {
+        "display": "a little",
+        "accept": ["a little", "a bit", "kind of", "sort of"]
+      }
+    },
+    {
+      "id": "6102a86c-efcf-4df9-ada7-44d4518a27ed",
+      "hanzi": {
+        "display": "离开"
+      },
+      "pinyin": {
+        "display": "líkāi"
+      },
+      "english": {
+        "display": "leave",
+        "accept": ["leave", "exit"]
+      }
+    },
+    {
+      "id": "682e8e97-c5f5-41fd-9516-6500a74ee450",
+      "hanzi": {
+        "display": "上课"
+      },
+      "pinyin": {
+        "display": "shàngkè"
+      },
+      "english": {
+        "display": "attend class",
+        "accept": ["attend class", "go to class"]
+      }
     }
   ]
 }
