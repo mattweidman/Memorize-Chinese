@@ -13,12 +13,14 @@ import * as all_vocabulary from './data/all_vocabulary.json';
 import * as common_words from './data/common_words.json';
 import * as duolingo_quizzes_1 from './data/duolingo_quizzes_1.json';
 import * as duolingo_quizzes_2 from './data/duolingo_quizzes_2.json';
+import * as oxford from './data/oxford.json';
 import * as time_json from './data/time.json';
 import * as zhui from './data/zhui.json';
 
 const jsonList = [
   duolingo_quizzes_1,
   duolingo_quizzes_2,
+  oxford,
   common_words,
   time_json,
   zhui

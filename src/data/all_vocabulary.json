@@ -1916,6 +1916,395 @@
       "english": {
         "display": "hour"
       }
+    },
+    {
+      "id": "337db135-6988-4ad5-addf-9eb1e0a83437",
+      "hanzi": {
+        "display": "爱尔兰"
+      },
+      "pinyin": {
+        "display": "Ài'ěrlán"
+      },
+      "english": {
+        "display": "Ireland"
+      }
+    },
+    {
+      "id": "e2120304-eca4-49ea-bf91-ef84c9121904",
+      "hanzi": {
+        "display": "安全"
+      },
+      "pinyin": {
+        "display": "ānquán"
+      },
+      "english": {
+        "display": "safe",
+        "accept": ["safe", "safety"]
+      }
+    },
+    {
+      "id": "b1570a5b-2fbe-4066-8c07-d85abc1d8578",
+      "hanzi": {
+        "display": "澳大利亚"
+      },
+      "pinyin": {
+        "display": "Àodàlìyà"
+      },
+      "english": {
+        "display": "Australia"
+      }
+    },
+    {
+      "id": "663f39f4-17e5-47e8-abe1-e571b0a07f2e",
+      "hanzi": {
+        "display": "爸爸"
+      },
+      "pinyin": {
+        "display": "bàba"
+      },
+      "english": {
+        "display": "father",
+        "accept": ["father", "dad"]
+      }
+    },
+    {
+      "id": "c07e304f-4d76-4465-a095-2650b0fa0728",
+      "hanzi": {
+        "display": "背"
+      },
+      "pinyin": {
+        "display": "bēi"
+      },
+      "english": {
+        "display": "back (of body)",
+        "accept": ["back", "carry on back"]
+      }
+    },
+    {
+      "id": "24e7809d-25a6-41ab-ba39-85dd96673809",
+      "hanzi": {
+        "display": "北"
+      },
+      "pinyin": {
+        "display": "běi"
+      },
+      "english": {
+        "display": "north"
+      }
+    },
+    {
+      "id": "c1899e7c-a633-4afd-8eba-b4235c42b196",
+      "hanzi": {
+        "display": "鼻子"
+      },
+      "pinyin": {
+        "display": "bízi"
+      },
+      "english": {
+        "display": "nose"
+      }
+    },
+    {
+      "id": "21c42ea8-2adf-4cb9-9aaf-7b91b85e6c75",
+      "hanzi": {
+        "display": "比赛"
+      },
+      "pinyin": {
+        "display": "bǐsài"
+      },
+      "english": {
+        "display": "competition",
+        "accept": ["competition", "game", "match"]
+      }
+    },
+    {
+      "id": "983cd75b-c568-4d95-9b1e-69885e6ab3d5",
+      "hanzi": {
+        "display": "毕业"
+      },
+      "pinyin": {
+        "display": "bìyè"
+      },
+      "english": {
+        "display": "graduation",
+        "accept": ["graduation", "graduate"]
+      }
+    },
+    {
+      "id": "23775ce9-5e81-4137-8db9-00ba3723619f",
+      "hanzi": {
+        "display": "表演"
+      },
+      "pinyin": {
+        "display": "biǎoyǎn"
+      },
+      "english": {
+        "display": "performance",
+        "accept": ["perform", "performance", "act", "play"]
+      }
+    },
+    {
+      "id": "9aa4576b-91ef-475b-b163-428d64c75bfe",
+      "hanzi": {
+        "display": "病"
+      },
+      "pinyin": {
+        "display": "bìng"
+      },
+      "english": {
+        "display": "sick",
+        "accept": ["sick", "ill"]
+      }
+    },
+    {
+      "id": "16878c73-5ccd-4825-8a76-2e56a3ef2a03",
+      "hanzi": {
+        "display": "博物馆"
+      },
+      "pinyin": {
+        "display": "bówùguǎn"
+      },
+      "english": {
+        "display": "museum"
+      }
+    },
+    {
+      "id": "977ae5cf-a9d0-40d6-870e-0cc177aa3322",
+      "hanzi": {
+        "display": "菜"
+      },
+      "pinyin": {
+        "display": "cài"
+      },
+      "english": {
+        "display": "dish",
+        "accept": ["dish", "food", "vegetable"]
+      }
+    },
+    {
+      "id": "3540a625-8ee1-41b4-ba39-d562a6da6f1c",
+      "hanzi": {
+        "display": "草"
+      },
+      "pinyin": {
+        "display": "cǎo"
+      },
+      "english": {
+        "display": "grass"
+      }
+    },
+    {
+      "id": "186a5d29-e232-4af9-99ed-c362dc7ee1bc",
+      "hanzi": {
+        "display": "厕所"
+      },
+      "pinyin": {
+        "display": "cèsuǒ"
+      },
+      "english": {
+        "display": "bathroom",
+        "accept": ["bathroom", "restroom", "toilet"]
+      }
+    },
+    {
+      "id": "50fc7bee-c66c-465d-85c0-794e8e23791e",
+      "hanzi": {
+        "display": "长城"
+      },
+      "pinyin": {
+        "display": "Chángchéng"
+      },
+      "english": {
+        "display": "The Great Wall",
+        "accept": ["The Great Wall", "Great Wall", "The Great Wall of China", "Great Wall of China"]
+      }
+    },
+    {
+      "id": "364b103e-50c6-40a1-bc0b-b9722596ca9c",
+      "hanzi": {
+        "display": "唱歌"
+      },
+      "pinyin": {
+        "display": "chànggē"
+      },
+      "english": {
+        "display": "sing songs",
+        "accept": ["sing songs", "sing song", "sing a song"]
+      }
+    },
+    {
+      "id": "1025aaba-02a8-440e-90c3-cec1f1d931fe",
+      "hanzi": {
+        "display": "超级市场"
+      },
+      "pinyin": {
+        "display": "chāojí shìchǎng"
+      },
+      "english": {
+        "display": "supermarket"
+      }
+    },
+    {
+      "id": "82b914b1-8abc-4f40-b949-30a1853a60e0",
+      "hanzi": {
+        "display": "炒"
+      },
+      "pinyin": {
+        "display": "chǎo"
+      },
+      "english": {
+        "display": "stir fry",
+        "accept": ["stir fry", "stir-fry"]
+      }
+    },
+    {
+      "id": "3f15584d-5101-4aea-bac8-5680b8f3f14f",
+      "hanzi": {
+        "display": "车站"
+      },
+      "pinyin": {
+        "display": "chēzhàn"
+      },
+      "english": {
+        "display": "station"
+      }
+    },
+    {
+      "id": "0dad1999-515e-4c05-8a52-1ab63f0ed154",
+      "hanzi": {
+        "display": "成人"
+      },
+      "pinyin": {
+        "display": "chéngrén"
+      },
+      "english": {
+        "display": "adult"
+      }
+    },
+    {
+      "id": "775a12e5-df36-4a6f-ba5b-33e9edd3fb63",
+      "hanzi": {
+        "display": "城市"
+      },
+      "pinyin": {
+        "display": "chéngshì"
+      },
+      "english": {
+        "display": "city"
+      }
+    },
+    {
+      "id": "52b5bbfa-1459-4075-bfe4-ed16a5393009",
+      "hanzi": {
+        "display": "吃"
+      },
+      "pinyin": {
+        "display": "chī"
+      },
+      "english": {
+        "display": "eat"
+      }
+    },
+    {
+      "id": "d8fa76fb-e67d-4437-9a81-37966ecb2bf7",
+      "hanzi": {
+        "display": "抽烟"
+      },
+      "pinyin": {
+        "display": "chōuyān"
+      },
+      "english": {
+        "display": "smoke (a cigarette or pipe)",
+        "accept": ["smoke"]
+      }
+    },
+    {
+      "id": "e905580c-1ea9-4772-9635-e7db60c2cdd3",
+      "hanzi": {
+        "display": "出去"
+      },
+      "pinyin": {
+        "display": "chūqu"
+      },
+      "english": {
+        "display": "go out"
+      }
+    },
+    {
+      "id": "7a510aef-5de4-4425-ab52-20db4c051ec4",
+      "hanzi": {
+        "display": "出生"
+      },
+      "pinyin": {
+        "display": "chūshēng"
+      },
+      "english": {
+        "display": "be born",
+        "accept": ["be born", "born"]
+      }
+    },
+    {
+      "id": "53e7309e-8a08-47b6-9956-b078ec98b6ce",
+      "hanzi": {
+        "display": "厨房"
+      },
+      "pinyin": {
+        "display": "chúfáng"
+      },
+      "english": {
+        "display": "kitchen"
+      }
+    },
+    {
+      "id": "9e95e63c-9d4a-4dc2-87cd-6b7f8c9270b6",
+      "hanzi": {
+        "display": "窗",
+        "accept": ["窗", "窗户"]
+      },
+      "pinyin": {
+        "display": "chuāng",
+        "accept": ["chuāng", "chuānghu"]
+      },
+      "english": {
+        "display": "window"
+      }
+    },
+    {
+      "id": "69d49812-a8cc-4aa3-b3c1-81e0067166d2",
+      "hanzi": {
+        "display": "床"
+      },
+      "pinyin": {
+        "display": "chuáng"
+      },
+      "english": {
+        "display": "bed"
+      }
+    },
+    {
+      "id": "2ee73eba-19e6-4ab3-a354-5db2a35a5f56",
+      "hanzi": {
+        "display": "春"
+      },
+      "pinyin": {
+        "display": "chūn"
+      },
+      "english": {
+        "display": "spring "
+      }
+    },
+    {
+      "id": "2ee73eba-19e6-4ab3-a354-5db2a35a5f56",
+      "hanzi": {
+        "display": "错误"
+      },
+      "pinyin": {
+        "display": "cuòwù"
+      },
+      "english": {
+        "display": "mistake",
+        "accept": ["mistake", "error"]
+      }
     }
   ]
 }
