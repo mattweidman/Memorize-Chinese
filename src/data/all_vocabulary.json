@@ -1638,10 +1638,12 @@
     {
       "id": "1ae66e6b-cbe0-4642-8dd7-c55fa66c6987",
       "hanzi": {
-        "display": "有点儿"
+        "display": "有点儿",
+        "accept": ["有点儿", "一点儿"]
       },
       "pinyin": {
-        "display": "yǒudiǎn er"
+        "display": "yǒudiǎn er",
+        "accept": ["yǒudiǎn er", "yīdiǎn er"]
       },
       "english": {
         "display": "a little",
@@ -1672,6 +1674,247 @@
       "english": {
         "display": "attend class",
         "accept": ["attend class", "go to class"]
+      }
+    },
+    {
+      "id": "20f0c940-489f-4310-b27f-234f02ff7b07",
+      "hanzi": {
+        "display": "公共汽车"
+      },
+      "pinyin": {
+        "display": "gōnggòng qìchē"
+      },
+      "english": {
+        "display": "bus"
+      }
+    },
+    {
+      "id": "1db41e6a-e39c-4249-80ef-56ab966e31e3",
+      "hanzi": {
+        "display": "船"
+      },
+      "pinyin": {
+        "display": "chuán"
+      },
+      "english": {
+        "display": "boat",
+        "accept": ["boat", "ship"]
+      }
+    },
+    {
+      "id": "5d379b88-4a3f-4521-b9f4-555a788bce9e",
+      "hanzi": {
+        "display": "开"
+      },
+      "pinyin": {
+        "display": "kāi"
+      },
+      "english": {
+        "display": "open"
+      }
+    },
+    {
+      "id": "3fe9ad47-db6d-4396-9a9e-14a3e4db835c",
+      "hanzi": {
+        "display": "门"
+      },
+      "pinyin": {
+        "display": "mén"
+      },
+      "english": {
+        "display": "door"
+      }
+    },
+    {
+      "id": "4b2111cc-ed5b-496d-8779-e4884e25323c",
+      "hanzi": {
+        "display": "欢迎"
+      },
+      "pinyin": {
+        "display": "huānyíng"
+      },
+      "english": {
+        "display": "welcome"
+      }
+    },
+    {
+      "id": "3b8ba32c-92c8-4c3d-a3d1-08c0b9c6e99a",
+      "hanzi": {
+        "display": "关"
+      },
+      "pinyin": {
+        "display": "guān"
+      },
+      "english": {
+        "display": "shut",
+        "accept": ["close", "shut"]
+      }
+    },
+    {
+      "id": "979f4a6d-6e4b-4c3a-a3e9-b62a91b6f284",
+      "hanzi": {
+        "display": "随便"
+      },
+      "pinyin": {
+        "display": "suíbiàn"
+      },
+      "english": {
+        "display": "up to you",
+        "accept": ["whatever you like", "wherever you like", "anywhere you like", "up to you", "as you like"]
+      }
+    },
+    {
+      "id": "92c9d206-6d61-48e5-97a5-3cbaee749b4f",
+      "hanzi": {
+        "display": "难"
+      },
+      "pinyin": {
+        "display": "nán"
+      },
+      "english": {
+        "display": "difficult",
+        "accept": ["difficult", "hard"]
+      }
+    },
+    {
+      "id": "941168a8-1ac1-4883-ad47-e32323099af4",
+      "hanzi": {
+        "display": "意思"
+      },
+      "pinyin": {
+        "display": "yìsi"
+      },
+      "english": {
+        "display": "meaning",
+        "accept": ["meaning", "mean"]
+      }
+    },
+    {
+      "id": "0ef9b0be-6abd-4380-abc4-c352b26e727f",
+      "hanzi": {
+        "display": "衬衫"
+      },
+      "pinyin": {
+        "display": "chènshān"
+      },
+      "english": {
+        "display": "shirt"
+      }
+    },
+    {
+      "id": "8b1bac1b-7247-4184-b553-864b0705bccd",
+      "hanzi": {
+        "display": "地理"
+      },
+      "pinyin": {
+        "display": "dìlǐ"
+      },
+      "english": {
+        "display": "geography"
+      }
+    },
+    {
+      "id": "d2a0340f-a003-4380-babd-5279e7d46513",
+      "hanzi": {
+        "display": "秒"
+      },
+      "pinyin": {
+        "display": "miǎo"
+      },
+      "english": {
+        "display": "second (as in time)",
+        "accept": ["second"]
+      }
+    },
+    {
+      "id": "03fd7740-9e17-47fc-bc05-1fb583f1c8c8",
+      "hanzi": {
+        "display": "刻"
+      },
+      "pinyin": {
+        "display": "kè"
+      },
+      "english": {
+        "display": "quarter (as in time)",
+        "accept": ["quarter", "fifteen minutes", "15 minutes", "moment"]
+      }
+    },
+    {
+      "id": "fead1233-78bc-4327-a392-67de53bc80c9",
+      "hanzi": {
+        "display": "差一刻"
+      },
+      "pinyin": {
+        "display": "chà yīkè"
+      },
+      "english": {
+        "display": "a quarter to",
+        "accept": ["a quarter to", "a quarter till", "a quarter until"]
+      }
+    },
+    {
+      "id": "b23dee04-8422-4095-9d65-a04c9a11d31c",
+      "hanzi": {
+        "display": "分",
+        "accept": ["分", "分钟"]
+      },
+      "pinyin": {
+        "display": "fēn",
+        "accept": ["fēn", "fēnzhōng"]
+      },
+      "english": {
+        "display": "minute"
+      }
+    },
+    {
+      "id": "642eb89b-5a38-4f72-a6ac-e50eee9308e3",
+      "hanzi": {
+        "display": "整"
+      },
+      "pinyin": {
+        "display": "zhěng"
+      },
+      "english": {
+        "display": "sharp (as in time)",
+        "accept": ["sharp", "whole"]
+      }
+    },
+    {
+      "id": "252bab30-9c40-40bc-b0f2-e4840e1082e7",
+      "hanzi": {
+        "display": "钟"
+      },
+      "pinyin": {
+        "display": "zhōng"
+      },
+      "english": {
+        "display": "clock",
+        "accept": ["o'clock", "clock"]
+      }
+    },
+    {
+      "id": "88aa3539-4e95-4607-a819-2fa9e085a099",
+      "hanzi": {
+        "display": "起床"
+      },
+      "pinyin": {
+        "display": "qǐchuáng"
+      },
+      "english": {
+        "display": "get up",
+        "accept": ["wake up", "get up"]
+      }
+    },
+    {
+      "id": "ab9a6004-5d47-4b90-b5e9-13f820a4d285",
+      "hanzi": {
+        "display": "小时"
+      },
+      "pinyin": {
+        "display": "xiǎoshí"
+      },
+      "english": {
+        "display": "hour"
       }
     }
   ]
