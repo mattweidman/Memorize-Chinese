@@ -16,6 +16,7 @@ import * as duolingo_quizzes_2 from './data/duolingo_quizzes_2.json';
 import * as oxford from './data/oxford.json';
 import * as time_json from './data/time.json';
 import * as zhui from './data/zhui.json';
+import * as zuozou from './data/zuozou.json';
 
 const jsonList = [
   duolingo_quizzes_1,
@@ -23,7 +24,8 @@ const jsonList = [
   oxford,
   common_words,
   time_json,
-  zhui
+  zhui,
+  zuozou
 ];
 
 const deleteProgressNotification = "Are you sure you want to delete your progress?";

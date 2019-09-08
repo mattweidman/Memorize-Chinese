@@ -1370,7 +1370,7 @@
         "display": "yǐqián"
       },
       "english": {
-        "display": "previous",
+        "display": "before",
         "accept": ["previous", "before"]
       }
     },
@@ -1930,6 +1930,191 @@
       "english": {
         "display": "coming soon",
         "accept": ["coming soon", "coming up"]
+      }
+    },
+    {
+      "id": "ba53fb03-fe74-4ee0-bba1-2b8bc3d743fb",
+      "hanzi": {
+        "display": "盘子"
+      },
+      "pinyin": {
+        "display": "pánzi"
+      },
+      "english": {
+        "display": "plate"
+      }
+    },
+    {
+      "id": "0b365d79-f852-4589-900e-079ef5f6cf50",
+      "hanzi": {
+        "display": "杯子"
+      },
+      "pinyin": {
+        "display": "bēizi"
+      },
+      "english": {
+        "display": "cup",
+        "accept": ["cup", "glass"]
+      }
+    },
+    {
+      "id": "270b6410-e2ab-437c-9a29-e5d0c55a2800",
+      "hanzi": {
+        "display": "筷子"
+      },
+      "pinyin": {
+        "display": "kuàizi"
+      },
+      "english": {
+        "display": "chopsticks"
+      }
+    },
+    {
+      "id": "cbe29f5a-d058-40f0-8868-800b7ca72327",
+      "hanzi": {
+        "display": "刀"
+      },
+      "pinyin": {
+        "display": "dāo"
+      },
+      "english": {
+        "display": "knife"
+      }
+    },
+    {
+      "id": "e84bb84a-556b-4fcc-996f-49a22dab488e",
+      "hanzi": {
+        "display": "勺子"
+      },
+      "pinyin": {
+        "display": "sháozi"
+      },
+      "english": {
+        "display": "spoon"
+      }
+    },
+    {
+      "id": "33693102-1872-4af3-85b9-fdb874dda2b0",
+      "hanzi": {
+        "display": "瓶子"
+      },
+      "pinyin": {
+        "display": "píngzi"
+      },
+      "english": {
+        "display": "bottle"
+      }
+    },
+    {
+      "id": "1a7a35e1-9a1f-4511-bdea-d9392362c135",
+      "hanzi": {
+        "display": "照片"
+      },
+      "pinyin": {
+        "display": "zhàopiàn"
+      },
+      "english": {
+        "display": "photo",
+        "accept": ["photo", "picture", "photograph"]
+      }
+    },
+    {
+      "id": "e58dff49-c455-40cd-a1cf-42454bf19618",
+      "hanzi": {
+        "display": "讲"
+      },
+      "pinyin": {
+        "display": "jiǎng"
+      },
+      "english": {
+        "display": "speak",
+        "accept": ["speak", "say", "talk", "tell"]
+      }
+    },
+    {
+      "id": "77e1971d-134c-4f1b-888b-cddd3330c279",
+      "hanzi": {
+        "display": "故事"
+      },
+      "pinyin": {
+        "display": "gùshì"
+      },
+      "english": {
+        "display": "story"
+      }
+    },
+    {
+      "id": "b3511330-0eed-4ef7-8158-4507dce4f478",
+      "hanzi": {
+        "display": "坐"
+      },
+      "pinyin": {
+        "display": "zuò"
+      },
+      "english": {
+        "display": "sit"
+      }
+    },
+    {
+      "id": "5d648196-86c4-4e8f-879b-882b3c1cb69b",
+      "hanzi": {
+        "display": "做"
+      },
+      "pinyin": {
+        "display": "zuò"
+      },
+      "english": {
+        "display": "do",
+        "accept": ["do", "make"]
+      }
+    },
+    {
+      "id": "d2d9c0a9-5e06-4ab8-a189-6e4b562e24e5",
+      "hanzi": {
+        "display": "昨天"
+      },
+      "pinyin": {
+        "display": "zuótiān"
+      },
+      "english": {
+        "display": "yesterday"
+      }
+    },
+    {
+      "id": "e6f0e607-dd52-47c3-a751-f0e8edfbd612",
+      "hanzi": {
+        "display": "工作"
+      },
+      "pinyin": {
+        "display": "gōngzuò"
+      },
+      "english": {
+        "display": "work"
+      }
+    },
+    {
+      "id": "7a5253bf-f27a-4272-a26c-0892641a18f7",
+      "hanzi": {
+        "display": "走"
+      },
+      "pinyin": {
+        "display": "zǒu"
+      },
+      "english": {
+        "display": "walk",
+        "accept": ["go", "walk"]
+      }
+    },
+    {
+      "id": "7be1d361-a385-4031-8e8f-46ed24dd1661",
+      "hanzi": {
+        "display": "刷牙"
+      },
+      "pinyin": {
+        "display": "shuāyá"
+      },
+      "english": {
+        "display": "brush teeth"
       }
     },
     {
