@@ -2052,7 +2052,8 @@
         "display": "zuò"
       },
       "english": {
-        "display": "sit"
+        "display": "sit",
+        "accept": ["sit", "ride"]
       }
     },
     {
@@ -2115,6 +2116,56 @@
       },
       "english": {
         "display": "brush teeth"
+      }
+    },
+    {
+      "id": "8cbeebb7-0a2e-434f-9654-bcf2913a182f",
+      "hanzi": {
+        "display": "打电话"
+      },
+      "pinyin": {
+        "display": "dǎ diànhuà"
+      },
+      "english": {
+        "display": "make a phone call",
+        "accept": ["call", "phone call", "make a phone call", "telephone call", "make a telephone call", "make a class"]
+      }
+    },
+    {
+      "id": "25633511-1b4d-4870-982b-668d2722429d",
+      "hanzi": {
+        "display": "告诉"
+      },
+      "pinyin": {
+        "display": "gàosù"
+      },
+      "english": {
+        "display": "tell"
+      }
+    },
+    {
+      "id": "315b6436-ccee-485c-a6da-a347c0564079",
+      "hanzi": {
+        "display": "舒服"
+      },
+      "pinyin": {
+        "display": "shūfú"
+      },
+      "english": {
+        "display": "comfortable"
+      }
+    },
+    {
+      "id": "0e8ae3d2-c62e-423b-82e9-df6382bfebb9",
+      "hanzi": {
+        "display": "飞机"
+      },
+      "pinyin": {
+        "display": "fēijī"
+      },
+      "english": {
+        "display": "airplane",
+        "accept": ["airplane", "plane", "aircraft"]
       }
     },
     {
