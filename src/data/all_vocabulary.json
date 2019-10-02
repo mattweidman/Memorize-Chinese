@@ -54,7 +54,7 @@
         "display": "经常"
       },
       "pinyin": {
-        "display": "jīngchāng"
+        "display": "jīngcháng"
       },
       "english": {
         "display": "often"
@@ -2166,6 +2166,548 @@
       "english": {
         "display": "airplane",
         "accept": ["airplane", "plane", "aircraft"]
+      }
+    },
+    {
+      "id": "ea0fbf1b-614a-42ce-a3ce-905962caf578",
+      "hanzi": {
+        "display": "药"
+      },
+      "pinyin": {
+        "display": "yào"
+      },
+      "english": {
+        "display": "medicine"
+      }
+    },
+    {
+      "id": "325cde4d-9704-4d09-9cba-e786bb969e6d",
+      "hanzi": {
+        "display": "留"
+      },
+      "pinyin": {
+        "display": "liú"
+      },
+      "english": {
+        "display": "stay"
+      }
+    },
+    {
+      "id": "28f24adb-0268-4e0a-a044-f44bc21aaa22",
+      "hanzi": {
+        "display": "请假"
+      },
+      "pinyin": {
+        "display": "qǐngjiǎ"
+      },
+      "english": {
+        "display": "ask for leave",
+        "accept": ["ask for leave", "take a day off", "take off", "ask for a day off"]
+      }
+    },
+    {
+      "id": "f7d79335-b01f-48f4-9e89-c722514dc1f0",
+      "hanzi": {
+        "display": "打扮"
+      },
+      "pinyin": {
+        "display": "dǎbàn"
+      },
+      "english": {
+        "display": "dress up"
+      }
+    },
+    {
+      "id": "73b2b72c-9150-4162-bc36-982830636fb8",
+      "hanzi": {
+        "display": "希望"
+      },
+      "pinyin": {
+        "display": "xīwàng"
+      },
+      "english": {
+        "display": "hope",
+        "accept": ["hope", "wish"]
+      }
+    },
+    {
+      "id": "f299b993-8237-4e27-b278-78bfe5a78b8a",
+      "hanzi": {
+        "display": "公司"
+      },
+      "pinyin": {
+        "display": "gōngsī"
+      },
+      "english": {
+        "display": "company"
+      }
+    },
+    {
+      "id": "df04a849-ef0b-4713-8147-e566456eaa0d",
+      "hanzi": {
+        "display": "正在"
+      },
+      "pinyin": {
+        "display": "zhèngzài"
+      },
+      "english": {
+        "display": "currently"
+      }
+    },
+    {
+      "id": "e148dd45-fabe-4c84-9513-7ed5854868e8",
+      "hanzi": {
+        "display": "才"
+      },
+      "pinyin": {
+        "display": "cái"
+      },
+      "english": {
+        "display": "only",
+        "accept": ["only", "just"]
+      }
+    },
+    {
+      "id": "946f9cb9-4280-47c0-a2a5-c873d8e4ffb6",
+      "hanzi": {
+        "display": "完"
+      },
+      "pinyin": {
+        "display": "wán"
+      },
+      "english": {
+        "display": "finish"
+      }
+    },
+    {
+      "id": "2a01bce0-478e-411a-9b71-bb9f80d699de",
+      "hanzi": {
+        "display": "小费"
+      },
+      "pinyin": {
+        "display": "xiǎofèi"
+      },
+      "english": {
+        "display": "tip"
+      }
+    },
+    {
+      "id": "c12d65da-bcf8-491f-8ee4-3d823154d719",
+      "hanzi": {
+        "display": "巧克力"
+      },
+      "pinyin": {
+        "display": "qiǎokèlì"
+      },
+      "english": {
+        "display": "chocolate"
+      }
+    },
+    {
+      "id": "a45412b4-6674-424d-ae60-c4c0f09c27f6",
+      "hanzi": {
+        "display": "味道"
+      },
+      "pinyin": {
+        "display": "wèidào"
+      },
+      "english": {
+        "display": "flavor",
+        "accept": ["taste", "flavor"]
+      }
+    },
+    {
+      "id": "e2286cb1-01f3-4638-8ba1-3ebf4e8818c7",
+      "hanzi": {
+        "display": "甜点"
+      },
+      "pinyin": {
+        "display": "tiándiǎn"
+      },
+      "english": {
+        "display": "dessert"
+      }
+    },
+    {
+      "id": "34bde56e-ae5c-4fe2-9103-e0aab888d766",
+      "hanzi": {
+        "display": "质量"
+      },
+      "pinyin": {
+        "display": "zhìliàng"
+      },
+      "english": {
+        "display": "quality"
+      }
+    },
+    {
+      "id": "c493ce62-5b20-40bd-bb3c-63b86b2ae82d",
+      "hanzi": {
+        "display": "耳朵"
+      },
+      "pinyin": {
+        "display": "ěrduǒ"
+      },
+      "english": {
+        "display": "ear",
+        "accept": ["ear", "ears"]
+      }
+    },
+    {
+      "id": "d16ac8fa-9a64-4749-9ff1-a6a5435d4763",
+      "hanzi": {
+        "display": "脸"
+      },
+      "pinyin": {
+        "display": "liǎn"
+      },
+      "english": {
+        "display": "face"
+      }
+    },
+    {
+      "id": "9caa092f-34ca-41c6-ae13-f54cac09aae2",
+      "hanzi": {
+        "display": "嘴巴"
+      },
+      "pinyin": {
+        "display": "zuǐbā"
+      },
+      "english": {
+        "display": "mouth"
+      }
+    },
+    {
+      "id": "80ebb3cf-7000-428b-94de-7ddd36a403ad",
+      "hanzi": {
+        "display": "开车"
+      },
+      "pinyin": {
+        "display": "kāichē"
+      },
+      "english": {
+        "display": "drive"
+      }
+    },
+    {
+      "id": "d5794b87-8ab9-4de0-8d55-d248c2f25770",
+      "hanzi": {
+        "display": "晴天"
+      },
+      "pinyin": {
+        "display": "qíngtiān"
+      },
+      "english": {
+        "display": "sunny day"
+      }
+    },
+    {
+      "id": "b911b6aa-0968-4530-a242-fa24956a60d8",
+      "hanzi": {
+        "display": "阴天"
+      },
+      "pinyin": {
+        "display": "yīntiān"
+      },
+      "english": {
+        "display": "cloudy day"
+      }
+    },
+    {
+      "id": "737da5ad-9a34-4e42-b51b-646065e0af20",
+      "hanzi": {
+        "display": "可能"
+      },
+      "pinyin": {
+        "display": "kěnéng"
+      },
+      "english": {
+        "display": "may",
+        "accept": ["may", "might"]
+      }
+    },
+    {
+      "id": "0598fe47-aa6b-4a98-ac8a-2b4a27eadaca",
+      "hanzi": {
+        "display": "刮风"
+      },
+      "pinyin": {
+        "display": "guāfēng"
+      },
+      "english": {
+        "display": "blow wind",
+        "accept": ["blow wind", "wind blows", "is windy"]
+      }
+    },
+    {
+      "id": "f35ffbf9-3e6c-4f3c-8b52-2da0b0c8fea0",
+      "hanzi": {
+        "display": "就"
+      },
+      "pinyin": {
+        "display": "jiù"
+      },
+      "english": {
+        "display": "then"
+      }
+    },
+    {
+      "id": "cacc2b85-3e0c-45e3-a7cc-56fa745a1306",
+      "hanzi": {
+        "display": "从来不"
+      },
+      "pinyin": {
+        "display": "cónglái bù"
+      },
+      "english": {
+        "display": "never"
+      }
+    },
+    {
+      "id": "d78c8f7a-1679-4457-868f-d4bee4ec74f9",
+      "hanzi": {
+        "display": "紫色"
+      },
+      "pinyin": {
+        "display": "zǐsè"
+      },
+      "english": {
+        "display": "purple"
+      }
+    },
+    {
+      "id": "56604312-616e-4beb-b43b-cfddb5018cf1",
+      "hanzi": {
+        "display": "虽然"
+      },
+      "pinyin": {
+        "display": "suīrán"
+      },
+      "english": {
+        "display": "although"
+      }
+    },
+    {
+      "id": "9cf7fc0c-19b4-45fc-8124-eab93356702c",
+      "hanzi": {
+        "display": "颜色"
+      },
+      "pinyin": {
+        "display": "yánsè"
+      },
+      "english": {
+        "display": "color"
+      }
+    },
+    {
+      "id": "7533c05e-2892-4f10-8a56-71282000b072",
+      "hanzi": {
+        "display": "手表"
+      },
+      "pinyin": {
+        "display": "shǒubiǎo"
+      },
+      "english": {
+        "display": "watch"
+      }
+    },
+    {
+      "id": "2fdc8e21-fa5a-4292-b789-9a5517dda4a3",
+      "hanzi": {
+        "display": "有时候"
+      },
+      "pinyin": {
+        "display": "yǒu shíhòu"
+      },
+      "english": {
+        "display": "sometimes"
+      }
+    },
+    {
+      "id": "c2a03976-4ba3-4d5d-bcb8-8d2143e9fd7b",
+      "hanzi": {
+        "display": "介绍"
+      },
+      "pinyin": {
+        "display": "jièshào"
+      },
+      "english": {
+        "display": "introduce",
+        "accept": ["introduce", "introduction"]
+      }
+    },
+    {
+      "id": "e0526575-d859-49a6-a69b-e0ec47f51e99",
+      "hanzi": {
+        "display": "练习"
+      },
+      "pinyin": {
+        "display": "liànxí"
+      },
+      "english": {
+        "display": "practice",
+        "accept": ["exercise", "practice", "drill"]
+      }
+    },
+    {
+      "id": "d648e8f7-c419-4a7d-9e56-3c563b99cd95",
+      "hanzi": {
+        "display": "网球"
+      },
+      "pinyin": {
+        "display": "wǎngqiú"
+      },
+      "english": {
+        "display": "tennis"
+      }
+    },
+    {
+      "id": "10f8962e-9d97-4ca8-8f82-4785f717904b",
+      "hanzi": {
+        "display": "排球"
+      },
+      "pinyin": {
+        "display": "páiqiú"
+      },
+      "english": {
+        "display": "volleyball"
+      }
+    },
+    {
+      "id": "436592ae-662e-440c-a25b-5fe702c0d9d8",
+      "hanzi": {
+        "display": "加油"
+      },
+      "pinyin": {
+        "display": "jiāyóu"
+      },
+      "english": {
+        "display": "come on"
+      }
+    },
+    {
+      "id": "600f6a53-79a8-4193-8347-7c50bf150f6a",
+      "hanzi": {
+        "display": "输"
+      },
+      "pinyin": {
+        "display": "shū"
+      },
+      "english": {
+        "display": "lose"
+      }
+    },
+    {
+      "id": "4b0affbd-dcbe-442a-8ce8-146eaccd00bc",
+      "hanzi": {
+        "display": "赢"
+      },
+      "pinyin": {
+        "display": "yíng"
+      },
+      "english": {
+        "display": "win"
+      }
+    },
+    {
+      "id": "acd0b231-68d4-4389-842b-8de1e3363242",
+      "hanzi": {
+        "display": "失望"
+      },
+      "pinyin": {
+        "display": "shīwàng"
+      },
+      "english": {
+        "display": "disappointed",
+        "accept": ["disappointed", "be disappointed"]
+      }
+    },
+    {
+      "id": "f1aba3f0-ceea-4575-b3f1-9678e4ed7826",
+      "hanzi": {
+        "display": "信心"
+      },
+      "pinyin": {
+        "display": "xìnxīn"
+      },
+      "english": {
+        "display": "confidence"
+      }
+    },
+    {
+      "id": "ffaa8957-5719-4a9f-9a7e-073c577f58d8",
+      "hanzi": {
+        "display": "准备"
+      },
+      "pinyin": {
+        "display": "zhǔnbèi"
+      },
+      "english": {
+        "display": "ready",
+        "accept": ["ready", "prepare", "get ready"]
+      }
+    },
+    {
+      "id": "7b64c8ff-23b5-4b9b-8506-19c7d7b2426f",
+      "hanzi": {
+        "display": "科学"
+      },
+      "pinyin": {
+        "display": "kēxué"
+      },
+      "english": {
+        "display": "science"
+      }
+    },
+    {
+      "id": "65a21631-4919-448e-8711-a099270dbd59",
+      "hanzi": {
+        "display": "咸"
+      },
+      "pinyin": {
+        "display": "xián"
+      },
+      "english": {
+        "display": "salty"
+      }
+    },
+    {
+      "id": "33502537-35c8-484f-a329-3abd93271fa9",
+      "hanzi": {
+        "display": "爷爷"
+      },
+      "pinyin": {
+        "display": "yéyé"
+      },
+      "english": {
+        "display": "grandpa",
+        "accept": ["grandpa", "grandfather"]
+      }
+    },
+    {
+      "id": "957bfd33-8726-4e63-82af-a5edf4dcfbf8",
+      "hanzi": {
+        "display": "奶奶"
+      },
+      "pinyin": {
+        "display": "nǎinai"
+      },
+      "english": {
+        "display": "grandma",
+        "accept": ["grandma", "grandmother"]
+      }
+    },
+    {
+      "id": "033beaa7-5217-4354-b696-a1fa67fa7038",
+      "hanzi": {
+        "display": "像"
+      },
+      "pinyin": {
+        "display": "xiàng"
+      },
+      "english": {
+        "display": "is like",
+        "accept": ["like", "is like", "to be like", "resemble", "similar"]
       }
     },
     {
