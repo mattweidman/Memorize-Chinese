@@ -1488,6 +1488,19 @@
       }
     },
     {
+      "id": "01e5abe8-98f1-44fe-9a0e-51f75c328aee",
+      "hanzi": {
+        "display": "秋天"
+      },
+      "pinyin": {
+        "display": "qiūtiān"
+      },
+      "english": {
+        "display": "fall",
+        "accept": ["fall", "autumn"]
+      }
+    },
+    {
       "id": "a3b511c7-6ad5-4567-b4d0-08abfc5ea4c3",
       "hanzi": {
         "display": "冬天"
@@ -1497,6 +1510,18 @@
       },
       "english": {
         "display": "winter"
+      }
+    },
+    {
+      "id": "8c36201a-d098-4b0f-94bc-9dd44e39ec39",
+      "hanzi": {
+        "display": "春天"
+      },
+      "pinyin": {
+        "display": "chūntiān"
+      },
+      "english": {
+        "display": "spring"
       }
     },
     {
@@ -1511,6 +1536,18 @@
       },
       "english": {
         "display": "summer"
+      }
+    },
+    {
+      "id": "eae942a9-7774-4eeb-89ff-730c61a8c3d9",
+      "hanzi": {
+        "display": "季节"
+      },
+      "pinyin": {
+        "display": "jìjié"
+      },
+      "english": {
+        "display": "season"
       }
     },
     {
@@ -2711,6 +2748,144 @@
       }
     },
     {
+      "id": "27dbbc87-e8a7-42f6-8210-cd948ae719c3",
+      "hanzi": {
+        "display": "准时"
+      },
+      "pinyin": {
+        "display": "zhǔnshí"
+      },
+      "english": {
+        "display": "on time",
+        "accept": ["on time", "punctual"]
+      }
+    },
+    {
+      "id": "2f6c5dd8-eeba-4adc-a3fc-ff0fa03d381a",
+      "hanzi": {
+        "display": "层"
+      },
+      "pinyin": {
+        "display": "céng"
+      },
+      "english": {
+        "display": "floor"
+      }
+    },
+    {
+      "id": "9694c2c3-d509-435f-b3a4-09f431871562",
+      "hanzi": {
+        "display": "借"
+      },
+      "pinyin": {
+        "display": "jiè"
+      },
+      "english": {
+        "display": "borrow",
+        "accept": ["borrow", "lend"]
+      }
+    },
+    {
+      "id": "e2919a47-c34a-4399-8256-4230a2f5635a",
+      "hanzi": {
+        "display": "铅笔"
+      },
+      "pinyin": {
+        "display": "qiānbǐ"
+      },
+      "english": {
+        "display": "pencil"
+      }
+    },
+    {
+      "id": "e3f77490-5fe7-4b71-96db-e1f8872a4037",
+      "hanzi": {
+        "display": "打折"
+      },
+      "pinyin": {
+        "display": "dǎzhé"
+      },
+      "english": {
+        "display": "discount",
+        "accept": ["discount", "on sale", "sale"]
+      }
+    },
+    {
+      "id": "f9d212b1-b316-42ed-8df1-e51a58f3a607",
+      "hanzi": {
+        "display": "初中"
+      },
+      "pinyin": {
+        "display": "chūzhōng"
+      },
+      "english": {
+        "display": "middle school",
+        "accept": ["middle school", "junior high"]
+      }
+    },
+    {
+      "id": "458e94a6-0c92-45b4-aca8-2d8a1d94ea0e",
+      "hanzi": {
+        "display": "个子"
+      },
+      "pinyin": {
+        "display": "gèzi"
+      },
+      "english": {
+        "display": "height",
+        "accept": ["height", "size"]
+      }
+    },
+    {
+      "id": "ca22b698-1614-4fc9-9958-27de36258d34",
+      "hanzi": {
+        "display": "旧"
+      },
+      "pinyin": {
+        "display": "jiù"
+      },
+      "english": {
+        "display": "old"
+      }
+    },
+    {
+      "id": "0bc42580-d1eb-4e1d-a833-7289da54a351",
+      "hanzi": {
+        "display": "换"
+      },
+      "pinyin": {
+        "display": "huàn"
+      },
+      "english": {
+        "display": "change",
+        "accept": ["change", "switch"]
+      }
+    },
+    {
+      "id": "2da8a3c8-8178-4baa-b138-953901335082",
+      "hanzi": {
+        "display": "袋子"
+      },
+      "pinyin": {
+        "display": "dàizi"
+      },
+      "english": {
+        "display": "bag"
+      }
+    },
+    {
+      "id": "4ba53e91-2b7a-44a4-96a9-fda92c0ea7a9",
+      "hanzi": {
+        "display": "花"
+      },
+      "pinyin": {
+        "display": "huā"
+      },
+      "english": {
+        "display": "spend"
+      }
+    },
+    {
       "id": "337db135-6988-4ad5-addf-9eb1e0a83437",
       "hanzi": {
         "display": "爱尔兰"
@@ -3184,7 +3359,7 @@
       },
       "english": {
         "display": "region",
-        "accept": ["region", "area"]
+        "accept": ["region", "area", "place"]
       }
     },
     {

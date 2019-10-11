@@ -19,6 +19,9 @@ import * as transportation from './data/transportation.json';
 import * as zhui from './data/zhui.json';
 import * as zuozou from './data/zuozou.json';
 
+const numRandomWords = 10;
+const randomTitle = `Random ${numRandomWords} words`;
+
 const jsonList = [
   duolingo_quizzes_1,
   duolingo_quizzes_2,
@@ -27,7 +30,13 @@ const jsonList = [
   time_json,
   transportation,
   zhui,
-  zuozou
+  zuozou,
+  {
+    default: {
+      "title": randomTitle,
+      "vocabulary": []
+    }
+  }
 ];
 
 const deleteProgressNotification = "Are you sure you want to delete your progress?";
@@ -41,6 +50,29 @@ const deleteProgressNotification = "Are you sure you want to delete your progres
 function getVocabularyFromJson(allVocab, json) {
   const vocabIdList = json.default.vocabulary.map(item => item.id);
   return vocabIdList.map(id => allVocab.default.vocabulary.find(vocab => vocab.id === id));
+}
+
+/**
+ * Generates a JSON of random vocabulary words from the list of all vocabulary.
+ * @param {*} allVocab JSON containing all vocabulary words
+ * @param {number} count number of vocabulary words to return
+ */
+function generateRandomJson(allVocab, count) {
+  const allIds = allVocab.default.vocabulary.map(vocabCell => vocabCell.id);
+  const returnIds = [];
+
+  while (returnIds.length < count && allIds.length > 0) {
+    const allIdIndex = Math.floor(Math.random() * allIds.length);
+    returnIds.push(allIds[allIdIndex]);
+    allIds.splice(allIdIndex, 1);
+  }
+
+  return {
+    default: {
+      "title": randomTitle,
+      "vocabulary": returnIds.map(id => ({ "id": id }))
+    }
+  }
 }
 
 /**
@@ -73,7 +105,13 @@ class MainComponent extends React.Component {
       return;
     }
 
-    const chosenJson = this.state.jsonList.find(json => json.default.title === title);
+    let chosenJson;
+    if (title === randomTitle) {
+      chosenJson = generateRandomJson(this.state.all_vocabulary, 10);
+    } else {
+      chosenJson = this.state.jsonList.find(json => json.default.title === title);
+    }
+
     const vocab = getVocabularyFromJson(this.state.all_vocabulary, chosenJson);
 
     this.setState({
