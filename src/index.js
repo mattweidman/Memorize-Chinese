@@ -105,13 +105,7 @@ class MainComponent extends React.Component {
       return;
     }
 
-    let chosenJson;
-    if (title === randomTitle) {
-      chosenJson = generateRandomJson(this.state.all_vocabulary, 10);
-    } else {
-      chosenJson = this.state.jsonList.find(json => json.default.title === title);
-    }
-
+    const chosenJson = this.getJson(title);
     const vocab = getVocabularyFromJson(this.state.all_vocabulary, chosenJson);
 
     this.setState({
@@ -130,14 +124,28 @@ class MainComponent extends React.Component {
       return;
     }
 
-    const title = this.state.chosenTitle;
-    const chosenJson = this.state.jsonList.find(json => json.default.title === title);
+    const chosenJson = this.getJson(this.state.chosenTitle);
     const vocab = getVocabularyFromJson(this.state.all_vocabulary, chosenJson);
 
     this.setState({
       vocabData: VocabData.create(vocab, newColumnFormat),
       percentCorrect: null
     });
+  }
+
+  /**
+   * Get JSON data from state, given JSON title.
+   * @param {string} title title of JSON chosen
+   */
+  getJson(title) {
+    let chosenJson;
+    if (title === randomTitle) {
+      chosenJson = generateRandomJson(this.state.all_vocabulary, 10);
+    } else {
+      chosenJson = this.state.jsonList.find(json => json.default.title === title);
+    }
+
+    return chosenJson;
   }
 
   /**

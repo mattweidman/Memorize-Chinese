@@ -2898,6 +2898,56 @@
       }
     },
     {
+      "id": "88bfec7b-5618-4e23-828e-972913072228",
+      "hanzi": {
+        "display": "马上"
+      },
+      "pinyin": {
+        "display": "mǎshàng"
+      },
+      "english": {
+        "display": "immediately",
+        "accept": ["immediately", "at once", "right away"]
+      }
+    },
+    {
+      "id": "07921740-10f7-4794-852b-c84e8f8419b4",
+      "hanzi": {
+        "display": "洗澡"
+      },
+      "pinyin": {
+        "display": "xǐzǎo"
+      },
+      "english": {
+        "display": "take a shower",
+        "accept": ["take a shower", "take a bath", "bathe"]
+      }
+    },
+    {
+      "id": "f31fe880-2475-46c8-9a4b-77115fb41ecb",
+      "hanzi": {
+        "display": "总是"
+      },
+      "pinyin": {
+        "display": "zǒngshì"
+      },
+      "english": {
+        "display": "always"
+      }
+    },
+    {
+      "id": "ec72b1e4-b71d-4d7e-86ac-698295a5f87b",
+      "hanzi": {
+        "display": "一边"
+      },
+      "pinyin": {
+        "display": "yībiān"
+      },
+      "english": {
+        "display": "at the same time"
+      }
+    },
+    {
       "id": "337db135-6988-4ad5-addf-9eb1e0a83437",
       "hanzi": {
         "display": "爱尔兰"
@@ -3367,7 +3417,7 @@
         "display": "地方"
       },
       "pinyin": {
-        "display": "dìfang"
+        "display": "dìfāng"
       },
       "english": {
         "display": "region",
@@ -3579,7 +3629,7 @@
         "display": "耳朵"
       },
       "pinyin": {
-        "display": "ěrduo"
+        "display": "ěrduǒ"
       },
       "english": {
         "display": "ear"
