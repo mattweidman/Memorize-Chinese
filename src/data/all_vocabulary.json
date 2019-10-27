@@ -2901,6 +2901,18 @@
       }
     },
     {
+      "id": "c018169e-de0b-4486-b8ec-8a77c8c5148e",
+      "hanzi": {
+        "display": "笔记本"
+      },
+      "pinyin": {
+        "display": "bǐjìběn"
+      },
+      "english": {
+        "display": "notebook"
+      }
+    },
+    {
       "id": "88bfec7b-5618-4e23-828e-972913072228",
       "hanzi": {
         "display": "马上"
@@ -3057,7 +3069,7 @@
         "display": "róngyì"
       },
       "english": {
-        "display": "easily",
+        "display": "easy",
         "accept": ["easily", "easy"]
       }
     },
@@ -3260,6 +3272,245 @@
       },
       "english": {
         "display": "sugar"
+      }
+    },
+    {
+      "id": "ffa980a0-4094-45ee-a494-1407748fac1f",
+      "hanzi": {
+        "display": "遇到"
+      },
+      "pinyin": {
+        "display": "yùdào"
+      },
+      "english": {
+        "display": "bump into",
+        "accept": ["bump into", "encounter"]
+      }
+    },
+    {
+      "id": "f7340336-8eae-4a72-9242-c9c988f8e4a0",
+      "hanzi": {
+        "display": "聊天"
+      },
+      "pinyin": {
+        "display": "liáotiān"
+      },
+      "english": {
+        "display": "chat"
+      }
+    },
+    {
+      "id": "25e1bd64-0956-459c-a454-2d09f2107c73",
+      "hanzi": {
+        "display": "见面"
+      },
+      "pinyin": {
+        "display": "jiànmiàn"
+      },
+      "english": {
+        "display": "meet up",
+        "accept": ["meet", "meet up", "see"]
+      }
+    },
+    {
+      "id": "7215673d-0508-4def-a326-62b5e3cecdc0",
+      "hanzi": {
+        "display": "生气"
+      },
+      "pinyin": {
+        "display": "shēngqì"
+      },
+      "english": {
+        "display": "angry",
+        "accept": ["angry", "mad", "angery"]
+      }
+    },
+    {
+      "id": "a0f385ff-7390-430a-90b7-2189102c551a",
+      "hanzi": {
+        "display": "签证"
+      },
+      "pinyin": {
+        "display": "qiānzhèng"
+      },
+      "english": {
+        "display": "visa"
+      }
+    },
+    {
+      "id": "feca1d19-8236-4529-9543-392d78863eb5",
+      "hanzi": {
+        "display": "发现"
+      },
+      "pinyin": {
+        "display": "fāxiàn"
+      },
+      "english": {
+        "display": "realize"
+      }
+    },
+    {
+      "id": "d2f7cff3-86bc-4dd3-b354-ac381ee36322",
+      "hanzi": {
+        "display": "检查"
+      },
+      "pinyin": {
+        "display": "jiǎnchá"
+      },
+      "english": {
+        "display": "check"
+      }
+    },
+    {
+      "id": "495e48b6-63cd-4552-9f11-fb4abf08dd60",
+      "hanzi": {
+        "display": "行李"
+      },
+      "pinyin": {
+        "display": "xínglǐ"
+      },
+      "english": {
+        "display": "luggage"
+      }
+    },
+    {
+      "id": "677fa72a-3aa5-4276-b512-08eca86e9ad4",
+      "hanzi": {
+        "display": "海关"
+      },
+      "pinyin": {
+        "display": "hǎiguān"
+      },
+      "english": {
+        "display": "customs"
+      }
+    },
+    {
+      "id": "55606850-c5b3-456b-993e-fd0fd5e31354",
+      "hanzi": {
+        "display": "邻居"
+      },
+      "pinyin": {
+        "display": "línjū"
+      },
+      "english": {
+        "display": "neighbor"
+      }
+    },
+    {
+      "id": "6ead926e-fff8-43c6-8d5c-7058ded73931",
+      "hanzi": {
+        "display": "垃圾桶"
+      },
+      "pinyin": {
+        "display": "lājītǒng",
+        "accept": ["lājītǒng", "lèsètǒng"]
+      },
+      "english": {
+        "display": "trash",
+        "accept": ["trash", "garbage", "trash can"]
+      }
+    },
+    {
+      "id": "a5e9dc62-1279-45dc-ad71-b9e94455390a",
+      "hanzi": {
+        "display": "久"
+      },
+      "pinyin": {
+        "display": "jiǔ"
+      },
+      "english": {
+        "display": "for a long time",
+        "accept": ["long", "long time", "for a long time"]
+      }
+    },
+    {
+      "id": "4838e99a-9bc7-4042-8382-7d53888a1245",
+      "hanzi": {
+        "display": "提高"
+      },
+      "pinyin": {
+        "display": "tígāo"
+      },
+      "english": {
+        "display": "improve"
+      }
+    },
+    {
+      "id": "ea0ad18d-e211-46a8-8d65-3e8316c31314",
+      "hanzi": {
+        "display": "水平"
+      },
+      "pinyin": {
+        "display": "shuǐpíng"
+      },
+      "english": {
+        "display": "proficiency",
+        "accept": ["proficiency", "level"]
+      }
+    },
+    {
+      "id": "c74df236-0ab1-4643-ad79-a1c487d45a01",
+      "hanzi": {
+        "display": "考试"
+      },
+      "pinyin": {
+        "display": "kǎoshì"
+      },
+      "english": {
+        "display": "exam",
+        "accept": ["exam", "test"]
+      }
+    },
+    {
+      "id": "bfc45633-1323-469a-96c1-18c61806e0a7",
+      "hanzi": {
+        "display": "考"
+      },
+      "pinyin": {
+        "display": "kǎo"
+      },
+      "english": {
+        "display": "take a test",
+        "accept": ["take test", "take a test", "take exam", "take an exam", "test"]
+      }
+    },
+    {
+      "id": "9ee76c9b-0621-4d3d-ab3a-36c4431b0e4b",
+      "hanzi": {
+        "display": "选择"
+      },
+      "pinyin": {
+        "display": "xuǎnzè"
+      },
+      "english": {
+        "display": "choose",
+        "accept": ["choose", "select", "pick"]
+      }
+    },
+    {
+      "id": "134dae11-50ca-4cd1-af8c-9f181c7b4d34",
+      "hanzi": {
+        "display": "国家"
+      },
+      "pinyin": {
+        "display": "guójiā"
+      },
+      "english": {
+        "display": "country",
+        "accept": ["country", "nation"]
+      }
+    },
+    {
+      "id": "22ec717d-9082-498b-a4f4-143ec50f3946",
+      "hanzi": {
+        "display": "紧张"
+      },
+      "pinyin": {
+        "display": "jǐnzhāng"
+      },
+      "english": {
+        "display": "nervous"
       }
     },
     {
