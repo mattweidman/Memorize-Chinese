@@ -3514,6 +3514,91 @@
       }
     },
     {
+      "id": "9931b2f0-ccbb-4d6f-9882-91902404565c",
+      "hanzi": {
+        "display": "奇怪"
+      },
+      "pinyin": {
+        "display": "qíguài"
+      },
+      "english": {
+        "display": "strange"
+      }
+    },
+    {
+      "id": "11308a5f-7762-42b5-9a6c-c1fe586c01cc",
+      "hanzi": {
+        "display": "可怕"
+      },
+      "pinyin": {
+        "display": "kěpà"
+      },
+      "english": {
+        "display": "scary"
+      }
+    },
+    {
+      "id": "677447b5-d321-413c-8dba-ec530817651d",
+      "hanzi": {
+        "display": "哭"
+      },
+      "pinyin": {
+        "display": "kū"
+      },
+      "english": {
+        "display": "cry"
+      }
+    },
+    {
+      "id": "b152d40f-7cb4-4d6e-9632-a27179712dae",
+      "hanzi": {
+        "display": "难过"
+      },
+      "pinyin": {
+        "display": "nánguò"
+      },
+      "english": {
+        "display": "sad"
+      }
+    },
+    {
+      "id": "9f5bda97-a8db-47fb-9dd2-acfd806c0be4",
+      "hanzi": {
+        "display": "热情"
+      },
+      "pinyin": {
+        "display": "rèqíng"
+      },
+      "english": {
+        "display": "affectionate"
+      }
+    },
+    {
+      "id": "5a48580b-2424-4b11-899b-491655aea60e",
+      "hanzi": {
+        "display": "关心"
+      },
+      "pinyin": {
+        "display": "guānxīn"
+      },
+      "english": {
+        "display": "care",
+        "accept": ["care", "care about"]
+      }
+    },
+    {
+      "id": "3cc76a4b-6cdd-4d7b-9d5b-d7f96de1350f",
+      "hanzi": {
+        "display": "安静"
+      },
+      "pinyin": {
+        "display": "ānjìng"
+      },
+      "english": {
+        "display": "quiet"
+      }
+    },
+    {
       "id": "337db135-6988-4ad5-addf-9eb1e0a83437",
       "hanzi": {
         "display": "爱尔兰"
