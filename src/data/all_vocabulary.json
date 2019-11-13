@@ -1071,7 +1071,8 @@
         "display": "yīhuǐer"
       },
       "english": {
-        "display": "for a while"
+        "display": "for a while",
+        "accept": ["for a while", "later", "in a moment", "a while", "in a while"]
       }
     },
     {
@@ -1282,6 +1283,18 @@
       },
       "english": {
         "display": "above"
+      }
+    },
+    {
+      "id": "326da363-d765-40dc-a96a-1dbfc58b41a7",
+      "hanzi": {
+        "display": "下面"
+      },
+      "pinyin": {
+        "display": "xiàmiàn"
+      },
+      "english": {
+        "display": "below"
       }
     },
     {
@@ -2860,7 +2873,7 @@
         "display": "huàn"
       },
       "english": {
-        "display": "change",
+        "display": "change (verb)",
         "accept": ["change", "switch"]
       }
     },
@@ -3171,8 +3184,8 @@
         "display": "bǐjiào"
       },
       "english": {
-        "display": "to compare or relatively",
-        "accept": ["compare", "relatively"]
+        "display": "more",
+        "accept": ["compare", "relatively", "more"]
       }
     },
     {
@@ -3235,7 +3248,7 @@
       },
       "english": {
         "display": "finally",
-        "accept": ["lastly", "finally", "last"]
+        "accept": ["lastly", "finally", "last", "eventually"]
       }
     },
     {
@@ -3408,8 +3421,22 @@
         "accept": ["lājītǒng", "lèsètǒng"]
       },
       "english": {
+        "display": "trash can",
+        "accept": ["garbage can", "trash can"]
+      }
+    },
+    {
+      "id": "e8189d92-1edb-428e-a899-bd274afa8e9b",
+      "hanzi": {
+        "display": "垃圾"
+      },
+      "pinyin": {
+        "display": "lājī",
+        "accept": ["lājī", "lèsè"]
+      },
+      "english": {
         "display": "trash",
-        "accept": ["trash", "garbage", "trash can"]
+        "accept": ["trash", "garbage"]
       }
     },
     {
@@ -3486,7 +3513,7 @@
       },
       "english": {
         "display": "choose",
-        "accept": ["choose", "select", "pick"]
+        "accept": ["choose", "select", "pick", "choice"]
       }
     },
     {
@@ -3571,7 +3598,8 @@
         "display": "rèqíng"
       },
       "english": {
-        "display": "affectionate"
+        "display": "affectionate",
+        "accept": ["affectionate", "warm-hearted", "warm hearted"]
       }
     },
     {
@@ -3597,6 +3625,633 @@
       },
       "english": {
         "display": "quiet"
+      }
+    },
+    {
+      "id": "0778203d-34b9-40d5-a2cb-357a8f8c59ef",
+      "hanzi": {
+        "display": "长江"
+      },
+      "pinyin": {
+        "display": "Chángjiāng"
+      },
+      "english": {
+        "display": "Yangtze",
+        "accept": ["Yangtze", "Yangtze River"]
+      }
+    },
+    {
+      "id": "2211c246-c908-4cf7-963a-8f0e6b63beda",
+      "hanzi": {
+        "display": "不见的"
+      },
+      "pinyin": {
+        "display": "bùjiànde"
+      },
+      "english": {
+        "display": "missing"
+      }
+    },
+    {
+      "id": "0105aed4-e640-4cbd-a2db-693284b81550",
+      "hanzi": {
+        "display": "教"
+      },
+      "pinyin": {
+        "display": "jiào"
+      },
+      "english": {
+        "display": "teach"
+      }
+    },
+    {
+      "id": "82febf22-5c52-4c57-a8c9-9d60faac20b3",
+      "hanzi": {
+        "display": "要求"
+      },
+      "pinyin": {
+        "display": "yāoqiú"
+      },
+      "english": {
+        "display": "request",
+        "accept": ["request", "standard", "standards", "demand"]
+      }
+    },
+    {
+      "id": "5689fb4d-f383-43d1-8d32-fe208a7bd9fa",
+      "hanzi": {
+        "display": "食堂"
+      },
+      "pinyin": {
+        "display": "shítáng"
+      },
+      "english": {
+        "display": "cafeteria"
+      }
+    },
+    {
+      "id": "a36c2121-942b-4ae3-a22d-dc8db2880128",
+      "hanzi": {
+        "display": "校长"
+      },
+      "pinyin": {
+        "display": "xiàozhǎng"
+      },
+      "english": {
+        "display": "principal"
+      }
+    },
+    {
+      "id": "c0bab632-9ca8-45fc-8583-d783ca4ad82b",
+      "hanzi": {
+        "display": "必须"
+      },
+      "pinyin": {
+        "display": "bìxū"
+      },
+      "english": {
+        "display": "must",
+        "accept": ["must", "have to", "need"]
+      }
+    },
+    {
+      "id": "acc9128e-cdbe-4387-8514-ed364b1aaed5",
+      "hanzi": {
+        "display": "完成"
+      },
+      "pinyin": {
+        "display": "wánchéng"
+      },
+      "english": {
+        "display": "complete",
+        "accept": ["complete", "carry out", "carry through", "accomplish", "finish"]
+      }
+    },
+    {
+      "id": "d38789c0-6220-49ec-b973-6d6e15714b35",
+      "hanzi": {
+        "display": "作业"
+      },
+      "pinyin": {
+        "display": "zuòyè"
+      },
+      "english": {
+        "display": "assignment",
+        "accept": ["assignment", "work", "task", "homework"]
+      }
+    },
+    {
+      "id": "629c7519-329b-445e-8309-8e96ecb3fa27",
+      "hanzi": {
+        "display": "高中"
+      },
+      "pinyin": {
+        "display": "gāozhōng"
+      },
+      "english": {
+        "display": "high school"
+      }
+    },
+    {
+      "id": "13768bbb-869f-4f2b-a415-4e3ace5e1433",
+      "hanzi": {
+        "display": "向上"
+      },
+      "pinyin": {
+        "display": "xiàngshàng"
+      },
+      "english": {
+        "display": "up/make progress",
+        "accept": ["up", "upwards", "make progress", "improve", "get better"]
+      }
+    },
+    {
+      "id": "9da5f374-5909-4bfc-bb03-c8bf374778c0",
+      "hanzi": {
+        "display": "纸"
+      },
+      "pinyin": {
+        "display": "zhǐ"
+      },
+      "english": {
+        "display": "paper"
+      }
+    },
+    {
+      "id": "f7ebab32-f28d-4998-b7b4-dcedad74f5aa",
+      "hanzi": {
+        "display": "清楚"
+      },
+      "pinyin": {
+        "display": "qīngchǔ"
+      },
+      "english": {
+        "display": "clear",
+        "accept": ["clear", "clearly"]
+      }
+    },
+    {
+      "id": "4666b2ba-5643-475c-bf41-32fd5aa78608",
+      "hanzi": {
+        "display": "体育馆"
+      },
+      "pinyin": {
+        "display": "tíyùguǎn"
+      },
+      "english": {
+        "display": "gym",
+        "accept": ["gym", "gymnasium", "stadium"]
+      }
+    },
+    {
+      "id": "4933ec23-070d-4c04-8b9d-1c68c8d39cd3",
+      "hanzi": {
+        "display": "黑板"
+      },
+      "pinyin": {
+        "display": "hēibǎn"
+      },
+      "english": {
+        "display": "blackboard"
+      }
+    },
+    {
+      "id": "3e2c84bd-6687-494c-befb-ae05256c1e39",
+      "hanzi": {
+        "display": "眼镜"
+      },
+      "pinyin": {
+        "display": "yǎnjìng"
+      },
+      "english": {
+        "display": "glasses"
+      }
+    },
+    {
+      "id": "191a8b32-7cad-4270-ad34-2ef1d3e57382",
+      "hanzi": {
+        "display": "眼睛"
+      },
+      "pinyin": {
+        "display": "yǎnjīng"
+      },
+      "english": {
+        "display": "eye",
+        "accept": ["eye", "eyes"]
+      }
+    },
+    {
+      "id": "366aa35b-dca6-4649-bb72-d0d3f6dcde44",
+      "hanzi": {
+        "display": "变化"
+      },
+      "pinyin": {
+        "display": "biànhuà"
+      },
+      "english": {
+        "display": "change (noun)",
+        "accept": ["change", "changes", "variety"]
+      }
+    },
+    {
+      "id": "5f4e8c3a-30c2-49b8-91b9-8bae5d97e217",
+      "hanzi": {
+        "display": "搬"
+      },
+      "pinyin": {
+        "display": "bān"
+      },
+      "english": {
+        "display": "move"
+      }
+    },
+    {
+      "id": "fbd45d0c-aef5-4685-8a3c-78c3e6d284ac",
+      "hanzi": {
+        "display": "打算"
+      },
+      "pinyin": {
+        "display": "dǎsuàn"
+      },
+      "english": {
+        "display": "plan",
+        "accept": ["plan", "intend"]
+      }
+    },
+    {
+      "id": "0581185d-eee2-4b5e-a34d-ec4010ea1286",
+      "hanzi": {
+        "display": "机会"
+      },
+      "pinyin": {
+        "display": "jīhuì"
+      },
+      "english": {
+        "display": "chance",
+        "accept": ["chance", "opportunity"]
+      }
+    },
+    {
+      "id": "9ba20819-d44d-4a70-9978-9f07a358dfb2",
+      "hanzi": {
+        "display": "留学"
+      },
+      "pinyin": {
+        "display": "liúxué"
+      },
+      "english": {
+        "display": "study abroad"
+      }
+    },
+    {
+      "id": "3529aff4-5191-4409-9f1b-fbd2adf79800",
+      "hanzi": {
+        "display": "认真"
+      },
+      "pinyin": {
+        "display": "rènzhēn"
+      },
+      "english": {
+        "display": "serious"
+      }
+    },
+    {
+      "id": "8188f293-ee2e-4336-b8d3-d2fba7d18089",
+      "hanzi": {
+        "display": "愿意"
+      },
+      "pinyin": {
+        "display": "yuànyì"
+      },
+      "english": {
+        "display": "willing"
+      }
+    },
+    {
+      "id": "a8382cd9-8bd7-4979-9cdf-c4d25b16f881",
+      "hanzi": {
+        "display": "分手"
+      },
+      "pinyin": {
+        "display": "fēnshǒu"
+      },
+      "english": {
+        "display": "break up"
+      }
+    },
+    {
+      "id": "f53545d0-2f91-4e97-b3cc-1fef6e04e8c4",
+      "hanzi": {
+        "display": "当然"
+      },
+      "pinyin": {
+        "display": "dāngrán"
+      },
+      "english": {
+        "display": "of course"
+      }
+    },
+    {
+      "id": "ae823aa1-10b1-4dc4-8be4-bff630fc455d",
+      "hanzi": {
+        "display": "害怕"
+      },
+      "pinyin": {
+        "display": "hàipà"
+      },
+      "english": {
+        "display": "scared",
+        "accept": ["scared", "afraid"]
+      }
+    },
+    {
+      "id": "7b5b13d8-291b-4d2b-bccf-8ff8853656ab",
+      "hanzi": {
+        "display": "解",
+        "accept": ["解", "明白"]
+      },
+      "pinyin": {
+        "display": "jiě",
+        "accept": ["jiě", "míngbái"]
+      },
+      "english": {
+        "display": "understand"
+      }
+    },
+    {
+      "id": "3bc1f18a-d070-4806-b338-989ced7400a0",
+      "hanzi": {
+        "display": "专辑柜台"
+      },
+      "pinyin": {
+        "display": "zhuǎnjī guìtái"
+      },
+      "english": {
+        "display": "transfer counter"
+      }
+    },
+    {
+      "id": "cf16e070-0f11-4121-976b-c3911e9c8de1",
+      "hanzi": {
+        "display": "别客气"
+      },
+      "pinyin": {
+        "display": "bié kèqì"
+      },
+      "english": {
+        "display": "you're welcome"
+      }
+    },
+    {
+      "id": "3a7b07e5-47be-4dbc-9933-24ecfe909be5",
+      "hanzi": {
+        "display": "方便"
+      },
+      "pinyin": {
+        "display": "fāngbiàn"
+      },
+      "english": {
+        "display": "convenience",
+        "accept": ["convenience", "convenient"]
+      }
+    },
+    {
+      "id": "672823f4-e3d6-44ed-adc6-93ea4ed01bbb",
+      "hanzi": {
+        "display": "环境"
+      },
+      "pinyin": {
+        "display": "huánjìng"
+      },
+      "english": {
+        "display": "environment",
+        "accept": ["environment", "surroundings"]
+      }
+    },
+    {
+      "id": "6c656430-7d02-4523-984a-4db357975d23",
+      "hanzi": {
+        "display": "太阳"
+      },
+      "pinyin": {
+        "display": "tàiyáng"
+      },
+      "english": {
+        "display": "sun"
+      }
+    },
+    {
+      "id": "13d823e1-3857-4d32-96df-bf4a896222f8",
+      "hanzi": {
+        "display": "声音"
+      },
+      "pinyin": {
+        "display": "shēngyīn"
+      },
+      "english": {
+        "display": "sound",
+        "accept": ["sound", "noise"]
+      }
+    },
+    {
+      "id": "ed773d89-a4c8-462b-ab07-2dfeeab5adb3",
+      "hanzi": {
+        "display": "影响"
+      },
+      "pinyin": {
+        "display": "yǐngxiǎng"
+      },
+      "english": {
+        "display": "bother",
+        "accept": ["bother", "affect", "influence", "disturb"]
+      }
+    },
+    {
+      "id": "53bf5282-8cc2-44b7-94bc-d9ad83a09912",
+      "hanzi": {
+        "display": "水桶"
+      },
+      "pinyin": {
+        "display": "shuǐtǒng"
+      },
+      "english": {
+        "display": "bucket"
+      }
+    },
+    {
+      "id": "f0154303-c392-4e1e-914c-43a5650a0533",
+      "hanzi": {
+        "display": "丢"
+      },
+      "pinyin": {
+        "display": "diū"
+      },
+      "english": {
+        "display": "throw away",
+        "accept": ["throw away", "throw out"]
+      }
+    },
+    {
+      "id": "211bd834-29a8-481b-9288-82ad941b86b3",
+      "hanzi": {
+        "display": "脏"
+      },
+      "pinyin": {
+        "display": "zāng"
+      },
+      "english": {
+        "display": "dirty"
+      }
+    },
+    {
+      "id": "053b646f-1614-4c5d-b30b-5c4f83f4c6b9",
+      "hanzi": {
+        "display": "故宫"
+      },
+      "pinyin": {
+        "display": "gùgōng"
+      },
+      "english": {
+        "display": "Forbidden City",
+        "accept": ["Forbidden City", "The Forbidden City"]
+      }
+    },
+    {
+      "id": "4221ac34-0ff6-49d3-90ba-361a648ef372",
+      "hanzi": {
+        "display": "相信"
+      },
+      "pinyin": {
+        "display": "xiāngxìn"
+      },
+      "english": {
+        "display": "believe",
+        "accept": ["believe", "trust"]
+      }
+    },
+    {
+      "id": "a34fa904-d72f-4c60-919d-0ab5e0976050",
+      "hanzi": {
+        "display": "解决"
+      },
+      "pinyin": {
+        "display": "jiějué"
+      },
+      "english": {
+        "display": "solve"
+      }
+    },
+    {
+      "id": "f93f7d30-3335-4f9d-9305-d47a212f4baa",
+      "hanzi": {
+        "display": "经理"
+      },
+      "pinyin": {
+        "display": "jīnglǐ"
+      },
+      "english": {
+        "display": "manager"
+      }
+    },
+    {
+      "id": "cc849d40-d41c-4898-8067-c98506b1dc15",
+      "hanzi": {
+        "display": "小姐"
+      },
+      "pinyin": {
+        "display": "xiǎojiě"
+      },
+      "english": {
+        "display": "Miss"
+      }
+    },
+    {
+      "id": "af54b9f4-070c-463f-825e-87d9073e647d",
+      "hanzi": {
+        "display": "先生"
+      },
+      "pinyin": {
+        "display": "xiānshēng"
+      },
+      "english": {
+        "display": "Mr",
+        "accept": ["Mr.", "Mr"]
+      }
+    },
+    {
+      "id": "d431a8a8-2cce-4a1b-ba44-993f461b7e3b",
+      "hanzi": {
+        "display": "同事"
+      },
+      "pinyin": {
+        "display": "tóngshì"
+      },
+      "english": {
+        "display": "colleague",
+        "accept": ["colleague", "coworker"]
+      }
+    },
+    {
+      "id": "ad62e8e1-63c2-4903-be2f-73f231b0e110",
+      "hanzi": {
+        "display": "突然"
+      },
+      "pinyin": {
+        "display": "túrán"
+      },
+      "english": {
+        "display": "unexpectedly",
+        "accept": ["unexpectedly", "suddenly"]
+      }
+    },
+    {
+      "id": "c675852d-9547-43fb-9006-32012c314218",
+      "hanzi": {
+        "display": "重要"
+      },
+      "pinyin": {
+        "display": "zhòngyào"
+      },
+      "english": {
+        "display": "important"
+      }
+    },
+    {
+      "id": "12b0a8d7-cb41-4fb9-ac40-1096c83cbc05",
+      "hanzi": {
+        "display": "会议"
+      },
+      "pinyin": {
+        "display": "huìyì"
+      },
+      "english": {
+        "display": "meeting",
+        "accept": ["meeting", "conference"]
+      }
+    },
+    {
+      "id": "1f883d6f-cfc0-4623-9621-e2fe06bc3054",
+      "hanzi": {
+        "display": "办法"
+      },
+      "pinyin": {
+        "display": "bànfǎ"
+      },
+      "english": {
+        "display": "solution"
+      }
+    },
+    {
+      "id": "16f4782c-a821-49d1-856b-03e9b532bc4d",
+      "hanzi": {
+        "display": "问题"
+      },
+      "pinyin": {
+        "display": "wèntí"
+      },
+      "english": {
+        "display": "question",
+        "accept": ["question", "problem"]
       }
     },
     {
@@ -4963,10 +5618,12 @@
     {
       "id": "75fb878b-b52d-43ef-bf54-0b3f639c90b4",
       "hanzi": {
-        "display": "近"
+        "display": "近",
+        "accept": ["附近", "近"]
       },
       "pinyin": {
-        "display": "jìn"
+        "display": "jìn",
+        "accept": ["jìn", "fùjìn"]
       },
       "english": {
         "display": "near",
@@ -5294,7 +5951,7 @@
       },
       "english": {
         "display": "Ms",
-        "accept": ["Ms", "Miss", "Ms."]
+        "accept": ["Ms", "Ms."]
       }
     },
     {
