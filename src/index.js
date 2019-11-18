@@ -17,6 +17,7 @@ import * as oxford from './data/oxford.json';
 import * as time_json from './data/time.json';
 import * as transportation from './data/transportation.json';
 import * as wrong_answers from './data/wrong_answers.json';
+import * as yuan from './data/yuan.json';
 import * as zhui from './data/zhui.json';
 import * as zuozou from './data/zuozou.json';
 
@@ -30,6 +31,7 @@ const jsonList = [
   common_words,
   time_json,
   transportation,
+  yuan,
   zhui,
   zuozou,
   wrong_answers,
