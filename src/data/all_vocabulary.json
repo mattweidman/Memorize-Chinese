@@ -3611,7 +3611,7 @@
         "display": "guānxīn"
       },
       "english": {
-        "display": "care",
+        "display": "care about",
         "accept": ["care", "care about"]
       }
     },
@@ -4479,6 +4479,197 @@
       }
     },
     {
+      "id": "2778b30a-cc99-44b3-9d44-c1f384d2e50f",
+      "hanzi": {
+        "display": "照顾"
+      },
+      "pinyin": {
+        "display": "zhàogù"
+      },
+      "english": {
+        "display": "take care of",
+        "accept": ["take care of", "care for", "care"]
+      }
+    },
+    {
+      "id": "c36efbc5-6993-4eed-9cd7-c244b89ec0a0",
+      "hanzi": {
+        "display": "闷"
+      },
+      "pinyin": {
+        "display": "mèn"
+      },
+      "english": {
+        "display": "bored",
+        "accept": ["bored", "boring"]
+      }
+    },
+    {
+      "id": "1288a226-aa88-48d3-a306-eb85f09a271b",
+      "hanzi": {
+        "display": "死"
+      },
+      "pinyin": {
+        "display": "sǐ"
+      },
+      "english": {
+        "display": "dead",
+        "accept": ["dead", "die"]
+      }
+    },
+    {
+      "id": "e24aa2b0-64d3-4972-aed2-9718de6de2e8",
+      "hanzi": {
+        "display": "腿"
+      },
+      "pinyin": {
+        "display": "tuǐ"
+      },
+      "english": {
+        "display": "leg",
+        "accept": ["leg", "legs"]
+      }
+    },
+    {
+      "id": "49b26c0a-08da-430f-bb47-096476643803",
+      "hanzi": {
+        "display": "公斤"
+      },
+      "pinyin": {
+        "display": "gōngjīn"
+      },
+      "english": {
+        "display": "kilogram",
+        "accept": ["kilogram", "kilograms", "kg", "kilo", "kilos"]
+      }
+    },
+    {
+      "id": "3dfb219e-6807-4fea-8164-be05506b7b73",
+      "hanzi": {
+        "display": "胖"
+      },
+      "pinyin": {
+        "display": "pàng"
+      },
+      "english": {
+        "display": "fat",
+        "accept": ["fat", "gain", "gain weight"]
+      }
+    },
+    {
+      "id": "2c70a0e0-4332-44fc-aa29-c7642e2e5fd7",
+      "hanzi": {
+        "display": "瘦"
+      },
+      "pinyin": {
+        "display": "shòu"
+      },
+      "english": {
+        "display": "thin",
+        "accept": ["thin", "skinny", "lose", "lose weight"]
+      }
+    },
+    {
+      "id": "922dee9e-eb94-40cd-8f32-a016b60be1c9",
+      "hanzi": {
+        "display": "着急"
+      },
+      "pinyin": {
+        "display": "zhāojí"
+      },
+      "english": {
+        "display": "worried",
+        "accept": ["worried", "anxious"]
+      }
+    },
+    {
+      "id": "d8fa76fb-e67d-4437-9a81-37966ecb2bf7",
+      "hanzi": {
+        "display": "抽烟"
+      },
+      "pinyin": {
+        "display": "chōuyān"
+      },
+      "english": {
+        "display": "smoke (a cigarette or pipe)",
+        "accept": ["smoke"]
+      }
+    },
+    {
+      "id": "726ad34e-3039-49a5-95a4-114a25d3ee7f",
+      "hanzi": {
+        "display": "咳嗽"
+      },
+      "pinyin": {
+        "display": "kèsòu"
+      },
+      "english": {
+        "display": "cough"
+      }
+    },
+    {
+      "id": "981b24fa-e89a-47a8-a8f3-c2baa700c327",
+      "hanzi": {
+        "display": "上去"
+      },
+      "pinyin": {
+        "display": "shàngqù"
+      },
+      "english": {
+        "display": "go up"
+      }
+    },
+    {
+      "id": "a10c2243-93dc-434a-9e90-5a3285979427",
+      "hanzi": {
+        "display": "下去"
+      },
+      "pinyin": {
+        "display": "xiàqù"
+      },
+      "english": {
+        "display": "go down"
+      }
+    },
+    {
+      "id": "8cc103cf-e955-4c32-addb-161bfe54a03b",
+      "hanzi": {
+        "display": "换钱"
+      },
+      "pinyin": {
+        "display": "huànqián"
+      },
+      "english": {
+        "display": "exchange money",
+        "accept": ["exchange money", "exchange currency", "change money", "change currency"]
+      }
+    },
+    {
+      "id": "56c21782-ae09-48d1-ac8c-6618e0a239ba",
+      "hanzi": {
+        "display": "充电"
+      },
+      "pinyin": {
+        "display": "chōngdiàn"
+      },
+      "english": {
+        "display": "charge",
+        "accept": ["charge", "charging"]
+      }
+    },
+    {
+      "id": "5002f69f-7207-4c17-aadf-169d5fa3000b",
+      "hanzi": {
+        "display": "银行"
+      },
+      "pinyin": {
+        "display": "yínháng"
+      },
+      "english": {
+        "display": "bank"
+      }
+    },
+    {
       "id": "337db135-6988-4ad5-addf-9eb1e0a83437",
       "hanzi": {
         "display": "爱尔兰"
@@ -4764,19 +4955,6 @@
       },
       "english": {
         "display": "eat"
-      }
-    },
-    {
-      "id": "d8fa76fb-e67d-4437-9a81-37966ecb2bf7",
-      "hanzi": {
-        "display": "抽烟"
-      },
-      "pinyin": {
-        "display": "chōuyān"
-      },
-      "english": {
-        "display": "smoke (a cigarette or pipe)",
-        "accept": ["smoke"]
       }
     },
     {
@@ -6200,18 +6378,6 @@
       },
       "english": {
         "display": "next to"
-      }
-    },
-    {
-      "id": "3dfb219e-6807-4fea-8164-be05506b7b73",
-      "hanzi": {
-        "display": "胖"
-      },
-      "pinyin": {
-        "display": "pàng"
-      },
-      "english": {
-        "display": "fat"
       }
     },
     {
