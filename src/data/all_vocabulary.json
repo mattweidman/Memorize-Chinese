@@ -123,6 +123,19 @@
       }
     },
     {
+      "id": "58de5780-67fb-4c91-9d39-858cec7b36cf",
+      "hanzi": {
+        "display": "订房"
+      },
+      "pinyin": {
+        "display": "dìngfáng"
+      },
+      "english": {
+        "display": "book a room",
+        "accept": ["room booking", "book a room", "room reservation", "reservation", "make a reservation", "booking", "book", "reserve"]
+      }
+    },
+    {
       "id": "3e8b0b07-46bd-4579-86e6-1406af45fbf7",
       "hanzi": {
         "display": "注意"
@@ -328,7 +341,8 @@
         "display": "huài"
       },
       "english": {
-        "display": "bad"
+        "display": "bad",
+        "accept": ["bad", "doesn't work"]
       }
     },
     {
@@ -1376,6 +1390,19 @@
       }
     },
     {
+      "id": "a823c57b-ac1d-4d1a-98d4-c29ff41fcd03",
+      "hanzi": {
+        "display": "刚才"
+      },
+      "pinyin": {
+        "display": "gāngcái"
+      },
+      "english": {
+        "display": "just now",
+        "accept": ["just", "just now"]
+      }
+    },
+    {
       "id": "bc3c4c04-0ef9-4825-a488-8b7eaaef1c45",
       "hanzi": {
         "display": "以前"
@@ -1460,7 +1487,7 @@
         "display": "qīngsōng"
       },
       "english": {
-        "display": "relax",
+        "display": "relaxed",
         "accept": ["relax", "relaxed"]
       }
     },
@@ -1765,7 +1792,8 @@
         "display": "kāi"
       },
       "english": {
-        "display": "open"
+        "display": "open",
+        "accept": ["open", "turn on", "start"]
       }
     },
     {
@@ -1802,7 +1830,7 @@
       },
       "english": {
         "display": "shut",
-        "accept": ["close", "shut"]
+        "accept": ["close", "shut", "turn off"]
       }
     },
     {
@@ -3643,13 +3671,16 @@
     {
       "id": "2211c246-c908-4cf7-963a-8f0e6b63beda",
       "hanzi": {
-        "display": "不见的"
+        "display": "不见了",
+        "accept": ["不见的", "不见了"]
       },
       "pinyin": {
-        "display": "bùjiànde"
+        "display": "bùjiànle",
+        "accept": ["bùjiànde", "bùjiànle"]
       },
       "english": {
-        "display": "missing"
+        "display": "missing",
+        "accept": ["missing", "gone"]
       }
     },
     {
@@ -3981,7 +4012,7 @@
     {
       "id": "3bc1f18a-d070-4806-b338-989ced7400a0",
       "hanzi": {
-        "display": "专辑柜台"
+        "display": "转机柜台"
       },
       "pinyin": {
         "display": "zhuǎnjī guìtái"
@@ -4368,7 +4399,7 @@
     {
       "id": "9dc70d39-827e-4703-993a-ba913065cc7a",
       "hanzi": {
-        "display": "兴文化趣"
+        "display": "文化"
       },
       "pinyin": {
         "display": "wénhuà"
@@ -4670,6 +4701,864 @@
       }
     },
     {
+      "id": "59982c0a-a854-4226-845e-f47f9f0f65bf",
+      "hanzi": {
+        "display": "漫游"
+      },
+      "pinyin": {
+        "display": "mànyóu"
+      },
+      "english": {
+        "display": "roaming"
+      }
+    },
+    {
+      "id": "7a115ed3-e034-479e-a2fb-bbbeb76fe530",
+      "hanzi": {
+        "display": "充值"
+      },
+      "pinyin": {
+        "display": "chōngzhí"
+      },
+      "english": {
+        "display": "top up",
+        "accept": ["top up", "refill", "recharge"]
+      }
+    },
+    {
+      "id": "7a8e4fc1-5a54-46fd-884b-1a42fe1d09a5",
+      "hanzi": {
+        "display": "卡"
+      },
+      "pinyin": {
+        "display": "kǎ"
+      },
+      "english": {
+        "display": "card"
+      }
+    },
+    {
+      "id": "027b5e50-65df-4bad-b074-8d0189c9c69a",
+      "hanzi": {
+        "display": "退房"
+      },
+      "pinyin": {
+        "display": "tuì fáng"
+      },
+      "english": {
+        "display": "check out"
+      }
+    },
+    {
+      "id": "cd3e3093-bfbc-4cea-9753-2cbf160985fc",
+      "hanzi": {
+        "display": "导游"
+      },
+      "pinyin": {
+        "display": "dàoyóu"
+      },
+      "english": {
+        "display": "tour guide"
+      }
+    },
+    {
+      "id": "e6759455-113b-4847-a5c3-5230f4dddea8",
+      "hanzi": {
+        "display": "取消"
+      },
+      "pinyin": {
+        "display": "qǔxiāo"
+      },
+      "english": {
+        "display": "cancel"
+      }
+    },
+    {
+      "id": "7be76ae0-2fa4-418c-a56d-aa1028fb19fb",
+      "hanzi": {
+        "display": "转机"
+      },
+      "pinyin": {
+        "display": "zhuǎnjī"
+      },
+      "english": {
+        "display": "transfer"
+      }
+    },
+    {
+      "id": "70c287b0-6966-42ef-8942-4a9ac7c333a8",
+      "hanzi": {
+        "display": "星期几"
+      },
+      "pinyin": {
+        "display": "xīngqí jǐ"
+      },
+      "english": {
+        "display": "what day of the week"
+      }
+    },
+    {
+      "id": "cfc13562-0ee0-4722-a85d-f4747d658109",
+      "hanzi": {
+        "display": "简单"
+      },
+      "pinyin": {
+        "display": "jiǎndān"
+      },
+      "english": {
+        "display": "simple"
+      }
+    },
+    {
+      "id": "a3538f62-0297-4a7f-8752-7066a6ad4e74",
+      "hanzi": {
+        "display": "句子"
+      },
+      "pinyin": {
+        "display": "jùzi"
+      },
+      "english": {
+        "display": "sentence"
+      }
+    },
+    {
+      "id": "be143fe3-475b-4aaf-965e-75bf0e10a1b9",
+      "hanzi": {
+        "display": "回答"
+      },
+      "pinyin": {
+        "display": "huídá"
+      },
+      "english": {
+        "display": "answer"
+      }
+    },
+    {
+      "id": "a3c2f43e-7273-465d-bfe6-bd584df734ad",
+      "hanzi": {
+        "display": "流利"
+      },
+      "pinyin": {
+        "display": "liúlì"
+      },
+      "english": {
+        "display": "fluent"
+      }
+    },
+    {
+      "id": "d2401ff2-9066-4f51-9c7e-fd1545ab1c46",
+      "hanzi": {
+        "display": "词典"
+      },
+      "pinyin": {
+        "display": "cídiǎn"
+      },
+      "english": {
+        "display": "dictionary"
+      }
+    },
+    {
+      "id": "b3219ea3-d9d6-47dc-b7d2-f6513c190da2",
+      "hanzi": {
+        "display": "语法"
+      },
+      "pinyin": {
+        "display": "yǔfǎ"
+      },
+      "english": {
+        "display": "grammar"
+      }
+    },
+    {
+      "id": "29ecd1ab-8b2c-4f51-8844-e301496d3ab4",
+      "hanzi": {
+        "display": "多邻国"
+      },
+      "pinyin": {
+        "display": "duō lín guó"
+      },
+      "english": {
+        "display": "Duolingo"
+      }
+    },
+    {
+      "id": "fd0f915e-d836-4f5f-aad9-2d4fe8402619",
+      "hanzi": {
+        "display": "翻译"
+      },
+      "pinyin": {
+        "display": "fānyì"
+      },
+      "english": {
+        "display": "translation",
+        "accept": ["translation", "translate"]
+      }
+    },
+    {
+      "id": "655f72c2-969f-400b-b0a2-69fe1e0593f8",
+      "hanzi": {
+        "display": "下载"
+      },
+      "pinyin": {
+        "display": "xiàzài"
+      },
+      "english": {
+        "display": "download"
+      }
+    },
+    {
+      "id": "6cad28ac-9a7b-48b0-8772-c37427a6fb1e",
+      "hanzi": {
+        "display": "空调"
+      },
+      "pinyin": {
+        "display": "kōngtiáo"
+      },
+      "english": {
+        "display": "air conditioner",
+        "accept": ["air conditioner", "AC"]
+      }
+    },
+    {
+      "id": "d9bcdb92-95b6-45bd-ad64-abc040d1b090",
+      "hanzi": {
+        "display": "灯"
+      },
+      "pinyin": {
+        "display": "dēng"
+      },
+      "english": {
+        "display": "light",
+        "accept": ["light", "lamp"]
+      }
+    },
+    {
+      "id": "d5df586a-655c-48a1-91f8-5ab26553dadf",
+      "hanzi": {
+        "display": "画"
+      },
+      "pinyin": {
+        "display": "huà"
+      },
+      "english": {
+        "display": "draw/paint",
+        "accept": ["draw", "paint"]
+      }
+    },
+    {
+      "id": "9a7c47c5-919a-4f0d-ae99-d2e023562a2d",
+      "hanzi": {
+        "display": "客厅"
+      },
+      "pinyin": {
+        "display": "kètīng"
+      },
+      "english": {
+        "display": "living room"
+      }
+    },
+    {
+      "id": "53e7309e-8a08-47b6-9956-b078ec98b6ce",
+      "hanzi": {
+        "display": "厨房"
+      },
+      "pinyin": {
+        "display": "chúfáng"
+      },
+      "english": {
+        "display": "kitchen"
+      }
+    },
+    {
+      "id": "a83777d1-d8b2-4300-a348-5361de773589",
+      "hanzi": {
+        "display": "放下"
+      },
+      "pinyin": {
+        "display": "fàngxià"
+      },
+      "english": {
+        "display": "drop off"
+      }
+    },
+    {
+      "id": "0210543f-31b1-4ff9-ab3e-6f7913318718",
+      "hanzi": {
+        "display": "放"
+      },
+      "pinyin": {
+        "display": "fàng"
+      },
+      "english": {
+        "display": "put"
+      }
+    },
+    {
+      "id": "2f450f0d-e1ac-411c-8023-ebf55ca12aaf",
+      "hanzi": {
+        "display": "干净"
+      },
+      "pinyin": {
+        "display": "gānjìng"
+      },
+      "english": {
+        "display": "clean (adjective)",
+        "accept": ["clean"]
+      }
+    },
+    {
+      "id": "9684eec0-8aca-4fdb-bfc2-12031ad4470a",
+      "hanzi": {
+        "display": "打扫"
+      },
+      "pinyin": {
+        "display": "dǎsǎo"
+      },
+      "english": {
+        "display": "clean (verb)",
+        "accept": ["clean"]
+      }
+    },
+    {
+      "id": "61d6b885-8325-4852-a7d0-18eea3a09e32",
+      "hanzi": {
+        "display": "客人"
+      },
+      "pinyin": {
+        "display": "kérén"
+      },
+      "english": {
+        "display": "guest"
+      }
+    },
+    {
+      "id": "63e31e14-adba-4fc6-9eca-63b8dfd50aa4",
+      "hanzi": {
+        "display": "电梯"
+      },
+      "pinyin": {
+        "display": "diàntī"
+      },
+      "english": {
+        "display": "elevator"
+      }
+    },
+    {
+      "id": "186a5d29-e232-4af9-99ed-c362dc7ee1bc",
+      "hanzi": {
+        "display": "厕所"
+      },
+      "pinyin": {
+        "display": "cèsuǒ"
+      },
+      "english": {
+        "display": "bathroom",
+        "accept": ["bathroom", "restroom", "toilet"]
+      }
+    },
+    {
+      "id": "db6d1805-3967-4488-89f9-0462c1bba908",
+      "hanzi": {
+        "display": "寒假"
+      },
+      "pinyin": {
+        "display": "hánjià"
+      },
+      "english": {
+        "display": "winter holidays",
+        "accept": ["winter holidays", "winter vacation"]
+      }
+    },
+    {
+      "id": "5ad14a6d-3e35-46ce-a09e-a59de126410e",
+      "hanzi": {
+        "display": "数学"
+      },
+      "pinyin": {
+        "display": "shùxué"
+      },
+      "english": {
+        "display": "math",
+        "accept": ["math", "mathematics"]
+      }
+    },
+    {
+      "id": "8624f7fd-519a-4529-95ec-7434f652a7ea",
+      "hanzi": {
+        "display": "记得"
+      },
+      "pinyin": {
+        "display": "jìdé"
+      },
+      "english": {
+        "display": "remember"
+      }
+    },
+    {
+      "id": "4ce9d305-8e85-43dc-b5bf-33f2fea8235a",
+      "hanzi": {
+        "display": "复习"
+      },
+      "pinyin": {
+        "display": "fùxí"
+      },
+      "english": {
+        "display": "review"
+      }
+    },
+    {
+      "id": "764b126a-9076-47f3-8eed-34e40e2f5be5",
+      "hanzi": {
+        "display": "放假"
+      },
+      "pinyin": {
+        "display": "fàngjià"
+      },
+      "english": {
+        "display": "break",
+        "accept": ["break", "holiday", "vacation", "off"]
+      }
+    },
+    {
+      "id": "78794bc0-6420-45d3-a2ff-7751dfcecf39",
+      "hanzi": {
+        "display": "暑假"
+      },
+      "pinyin": {
+        "display": "shǔjià"
+      },
+      "english": {
+        "display": "summer holidays",
+        "accept": ["summer holidays", "summer vacation"]
+      }
+    },
+    {
+      "id": "8649cad3-909b-4697-ac15-a71111e6b683",
+      "hanzi": {
+        "display": "终于"
+      },
+      "pinyin": {
+        "display": "zhōngyú"
+      },
+      "english": {
+        "display": "finally",
+        "accept": ["finally", "at last"]
+      }
+    },
+    {
+      "id": "e1153f3c-3c17-4a80-b88f-b3609b8625de",
+      "hanzi": {
+        "display": "结束"
+      },
+      "pinyin": {
+        "display": "jiéshù"
+      },
+      "english": {
+        "display": "end",
+        "accept": ["end", "finish"]
+      }
+    },
+    {
+      "id": "71701612-88ec-4c2d-8d25-43165aeecb24",
+      "hanzi": {
+        "display": "放松"
+      },
+      "pinyin": {
+        "display": "fàngsōng"
+      },
+      "english": {
+        "display": "relax, unwind, loosen",
+        "accept": ["relax", "unwind", "loosen"]
+      }
+    },
+    {
+      "id": "504508e3-af9a-4159-aaac-a5624991060e",
+      "hanzi": {
+        "display": "成绩"
+      },
+      "pinyin": {
+        "display": "chéngjì"
+      },
+      "english": {
+        "display": "grades",
+        "accept": ["grades", "grade"]
+      }
+    },
+    {
+      "id": "06c56558-73a4-4314-8972-4c678d067fb5",
+      "hanzi": {
+        "display": "专业"
+      },
+      "pinyin": {
+        "display": "zhuānyè"
+      },
+      "english": {
+        "display": "major"
+      }
+    },
+    {
+      "id": "70aa4f49-7c15-4c00-b1ab-87bb1982e453",
+      "hanzi": {
+        "display": "担心"
+      },
+      "pinyin": {
+        "display": "dānxīn"
+      },
+      "english": {
+        "display": "worry"
+      }
+    },
+    {
+      "id": "197267f2-62f3-4804-9682-918a3b5d979e",
+      "hanzi": {
+        "display": "风景"
+      },
+      "pinyin": {
+        "display": "fēngjǐng"
+      },
+      "english": {
+        "display": "landscape",
+        "accept": ["scenery", "landscape", "view"]
+      }
+    },
+    {
+      "id": "0d0505c7-d1b9-4836-a31a-e05ea0822b6c",
+      "hanzi": {
+        "display": "红绿灯"
+      },
+      "pinyin": {
+        "display": "hónglǜdēng"
+      },
+      "english": {
+        "display": "traffic light",
+        "accept": ["traffic light", "traffic lights"]
+      }
+    },
+    {
+      "id": "aa1644cd-a735-4918-8dd4-087da3983df8",
+      "hanzi": {
+        "display": "街道"
+      },
+      "pinyin": {
+        "display": "jiēdào"
+      },
+      "english": {
+        "display": "street",
+        "accept": ["street", "road", "neighborhood", "way"]
+      }
+    },
+    {
+      "id": "727e98cc-62b0-4a08-ac4e-74f8b3aef907",
+      "hanzi": {
+        "display": "拿"
+      },
+      "pinyin": {
+        "display": "ná"
+      },
+      "english": {
+        "display": "take",
+        "accept": ["take", "hold", "carry"]
+      }
+    },
+    {
+      "id": "4dd06f81-edef-4434-beff-f991e2516028",
+      "hanzi": {
+        "display": "拿出"
+      },
+      "pinyin": {
+        "display": "náchū"
+      },
+      "english": {
+        "display": "take out"
+      }
+    },
+    {
+      "id": "24d42d6b-38b9-4887-9a66-c6c58cd1026a",
+      "hanzi": {
+        "display": "地图"
+      },
+      "pinyin": {
+        "display": "dìtú"
+      },
+      "english": {
+        "display": "map"
+      }
+    },
+    {
+      "id": "9c560f85-77d1-4770-be79-d89b9cecdf76",
+      "hanzi": {
+        "display": "说出来"
+      },
+      "pinyin": {
+        "display": "shuō chūlái"
+      },
+      "english": {
+        "display": "say out loud",
+        "accept": ["say out loud", "say it out loud", "speak out loud", "speak out"]
+      }
+    },
+    {
+      "id": "56f465bd-3d23-4874-8477-5aeb9ef4fb95",
+      "hanzi": {
+        "display": "打车"
+      },
+      "pinyin": {
+        "display": "dǎchē"
+      },
+      "english": {
+        "display": "get a cab",
+        "accept": ["get a cab", "get a taxi", "hail a cab", "hail a taxi"]
+      }
+    },
+    {
+      "id": "27b3bd14-b6c7-41f0-b7dd-a211df140e63",
+      "hanzi": {
+        "display": "免费"
+      },
+      "pinyin": {
+        "display": "miǎnfèi"
+      },
+      "english": {
+        "display": "free"
+      }
+    },
+    {
+      "id": "6c475862-1de6-486c-bbfb-3e75bf0f0059",
+      "hanzi": {
+        "display": "接"
+      },
+      "pinyin": {
+        "display": "jiē"
+      },
+      "english": {
+        "display": "pick up "
+      }
+    },
+    {
+      "id": "a24df66b-67c6-4191-9772-636ff4eb17ed",
+      "hanzi": {
+        "display": "观光"
+      },
+      "pinyin": {
+        "display": "guānguāng"
+      },
+      "english": {
+        "display": "sightseeing"
+      }
+    },
+    {
+      "id": "9fe09285-8266-4673-8fa8-a7c4437b32d0",
+      "hanzi": {
+        "display": "司机"
+      },
+      "pinyin": {
+        "display": "sījī"
+      },
+      "english": {
+        "display": "driver"
+      }
+    },
+    {
+      "id": "dc872f3d-9e76-47c9-8570-502c86f8e565",
+      "hanzi": {
+        "display": "时差"
+      },
+      "pinyin": {
+        "display": "shíchā"
+      },
+      "english": {
+        "display": "jet lag"
+      }
+    },
+    {
+      "id": "4c6ad68c-016f-4542-85ba-05ade7051f20",
+      "hanzi": {
+        "display": "马路"
+      },
+      "pinyin": {
+        "display": "mǎlù"
+      },
+      "english": {
+        "display": "road",
+        "accept": ["road", "street"]
+      }
+    },
+    {
+      "id": "3fb8bff5-ce49-4c8f-b271-40cc2ea3df3a",
+      "hanzi": {
+        "display": "一直"
+      },
+      "pinyin": {
+        "display": "yīzhí"
+      },
+      "english": {
+        "display": "keep (doing something)",
+        "accept": ["keep", "always", "continuously"]
+      }
+    },
+    {
+      "id": "ef9789a9-8842-46cc-b678-3de1e4679311",
+      "hanzi": {
+        "display": "小心"
+      },
+      "pinyin": {
+        "display": "xiǎoxīn"
+      },
+      "english": {
+        "display": "watch out",
+        "accept": ["watch out", "be careful"]
+      }
+    },
+    {
+      "id": "705287e5-2694-4ebe-8ade-c4a48843e6b5",
+      "hanzi": {
+        "display": "参观"
+      },
+      "pinyin": {
+        "display": "cānguān"
+      },
+      "english": {
+        "display": "visit",
+        "accept": ["visit", "look around"]
+      }
+    },
+    {
+      "id": "16878c73-5ccd-4825-8a76-2e56a3ef2a03",
+      "hanzi": {
+        "display": "博物馆"
+      },
+      "pinyin": {
+        "display": "bówùguǎn"
+      },
+      "english": {
+        "display": "museum"
+      }
+    },
+    {
+      "id": "23775ce9-5e81-4137-8db9-00ba3723619f",
+      "hanzi": {
+        "display": "表演"
+      },
+      "pinyin": {
+        "display": "biǎoyǎn"
+      },
+      "english": {
+        "display": "performance",
+        "accept": ["perform", "performance", "act", "play"]
+      }
+    },
+    {
+      "id": "1c4ca277-51ee-45e1-9bc6-6e3235af8f66",
+      "hanzi": {
+        "display": "安排"
+      },
+      "pinyin": {
+        "display": "ānpái"
+      },
+      "english": {
+        "display": "plan",
+        "accept": ["plan", "arrange"]
+      }
+    },
+    {
+      "id": "d771917c-ed59-4930-bbbd-f8ec78c01912",
+      "hanzi": {
+        "display": "活动"
+      },
+      "pinyin": {
+        "display": "huódòng"
+      },
+      "english": {
+        "display": "activity",
+        "accept": ["activity", "event"]
+      }
+    },
+    {
+      "id": "c6159c2b-848a-4478-afc8-aa0b27f57b35",
+      "hanzi": {
+        "display": "发"
+      },
+      "pinyin": {
+        "display": "fā"
+      },
+      "english": {
+        "display": "send"
+      }
+    },
+    {
+      "id": "40e9fec7-3a3b-4007-9fc6-414e5180d14c",
+      "hanzi": {
+        "display": "关于"
+      },
+      "pinyin": {
+        "display": "guānyú"
+      },
+      "english": {
+        "display": "about"
+      }
+    },
+    {
+      "id": "bdef0ce1-ee5e-4574-b390-47ed0390bb90",
+      "hanzi": {
+        "display": "短信"
+      },
+      "pinyin": {
+        "display": "duǎnxìn"
+      },
+      "english": {
+        "display": "text",
+        "accept": ["text", "text message"]
+      }
+    },
+    {
+      "id": "cf497692-8050-46ec-84e9-4e09f9ebceec",
+      "hanzi": {
+        "display": "主要"
+      },
+      "pinyin": {
+        "display": "zhǔyào"
+      },
+      "english": {
+        "display": "main"
+      }
+    },
+    {
+      "id": "86c2371f-7524-40cc-9d30-3bf216be6b05",
+      "hanzi": {
+        "display": "登录"
+      },
+      "pinyin": {
+        "display": "dēnglù"
+      },
+      "english": {
+        "display": "log in"
+      }
+    },
+    {
+      "id": "a17f5517-77fd-44dc-ad15-9e5d026cb178",
+      "hanzi": {
+        "display": "信号"
+      },
+      "pinyin": {
+        "display": "xìnhào"
+      },
+      "english": {
+        "display": "signal"
+      }
+    },
+    {
+      "id": "be30e9b8-2df8-4428-bb08-f5d234146e99",
+      "hanzi": {
+        "display": "密码"
+      },
+      "pinyin": {
+        "display": "mìmǎ"
+      },
+      "english": {
+        "display": "password"
+      }
+    },
+    {
       "id": "337db135-6988-4ad5-addf-9eb1e0a83437",
       "hanzi": {
         "display": "爱尔兰"
@@ -4783,19 +5672,6 @@
       }
     },
     {
-      "id": "23775ce9-5e81-4137-8db9-00ba3723619f",
-      "hanzi": {
-        "display": "表演"
-      },
-      "pinyin": {
-        "display": "biǎoyǎn"
-      },
-      "english": {
-        "display": "performance",
-        "accept": ["perform", "performance", "act", "play"]
-      }
-    },
-    {
       "id": "9aa4576b-91ef-475b-b163-428d64c75bfe",
       "hanzi": {
         "display": "病"
@@ -4806,18 +5682,6 @@
       "english": {
         "display": "sick",
         "accept": ["sick", "ill"]
-      }
-    },
-    {
-      "id": "16878c73-5ccd-4825-8a76-2e56a3ef2a03",
-      "hanzi": {
-        "display": "博物馆"
-      },
-      "pinyin": {
-        "display": "bówùguǎn"
-      },
-      "english": {
-        "display": "museum"
       }
     },
     {
@@ -4843,19 +5707,6 @@
       },
       "english": {
         "display": "grass"
-      }
-    },
-    {
-      "id": "186a5d29-e232-4af9-99ed-c362dc7ee1bc",
-      "hanzi": {
-        "display": "厕所"
-      },
-      "pinyin": {
-        "display": "cèsuǒ"
-      },
-      "english": {
-        "display": "bathroom",
-        "accept": ["bathroom", "restroom", "toilet"]
       }
     },
     {
@@ -4983,18 +5834,6 @@
       }
     },
     {
-      "id": "53e7309e-8a08-47b6-9956-b078ec98b6ce",
-      "hanzi": {
-        "display": "厨房"
-      },
-      "pinyin": {
-        "display": "chúfáng"
-      },
-      "english": {
-        "display": "kitchen"
-      }
-    },
-    {
       "id": "9e95e63c-9d4a-4dc2-87cd-6b7f8c9270b6",
       "hanzi": {
         "display": "窗",
@@ -5080,19 +5919,6 @@
       },
       "english": {
         "display": "German"
-      }
-    },
-    {
-      "id": "d9bcdb92-95b6-45bd-ad64-abc040d1b090",
-      "hanzi": {
-        "display": "灯"
-      },
-      "pinyin": {
-        "display": "dēng"
-      },
-      "english": {
-        "display": "light",
-        "accept": ["light", "lamp"]
       }
     },
     {
@@ -5441,19 +6267,6 @@
       },
       "english": {
         "display": "wind"
-      }
-    },
-    {
-      "id": "197267f2-62f3-4804-9682-918a3b5d979e",
-      "hanzi": {
-        "display": "风景"
-      },
-      "pinyin": {
-        "display": "fēngjǐng"
-      },
-      "english": {
-        "display": "landscape",
-        "accept": ["scenery", "landscape", "view"]
       }
     },
     {
@@ -5812,44 +6625,6 @@
       "english": {
         "display": "garden",
         "accept": ["flower garden", "garden"]
-      }
-    },
-    {
-      "id": "d5df586a-655c-48a1-91f8-5ab26553dadf",
-      "hanzi": {
-        "display": "画"
-      },
-      "pinyin": {
-        "display": "huà"
-      },
-      "english": {
-        "display": "draw/paint",
-        "accept": ["draw", "paint"]
-      }
-    },
-    {
-      "id": "be143fe3-475b-4aaf-965e-75bf0e10a1b9",
-      "hanzi": {
-        "display": "回答"
-      },
-      "pinyin": {
-        "display": "huídá"
-      },
-      "english": {
-        "display": "answer"
-      }
-    },
-    {
-      "id": "d771917c-ed59-4930-bbbd-f8ec78c01912",
-      "hanzi": {
-        "display": "活动"
-      },
-      "pinyin": {
-        "display": "huódòng"
-      },
-      "english": {
-        "display": "activity",
-        "accept": ["activity", "event"]
       }
     },
     {
