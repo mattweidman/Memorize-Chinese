@@ -5443,8 +5443,8 @@
         "display": "biǎoyǎn"
       },
       "english": {
-        "display": "performance",
-        "accept": ["perform", "performance", "act", "play"]
+        "display": "performance (show)",
+        "accept": ["perform", "performance", "act", "play", "show"]
       }
     },
     {
@@ -5556,6 +5556,676 @@
       },
       "english": {
         "display": "password"
+      }
+    },
+    {
+      "id": "5c40c3f1-d68f-4efb-ae7a-db92c17e577c",
+      "hanzi": {
+        "display": "过去一个月"
+      },
+      "pinyin": {
+        "display": "guòqù yīgeyuè"
+      },
+      "english": {
+        "display": "for the past month"
+      }
+    },
+    {
+      "id": "30401452-fe12-44c8-9cf3-ad2afb161f59",
+      "hanzi": {
+        "display": "谈"
+      },
+      "pinyin": {
+        "display": "tán"
+      },
+      "english": {
+        "display": "discuss"
+      }
+    },
+    {
+      "id": "203893b4-ff5b-43c8-b5fd-7eaf2a954569",
+      "hanzi": {
+        "display": "其实"
+      },
+      "pinyin": {
+        "display": "qíshí"
+      },
+      "english": {
+        "display": "actually"
+      }
+    },
+    {
+      "id": "4322910c-d11c-487c-8145-f37a4a27caa9",
+      "hanzi": {
+        "display": "时间"
+      },
+      "pinyin": {
+        "display": "shíjiān"
+      },
+      "english": {
+        "display": "time",
+        "accept": ["time", "times"]
+      }
+    },
+    {
+      "id": "87134d2e-f511-42ef-94c2-35eb26992110",
+      "hanzi": {
+        "display": "同意"
+      },
+      "pinyin": {
+        "display": "tóngyì"
+      },
+      "english": {
+        "display": "agree"
+      }
+    },
+    {
+      "id": "8cc58300-9550-4644-9703-82d521a4bc58",
+      "hanzi": {
+        "display": "决定"
+      },
+      "pinyin": {
+        "display": "juédìng"
+      },
+      "english": {
+        "display": "decide",
+        "accept": ["decide", "decision"]
+      }
+    },
+    {
+      "id": "97b849a9-c487-40e3-ad72-d5bf6f7d05e4",
+      "hanzi": {
+        "display": "根据"
+      },
+      "pinyin": {
+        "display": "gēnjù"
+      },
+      "english": {
+        "display": "based on",
+        "accept": ["based on", "according to"]
+      }
+    },
+    {
+      "id": "1b589299-e1ea-4492-86a5-4182e17845ef",
+      "hanzi": {
+        "display": "升职"
+      },
+      "pinyin": {
+        "display": "shēng zhí"
+      },
+      "english": {
+        "display": "promote",
+        "accept": ["promotion", "promote", "promoted", "got promoted", "was promoted"]
+      }
+    },
+    {
+      "id": "eeca2b5e-bfa1-40c1-b4ba-a516ad5211b8",
+      "hanzi": {
+        "display": "认为",
+        "accept": ["认为", "觉得"]
+      },
+      "pinyin": {
+        "display": "rènwéi",
+        "accept": ["rènwéi", "juédé"]
+      },
+      "english": {
+        "display": "think"
+      }
+    },
+    {
+      "id": "e575a837-6e35-4392-bac9-c2bd503a53c7",
+      "hanzi": {
+        "display": "表现"
+      },
+      "pinyin": {
+        "display": "biǎoxiàn"
+      },
+      "english": {
+        "display": "performance (achievement)",
+        "accept": ["performance"]
+      }
+    },
+    {
+      "id": "a8aff057-0dd4-4598-b7c1-4452f4d265d0",
+      "hanzi": {
+        "display": "满意"
+      },
+      "pinyin": {
+        "display": "mànyì"
+      },
+      "english": {
+        "display": "satisfied",
+        "accept": ["satisfied", "satisfaction", "approved", "approval", "pleased", "happy"]
+      }
+    },
+    {
+      "id": "982bf4b2-fa85-42b9-9421-26b321f31c1f",
+      "hanzi": {
+        "display": "出差"
+      },
+      "pinyin": {
+        "display": "chūchāi"
+      },
+      "english": {
+        "display": "business trip",
+        "accept": ["busienss trip", "go on a business trip"]
+      }
+    },
+    {
+      "id": "75336564-f6b1-40d0-9e28-aca2826383ee",
+      "hanzi": {
+        "display": "老板"
+      },
+      "pinyin": {
+        "display": "lǎobǎn"
+      },
+      "english": {
+        "display": "boss"
+      }
+    },
+    {
+      "id": "49154325-c7e5-4b51-976e-72e5cb61d9c5",
+      "hanzi": {
+        "display": "麻烦"
+      },
+      "pinyin": {
+        "display": "mǎfan"
+      },
+      "english": {
+        "display": "annoying",
+        "accept": ["annoying", "tricky"]
+      }
+    },
+    {
+      "id": "74e03ef3-e241-45eb-8cc3-148f926419f6",
+      "hanzi": {
+        "display": "面试"
+      },
+      "pinyin": {
+        "display": "miànshì"
+      },
+      "english": {
+        "display": "interview"
+      }
+    },
+    {
+      "id": "24dc377b-eb11-421a-8d4b-955c144aa4b1",
+      "hanzi": {
+        "display": "准备"
+      },
+      "pinyin": {
+        "display": "zhǔnbèi"
+      },
+      "english": {
+        "display": "prepare"
+      }
+    },
+    {
+      "id": "be1c12bb-2671-4fac-8aa4-05dde55426fb",
+      "hanzi": {
+        "display": "开会"
+      },
+      "pinyin": {
+        "display": "kāihuì"
+      },
+      "english": {
+        "display": "have a meeting"
+      }
+    },
+    {
+      "id": "3beecfff-f87f-4174-8f38-40219378a30f",
+      "hanzi": {
+        "display": "中秋节"
+      },
+      "pinyin": {
+        "display": "zhōngqiū jié"
+      },
+      "english": {
+        "display": "mid-autumn festival",
+        "accept": ["mid-autumn festival", "mid autumn festival"]
+      }
+    },
+    {
+      "id": "fc207c65-876f-4ed5-b481-17e3a55a6585",
+      "hanzi": {
+        "display": "圆"
+      },
+      "pinyin": {
+        "display": "yuán"
+      },
+      "english": {
+        "display": "round",
+        "accept": ["round", "circle", "circular"]
+      }
+    },
+    {
+      "id": "a4f838a3-256c-4f2b-836f-18785880dd89",
+      "hanzi": {
+        "display": "月饼"
+      },
+      "pinyin": {
+        "display": "yuèbǐng"
+      },
+      "english": {
+        "display": "moon cake"
+      }
+    },
+    {
+      "id": "d220e42d-ce7b-47ab-a413-e17ee17e6a48",
+      "hanzi": {
+        "display": "月亮"
+      },
+      "pinyin": {
+        "display": "yuèliàng"
+      },
+      "english": {
+        "display": "moon"
+      }
+    },
+    {
+      "id": "bf360887-1482-48e3-8676-6880ee21d1a5",
+      "hanzi": {
+        "display": "恭喜"
+      },
+      "pinyin": {
+        "display": "gōngxì"
+      },
+      "english": {
+        "display": "congratulations",
+        "accept": ["congratulations", "congrats"]
+      }
+    },
+    {
+      "id": "8aa7c7cd-c0c2-4c4f-9dda-979c28d12051",
+      "hanzi": {
+        "display": "划"
+      },
+      "pinyin": {
+        "display": "huà"
+      },
+      "english": {
+        "display": "row",
+        "accept": ["row", "stroke", "paddle"]
+      }
+    },
+    {
+      "id": "57a03c18-85c4-4152-a0a8-c694fa558b8c",
+      "hanzi": {
+        "display": "龙舟"
+      },
+      "pinyin": {
+        "display": "lóngzhōu"
+      },
+      "english": {
+        "display": "dragon boat"
+      }
+    },
+    {
+      "id": "57a03c18-85c4-4152-a0a8-c694fa558b8c",
+      "hanzi": {
+        "display": "端午节",
+        "accept": ["端午节", "龙舟节"]
+      },
+      "pinyin": {
+        "display": "duānwǔ jié",
+        "accept": ["duānwǔ jié", "lóngzhōu jié"]
+      },
+      "english": {
+        "display": "dragon boat festival"
+      }
+    },
+    {
+      "id": "ebe9c78d-a1a8-426c-b2e5-ddf3563c4370",
+      "hanzi": {
+        "display": "汤圆"
+      },
+      "pinyin": {
+        "display": "tāngyuán"
+      },
+      "english": {
+        "display": "glutinous rice ball",
+        "accept": ["glutinous rice ball", "glutinous rice balls"]
+      }
+    },
+    {
+      "id": "1b01b413-a29c-4a54-af8b-10d793c832e1",
+      "hanzi": {
+        "display": "粽子"
+      },
+      "pinyin": {
+        "display": "zòngzi"
+      },
+      "english": {
+        "display": "sticky rice dumpling",
+        "accept": ["sticky rice dumpling", "sticky rice dumplings"]
+      }
+    },
+    {
+      "id": "93a68a0f-96b8-4ca2-85fd-d74b83ab5e87",
+      "hanzi": {
+        "display": "聚会"
+      },
+      "pinyin": {
+        "display": "jùhuì"
+      },
+      "english": {
+        "display": "gathering",
+        "accept": ["gathering", "party"]
+      }
+    },
+    {
+      "id": "12b5071e-a98d-4e85-8166-220ba58ca548",
+      "hanzi": {
+        "display": "珍珠奶茶"
+      },
+      "pinyin": {
+        "display": "zhēnzhū nǎichá"
+      },
+      "english": {
+        "display": "bubble tea",
+        "accept": ["bubble tea", "bubble milk tea"]
+      }
+    },
+    {
+      "id": "a5aa49e0-5044-4a6b-8d01-8f901ccb1336",
+      "hanzi": {
+        "display": "酸辣汤"
+      },
+      "pinyin": {
+        "display": "suān là tāng"
+      },
+      "english": {
+        "display": "hot and sour soup"
+      }
+    },
+    {
+      "id": "a023098c-b244-4ae3-93b0-7bbde55fbd12",
+      "hanzi": {
+        "display": "辣"
+      },
+      "pinyin": {
+        "display": "là"
+      },
+      "english": {
+        "display": "spicy",
+        "accept": ["spicy", "hot"]
+      }
+    },
+    {
+      "id": "32250d09-54df-45c6-9153-452541d599b1",
+      "hanzi": {
+        "display": "春卷"
+      },
+      "pinyin": {
+        "display": "chūnjuǎn"
+      },
+      "english": {
+        "display": "spring roll",
+        "accept": ["spring roll", "spring rolls"]
+      }
+    },
+    {
+      "id": "e311538f-d2c0-47d1-b3c4-9ef178becb1c",
+      "hanzi": {
+        "display": "豆花"
+      },
+      "pinyin": {
+        "display": "dòuhuā"
+      },
+      "english": {
+        "display": "tofu pudding",
+        "accept": ["tofu pudding", "douhua"]
+      }
+    },
+    {
+      "id": "dcee6e9f-06cc-4e94-99af-95ed2fbab830",
+      "hanzi": {
+        "display": "烤鸭"
+      },
+      "pinyin": {
+        "display": "kǎoyā"
+      },
+      "english": {
+        "display": "roast duck",
+        "accept": ["roast duck", "duck"]
+      }
+    },
+    {
+      "id": "96729118-5d02-4498-a23d-c1e5a6038354",
+      "hanzi": {
+        "display": "北京烤鸭"
+      },
+      "pinyin": {
+        "display": "Běijīng kǎoyā"
+      },
+      "english": {
+        "display": "Peking duck"
+      }
+    },
+    {
+      "id": "c0ec7921-6c14-45a8-ab21-d0f75bcc2ba0",
+      "hanzi": {
+        "display": "宫保鸡丁"
+      },
+      "pinyin": {
+        "display": "Gōng bǎo jī dīng"
+      },
+      "english": {
+        "display": "Kung Pao chicken"
+      }
+    },
+    {
+      "id": "13a63d6b-1ece-4ce1-9c4d-bc743f1739b6",
+      "hanzi": {
+        "display": "馒头"
+      },
+      "pinyin": {
+        "display": "mántou"
+      },
+      "english": {
+        "display": "steamed bun",
+        "accept": ["steamed bun", "steamed buns"]
+      }
+    },
+    {
+      "id": "6138b853-3495-403d-846c-4d852715fae4",
+      "hanzi": {
+        "display": "卤肉饭"
+      },
+      "pinyin": {
+        "display": "lǔròufàn"
+      },
+      "english": {
+        "display": "braised pork rice"
+      }
+    },
+    {
+      "id": "a1a6486a-645a-4eac-bcc9-51df4504a2fa",
+      "hanzi": {
+        "display": "菜鸟"
+      },
+      "pinyin": {
+        "display": "càiniǎo"
+      },
+      "english": {
+        "display": "beginner"
+      }
+    },
+    {
+      "id": "de889df2-7e60-41eb-aaed-d8e7bdf1b1e6",
+      "hanzi": {
+        "display": "萌",
+        "accept": ["萌", "可爱"]
+      },
+      "pinyin": {
+        "display": "méng",
+        "accept": ["méng", "kě'ài"]
+      },
+      "english": {
+        "display": "cute"
+      }
+    },
+    {
+      "id": "b77ccc54-bcb9-4f43-b110-f46e00aa5088",
+      "hanzi": {
+        "display": "自拍"
+      },
+      "pinyin": {
+        "display": "zìpāi"
+      },
+      "english": {
+        "display": "selfie"
+      }
+    },
+    {
+      "id": "3684421d-a12e-4610-89e5-15fd13f26d1e",
+      "hanzi": {
+        "display": "富",
+        "accept": ["富", "有钱"]
+      },
+      "pinyin": {
+        "display": "fù",
+        "accept": ["fù", "yǒuqián"]
+      },
+      "english": {
+        "display": "rich"
+      }
+    },
+    {
+      "id": "84c1a60f-0fad-4f6a-ad63-60eb7027905f",
+      "hanzi": {
+        "display": "刷"
+      },
+      "pinyin": {
+        "display": "shuā"
+      },
+      "english": {
+        "display": "scroll through",
+        "accept": ["scroll through", "scroll", "brush", "scrub"]
+      }
+    },
+    {
+      "id": "43834086-a484-495f-a1b8-2f18143af03d",
+      "hanzi": {
+        "display": "聊天"
+      },
+      "pinyin": {
+        "display": "liáotiān"
+      },
+      "english": {
+        "display": "chat"
+      }
+    },
+    {
+      "id": "26417767-eb2d-4f40-9849-975dcdd64f79",
+      "hanzi": {
+        "display": "赞"
+      },
+      "pinyin": {
+        "display": "zàn"
+      },
+      "english": {
+        "display": "like (as in a Facebook like)",
+        "accept": ["like"]
+      }
+    },
+    {
+      "id": "3fdca0d9-9423-4ae6-b448-05a42442fd68",
+      "hanzi": {
+        "display": "好友"
+      },
+      "pinyin": {
+        "display": "hǎoyǒu"
+      },
+      "english": {
+        "display": "friend (as in a Facebook friend)",
+        "accept": ["friend"]
+      }
+    },
+    {
+      "id": "740d171a-c451-469a-9f67-83f2d6521eac",
+      "hanzi": {
+        "display": "关注"
+      },
+      "pinyin": {
+        "display": "guānzhù"
+      },
+      "english": {
+        "display": "follow"
+      }
+    },
+    {
+      "id": "b5771c5e-e97a-40eb-8ce1-816df86d25ea",
+      "hanzi": {
+        "display": "加"
+      },
+      "pinyin": {
+        "display": "jiā"
+      },
+      "english": {
+        "display": "add",
+        "accept": ["add", "plus"]
+      }
+    },
+    {
+      "id": "896c1a93-322e-45a6-b222-f9b76af62a02",
+      "hanzi": {
+        "display": "转发"
+      },
+      "pinyin": {
+        "display": "zhuǎnfā"
+      },
+      "english": {
+        "display": "forward"
+      }
+    },
+    {
+      "id": "055ada88-ebab-4f38-aeb7-3decb0aeb89e",
+      "hanzi": {
+        "display": "分享"
+      },
+      "pinyin": {
+        "display": "fēnxiǎng"
+      },
+      "english": {
+        "display": "share"
+      }
+    },
+    {
+      "id": "6f960c50-e2d6-46be-84fd-99589ba8593c",
+      "hanzi": {
+        "display": "粉丝"
+      },
+      "pinyin": {
+        "display": "fěnsī"
+      },
+      "english": {
+        "display": "fan",
+        "accept": ["fan", "fans"]
+      }
+    },
+    {
+      "id": "1ea7f70c-148d-4897-a31a-b9f0f56b0dac",
+      "hanzi": {
+        "display": "百万"
+      },
+      "pinyin": {
+        "display": "bǎiwàn"
+      },
+      "english": {
+        "display": "million"
+      }
+    },
+    {
+      "id": "17af1ad7-a723-4888-9dbd-23e73d068924",
+      "hanzi": {
+        "display": "评论"
+      },
+      "pinyin": {
+        "display": "pínglùn"
+      },
+      "english": {
+        "display": "comment"
       }
     },
     {
@@ -6341,8 +7011,8 @@
         "display": "gèng"
       },
       "english": {
-        "display": "even more",
-        "accept": ["still", "even", "even more", "still more"]
+        "display": "more",
+        "accept": ["still", "even", "even more", "still more", "more"]
       }
     },
     {
