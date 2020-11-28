@@ -4310,18 +4310,6 @@
       }
     },
     {
-      "id": "aa9e4e77-a44e-41aa-94c1-0564417af61f",
-      "hanzi": {
-        "display": "有钱"
-      },
-      "pinyin": {
-        "display": "yǒuqián"
-      },
-      "english": {
-        "display": "rich"
-      }
-    },
-    {
       "id": "f1483a89-bc13-41f7-8158-153196e115be",
       "hanzi": {
         "display": "角"
@@ -6226,6 +6214,193 @@
       },
       "english": {
         "display": "comment"
+      }
+    },
+    {
+      "id": "66649298-5d5a-47ba-b98d-13d7d3aff4bb",
+      "hanzi": {
+        "display": "收据"
+      },
+      "pinyin": {
+        "display": "shōujù"
+      },
+      "english": {
+        "display": "receipt"
+      }
+    },
+    {
+      "id": "c7aff43b-22b0-4b60-97dc-d9685814cfd6",
+      "hanzi": {
+        "display": "费用"
+      },
+      "pinyin": {
+        "display": "fèiyòng"
+      },
+      "english": {
+        "display": "cost",
+        "accept": ["cost", "costs"]
+      }
+    },
+    {
+      "id": "4f2473d6-61dc-40f6-afe7-b855e7aabd57",
+      "hanzi": {
+        "display": "报销"
+      },
+      "pinyin": {
+        "display": "bàoxiāo"
+      },
+      "english": {
+        "display": "reimburse",
+        "accept": ["reimburse", "reimbursement"]
+      }
+    },
+    {
+      "id": "de1c042c-4479-446e-a4d0-1ef6f24f3021",
+      "hanzi": {
+        "display": "协议"
+      },
+      "pinyin": {
+        "display": "xiéyì"
+      },
+      "english": {
+        "display": "agreement"
+      }
+    },
+    {
+      "id": "65db7532-fe21-4370-b83a-dc8043ac3310",
+      "hanzi": {
+        "display": "尽快"
+      },
+      "pinyin": {
+        "display": "jǐnkuài"
+      },
+      "english": {
+        "display": "as soon as possible",
+        "accept": ["as soon as possible", "asap"]
+      }
+    },
+    {
+      "id": "c1292412-ede8-4c2d-a8ce-5230aea0ba56",
+      "hanzi": {
+        "display": "报告"
+      },
+      "pinyin": {
+        "display": "bàogào"
+      },
+      "english": {
+        "display": "report (noun)",
+        "accept": ["report"]
+      }
+    },
+    {
+      "id": "95280bb7-9555-483a-8ad8-0a08b740d507",
+      "hanzi": {
+        "display": "回复"
+      },
+      "pinyin": {
+        "display": "huífù"
+      },
+      "english": {
+        "display": "reply"
+      }
+    },
+    {
+      "id": "62162c43-d505-4fa8-baad-6440367a94b0",
+      "hanzi": {
+        "display": "项目"
+      },
+      "pinyin": {
+        "display": "xiàngmù"
+      },
+      "english": {
+        "display": "project"
+      }
+    },
+    {
+      "id": "c2c3d21c-319f-4593-a738-8199f414117d",
+      "hanzi": {
+        "display": "签名"
+      },
+      "pinyin": {
+        "display": "qiānmíng"
+      },
+      "english": {
+        "display": "signature",
+        "accept": ["signature", "sign"]
+      }
+    },
+    {
+      "id": "22550a45-e355-48ed-b50a-b0f1af18d868",
+      "hanzi": {
+        "display": "合同"
+      },
+      "pinyin": {
+        "display": "hétóng"
+      },
+      "english": {
+        "display": "contract"
+      }
+    },
+    {
+      "id": "bdae6b7d-f6b4-464b-97b4-410b27ea1fe2",
+      "hanzi": {
+        "display": "汇报"
+      },
+      "pinyin": {
+        "display": "huìbào"
+      },
+      "english": {
+        "display": "report (verb)",
+        "accept": ["report"]
+      }
+    },
+    {
+      "id": "dbc9dc2a-a8e4-43a2-afdb-c5f86e24d39b",
+      "hanzi": {
+        "display": "低"
+      },
+      "pinyin": {
+        "display": "dī"
+      },
+      "english": {
+        "display": "low"
+      }
+    },
+    {
+      "id": "172f25ab-2fea-4801-a3b8-74b58991c7a2",
+      "hanzi": {
+        "display": "资本"
+      },
+      "pinyin": {
+        "display": "zīběn"
+      },
+      "english": {
+        "display": "capital"
+      }
+    },
+    {
+      "id": "9eba045d-c55e-4d5a-be03-cf8b439b6b0c",
+      "hanzi": {
+        "display": "广告"
+      },
+      "pinyin": {
+        "display": "guǎnggào"
+      },
+      "english": {
+        "display": "advertisement",
+        "accept": ["advertisement", "add", "commercial"]
+      }
+    },
+    {
+      "id": "f186fede-f4a3-4a39-bb04-a7553d8411d9",
+      "hanzi": {
+        "display": "预算"
+      },
+      "pinyin": {
+        "display": "yùsuàn"
+      },
+      "english": {
+        "display": "budget"
       }
     },
     {
